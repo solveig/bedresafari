@@ -71,7 +71,7 @@
 <body>
 	
  	 
-  	<amp-img src="bilder/fugllotte2.gif" width="250" height="212" layout="fill" class="doc_header_bg"></amp-img>
+  	<amp-img src="/fugllotte2.gif" width="250" height="212" layout="fill" class="doc_header_bg"></amp-img>
    <h1>BedreSafari tester AMP</h1>  
  
 

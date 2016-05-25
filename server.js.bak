@@ -5,7 +5,7 @@ var app = express()
 
 app.get('/', function (req, res) {
 var path = require('path');
-res.sendFile(path.resolve('/BedreSafari.html'));
+res.sendFile(path.resolve('BedreSafari.html'));
 //res.sendFile('/BedreSafari.html');
 // not found res.sendFile('/main.html');
 //  OK res.send('Hello World!')
