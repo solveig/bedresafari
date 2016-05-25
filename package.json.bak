@@ -1,0 +1,15 @@
+﻿{
+  "name": "bedresafari",
+  "version": "1.0.0",
+  "description": "Mine hjemmesider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  ""repository": "https://github.com/",
+  "author": "Solveig Løvhaug",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
