@@ -4,8 +4,9 @@ var express = require('express')
 var app = express()
 
 app.get('/', function (req, res) {
-
-res.sendFile('/BedreSafari.html');
+var path = require('path');
+res.sendFile(path.resolve('/BedreSafari.html'));
+//res.sendFile('/BedreSafari.html');
 // not found res.sendFile('/main.html');
 //  OK res.send('Hello World!')
 })

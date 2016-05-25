@@ -4,8 +4,9 @@ var express = require('express')
 var app = express()
 
 app.get('/', function (req, res) {
-res.sendFile('/main.html');
-// error not found res.sendFile('/BedreSafari.html');
+
+res.sendFile('/BedreSafari.html');
+// not found res.sendFile('/main.html');
 //  OK res.send('Hello World!')
 })
 
