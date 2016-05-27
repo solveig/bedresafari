@@ -1,0 +1,3 @@
+  <li>
+          <p class="kontakt showUp"  href="#"   onclick="document.getElementsByClassName('infoTxt')[0].classList.toggle('opened')"  >?</p>
+        </li>
