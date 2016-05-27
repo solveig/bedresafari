@@ -248,8 +248,7 @@ h2#oversett {
  text-align:center; 
  font-size: 80%;  
 }
- .infoTxt{
- display:none;
+ .infoTxt{ 
  background-color: #3290d9;
  color:#feb06c;
  text-align:center; 
@@ -305,7 +304,7 @@ li.liContent{
  
    
 nav { overflow:hidden;
-    background-color:#dbebf7;    
+    background-color:#dinfotbebf7;    
 }
 
 img.inside{
