@@ -55,7 +55,7 @@ var main_no=
 	"logo"                : "/bilder/logo.gif" ,
 	"logo2"               : "/bilder/solveig1.gif" ,
   "logo2Title"          : "Solveig Løvhaug",
-  "info_txt"            : "BedreSafari er en oversikt over hva jeg Solveig Løvhaug ønsker å formidle på web og mine konsulent tjenester." ,
+  "info_txt"            : "Konsulent tjenester, event og ting jeg ønsker å formidle." ,
 };
 var main_sv= 
 { "speak"               : "sv",
@@ -63,7 +63,7 @@ var main_sv=
 	"logo"                : "/bilder/logo.gif" ,
 	"logo2"               : "/bilder/solveig1.gif" ,
   "logo2Title"          : "Solveig Løvhaug",
-  "info_txt"            : "BedreSafari är en sammanfattning av vad jag Solveig Løvhaug vill förmedla på web och mina konsulttjänster." ,
+  "info_txt"            : "Konsulttjänster, event och annat jag vill förmedla." ,
 };
 var main_en       = 
 { "speak"               : "en",
@@ -71,7 +71,7 @@ var main_en       =
 	"logo"                : "/bilder/logo.gif" ,
 	"logo2"               : "/bilder/solveig1.gif" ,
   "logo2Title"          : "Solveig Løvhaug",
- "info_txt"            : "BedreSafari is a overview of what I Solveig Løvhaug want to say on web and my consulting services.",
+ "info_txt"            : "Consulting services, event and things I want to convay.",
  };
 
 var GALLERI_no       = 
