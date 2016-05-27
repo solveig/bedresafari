@@ -1,0 +1,450 @@
+*,html{
+ font-family: arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ outline: none;
+ box-sizing: border-box;
+}
+/* Use rem its relative to its root element */
+body{
+   background-color: #c0e9ff; 
+  border:0.3vw solid  #ba5986;
+  color: black;
+  font-size: 2.9vmax; 
+}
+p {
+margin:0;
+padding:0 0 0 1vw;
+}
+h1,h2,h3,h4 {
+margin: 0.1vw 0 0 0;
+padding:0 0 0 0.5vw;
+}
+article{	
+      
+ background-color:#dbebf7; 	
+}
+section{	
+overflow: hidden;
+display: inline;
+}
+nav{
+	 background-color:#dbebf7; 	 
+}
+header {
+background-color: #dbebf7;
+} 
+footer nav,header nav  { 
+background-color: #c0e9ff;
+}
+footer {
+  display:flex;
+}
+.left_float{
+float: left;
+}
+ul{
+  list-style-type: none;
+}
+
+li.liMenu{
+	width: 92vw;
+	height:30vw;
+  display:block;
+  float: left;
+  border:0.3vw ridge  #3290d9;
+  margin: 1vw;
+  padding:1.2vw 0 0 0; 
+  overflow:hidden;
+} 
+
+img.imgMenu{
+	width: 26vw !important;
+	
+  min-width: 100px;
+  display:inline;
+  float: left; 
+  padding: 0.2vw 1.2vw;
+  margin:0 0.3vw 0 0;
+}  
+
+a{	
+	background-color: #c0e9ff;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  width:auto;  
+}
+a:hover {
+	color:#feb06c;
+}
+
+.hidden  {
+	display:none;
+}
+
+
+.oversettList.opened, .menuList.opened {
+  display: inline-block;
+  overflow:hidden;
+  	
+}
+.oversettList, .menuList {
+  display: none;
+}
+
+#reklame{
+	background: white url("/bilder/reklame.svg") no-repeat left center; 
+  border:0.2vw solid  #ba5986;
+}
+/* Menu main in header */
+
+
+.navTxt{	
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  padding: 0 1vw;
+  border:0.2vw solid #b4c8d6;
+  display:inline-block;
+  float:left;
+  margin:0.5vh 0;
+ 
+}
+a.mainHead{	
+	background-color:#b4c8d6;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  padding: 0 0.1em;
+  margin: 0.1em;
+  display:inline-block;
+  float:left;
+}
+
+a.mainHead:hover{
+ color: #feb06c;
+}
+a.choosen {
+  color: #feb06c;
+}
+ 
+a.mainCont{	
+  float:left;
+	background-color:#dbebf7;
+  color: black;
+   font-weight: bold;  
+    padding: 0 1.2vw;    
+    text-decoration: none;
+    text-align: left; 
+ 
+  border:0vw solid  #b4c8d6;
+}
+
+a.mainCont:hover{
+ color: #feb06c;
+}  
+/* main part */  
+
+aside.asideKontakt {
+	 position: fixed;
+  top: 30%;
+  left: 20%; 
+	display: none;
+	float :right;
+	color : black; 
+	width:70vw;
+  border:0.5vw solid #406584;
+  border-radius: 20vw;
+ 
+  margin : 0.8vw;
+  background:#b4c8d6;
+  text-align:center;  
+}
+aside.asideBlog {
+	position: fixed;
+  top: 20%;
+  left: 0; 
+	color : black; 
+	width:34vw;
+  border:0.5vw solid  #ba5986;
+  border-radius: 4vw;
+   background-image: url("/bilder/fugllotte2.gif");  
+  text-align:center;  
+}
+ .kontakt  {   	   
+	color : black;  
+  text-align:center; 
+	border:0.1vw solid #406584;
+  border-radius: 2vw;
+  padding: 0.8vw;
+  margin: 1.3vw 0.2vw;
+ font-size: 22px;
+  font-weight: bold;  
+  display: inline-block;
+	background:#b4c8d6;
+	float:left;
+}
+		 
+.oversett {   	  
+		position: fixed;
+    top: 80;
+    right: 0;  
+  margin:  0.1vh;
+  height : 8vw;
+  width : auto;
+}	
+.menu {   	  
+	position: fixed;
+    top: 0;
+    right: 0;  
+  margin:  0.1vh;
+  
+  height : 8vw;
+  width : auto;
+}		
+.question {   	   
+  background:  #ba5986;
+	width: 11vw;
+  height:auto;
+  
+  color : gray;
+	text-align:center; 
+  font-size: 32px;
+  font-weight: bold;  
+	border:0.2vw solid #406584;    
+  border-radius: 10vw;
+  float: right;
+  margin-top: 1vw;
+}		
+h2#oversett {
+	  background:  #ba5986;;
+  font-size: 32px;
+
+ display: inline; 
+  color : gray;
+	text-align:center; 
+  float: left;
+  margin-top: 1vw;
+	border:0.2vw solid #406584;    
+  border-radius: 10vw;
+ 
+}
+
+#toLeft {
+  margin:0 0 0 auto; 
+  display:flex;
+  float:right;
+
+}
+
+.showUp:hover {
+  background-color: #3290d9;
+  color:#feb06c;
+}
+.show {
+ color:black;
+ text-align:center; 
+ font-size: 80%;  
+}
+ .infoTxt{
+ display:none;
+ background-color: #3290d9;
+ color:#feb06c;
+ text-align:center; 
+}
+.infoTxt.opened{
+ display:block;
+ background-color: #3290d9;
+ color:#feb06c;
+ text-align:center; 
+}
+
+a.copy{
+	background-color:#c0e9ff;
+  color: black; 
+  float: right;
+  font-size: 32px;
+}
+
+ a.ha {
+ text-decoration: underline;
+ font-size: 80%;
+}
+a.ylvis {
+ text-decoration: underline;
+ font-size: 80%;
+} 
+nav.navMenu ul{
+  display: block;
+}
+ 
+li.liMenu{
+	width: 92vw;
+	height:auto;
+  display:inline-block;
+  float: left;
+  border:0.3vw ridge  #3290d9;
+  margin: 1vw;
+  padding:1.2vw 0 0 0;
+  float:left;  
+  overflow:hidden;
+}
+li.liContent{
+	width: 88vw;
+	height:auto;
+  display:inline-block;
+  float: left;
+  border:0.3vw ridge  #3290d9;
+  margin: 1vw;
+  padding:1.2vw 0 0 0;
+  float:left;  
+  overflow:hidden;
+}
+ 
+   
+nav { overflow:hidden;
+    background-color:#dbebf7;    
+}
+
+img.inside{
+	width: 16vw;
+  min-width: 150px;
+   display:inline;
+  float: left;
+  margin: 0 0.2vw 1.2vw 0;
+    padding: 0.2vw 1.2vw;
+
+ }
+ #ork{
+  display:inline;
+  float: left;
+  margin: 0 0.3vw 1.2vw 0;
+ }
+nav.linkHead{		
+	background-color: #c0e9ff; 	
+}
+nav a.linkHead{		
+	display: none;
+	background-color: #c0e9ff; 
+  text-decoration: underline;
+  text-align: center; 
+  color: #3290d9;
+}
+.container {
+  font-family: arial, sans-serif;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex {
+  background: #c0e9ff; 
+  padding: 0.2vw;
+  margin: 0 0.3vw 1.2vw 0;
+  border: 0 solid  #3290d9; 
+  text-align: center;
+  position: relative;
+  flex-basis: auto;
+}
+
+#logoHeader {
+ width:3em;
+ height:auto; 
+}
+#logoTxt {
+display: inline;
+color:#feb06c;
+letter-spacing: -0.05em;
+font-family: verdana,georgia;
+font-size: 2.3em;
+}
+
+.circle{border-radius:50%;}
+
+
+.opp {
+display:inline-block;  
+}
+
+.plassert {
+  position: fixed;
+  top: 2em;
+  right: 0;; 
+
+
+}
+/* Gjelder for noe som er større enn tablet*/
+@media only screen and (min-width: 768px){
+
+#toLeft {
+  margin:0 0 0 auto; 
+}
+#toLeft2 {	
+  margin:0;
+  float: right;
+} 
+.menuList.opened, .menuList {
+  display: flex;
+}
+#hamburger {
+  display: none;  
+} 
+li.liMenu1{	
+	width: 22vw;
+	height:72vh;
+}
+li.liMenu{
+	width: 22vw;
+	height:36vh;
+}
+li.liContent{
+	width: 46vw;
+	height:auto;
+}
+li.liContentMer{
+	width: 94vw;
+	height:auto;
+}
+body{ 
+ font-size: 1.5vmax;
+}
+
+a.mainHead{	
+ font-size: 1.2em;
+  padding: 0 0.1em;
+  margin: 0.1em;  
+} 
+
+.opp {
+display:flex;
+}
+
+}
+/* Gjelder for stor skjerm full page */
+@media only screen and (min-width: 1024px){
+ 
+body{
+  font-size: 1.2vmax;
+  margin: 0 11vw;
+}
+li.liMenu1{
+	width: 17vw;
+	height:60vh;
+}li.liMenu{
+	width: 17vw;
+	height:30vh;
+}
+}
+
+@media only screen and (min-width: 1424px){
+ 
+body{
+  font-size: 1vmax;
+  margin: 0 11vw;
+}
+
+}
+  
+
+ 

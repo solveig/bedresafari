@@ -7,10 +7,9 @@ app.get('/', function (req, res) {
 var path = require('path');
    app.use(express.static(__dirname + '/public'));
 
-res.sendFile(path.resolve('BedreSafari.html')); // OK
-// not found res.sendFile('/BedreSafari.html');
-// not found res.sendFile('/main.html');
-//  OK res.send('Hello World!')
+res.sendFile(path.resolve('nogo.html')); // OK
+//res.sendFile(path.resolve('BedreSafari.html')); // OK
+ 
 })
 
 var server = app.listen(process.env.PORT || 3000, function () {
