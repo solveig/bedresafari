@@ -69,7 +69,7 @@
 <body>
 	
  	 
-  	<amp-img src="fugllotte2.gif" width="250" height="212" layout="fill" class="doc_header_bg"></amp-img>
+  	<amp-img src="public/bilder/fugllotte2.gif" width="250" height="212" layout="fill" class="doc_header_bg"></amp-img>
    <h1>BedreSafari tester AMP</h1>  
  
 
@@ -77,7 +77,7 @@
     <amp-list width=100
         height=20
         layout=responsive
-        src="https://www.lydsafari.no/ampLinker.json">
+        src="https://bedresafari.scalingo.io/public/href/ampLinker.json">
            <template type="amp-mustache"
           id="amp-sol-id">
         <li>
