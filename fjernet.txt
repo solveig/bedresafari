@@ -1,3 +1,53 @@
   <li>
           <p class="kontakt showUp"  href="#"   onclick="document.getElementsByClassName('infoTxt')[0].classList.toggle('opened')"  >?</p>
         </li>
+        
+         	<amp-img src="/bilder/translate.png" width="60" height="60" layout="fill" class="doc_header_bg"></amp-img>
+  
+
+   <ul>
+    <amp-list width=100
+        height=20
+        layout=responsive
+        src="https://bedresafari.scalingo.io/href/ampLinker.json">
+           <template type="amp-mustache"
+          id="amp-sol-id">
+        <li>
+          <a href={{url}}>{{title}}</a>
+        </li>
+      </template>
+      <button overflow
+          role=button
+          aria-label="Show more"
+          class="list-overflow">
+        Show more
+      </button>
+    </amp-list>
+  </ul>
+  
+   onclick="startSafari('bedresafari','no'); return false;"
+    onclick = "document.getElementsByClassName('oversettList')[0].classList.toggle('opened')" 
+     onclick = "document.getElementsByClassName('menuList')[0].classList.toggle('opened')"
+     
+     
+       <li>
+          <ul class='menuList' id= 'menuList'>   
+     	   </ul>    
+        </li>
+    	  <li>
+      	  <p class="showx"><img src="/bilder/solveig1.gif" width=50 height=50 
+	              alt="Solveig" class="circle" > av <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+	        <a href="http://no.linkedin.com/in/solveiglovhaug/" itemprop="url" rel="author"><span itemprop="name">Solveig Løvhaug</span></a></span></p>     		         	 
+     	 	</li>     	
+
+        <li  class="plassert">
+          
+            <ul class='oversettList' id= 'oversettList'>   
+              <li class="navTxt"  onclick="changeContent('no'); return false;" ><a   href="#" >NO</a></li> 
+              <li class="navTxt" onclick="changeContent('sv'); return false;"><a  href="#"  >SV</a></li>
+              <li  class="navTxt"  onclick="changeContent('en'); return false;" ><a  href="#"  >EN</a></li>
+        	   </ul>    
+          
+        </li> 
+   <aside id='infoTxt' class="infoTxt" ></aside>    
+    <div id="isFrom" class="hidden">sisi</div>
