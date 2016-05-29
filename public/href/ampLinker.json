@@ -1,20 +1,10 @@
 {
  "items": [
-   {
-     "title": "BedreSafari tester AMP" ,
-     "url": "https://www.lydsafari.no/BedreSafari.html"
-   },
-   {
-     "title": "BedreSafari tester mobil... ",
-     "url": "https://www.lydsafari.no/nogo.html"
-   },
-   {
-     "title": "BedreData",
-     "url": "https://www.lydsafari.no/bedredata/"
-   },
-   {
-     "title": "LydSafari",
-     "url": "https://www.lydsafari.no/lydsafari"
-   }
+ "speak"               : "no",
+	"logoTxt"            : "BedreSafari",
+	"logo"                : "/bilder/logo.gif" ,
+	"logo2"               : "/bilder/solveig1.gif" ,
+  "logo2Title"          : "Solveig Løvhaug",
+  "infoTxt"            : "Konsulent tjenester, event og ting jeg ønsker å formidle." ,
  ]
 }
