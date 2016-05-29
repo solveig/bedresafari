@@ -131,7 +131,7 @@ a:hover {
   	  <ul >
   	    <li class="opp">
   	      <a href= "#" >
- 	      	<amp-img src="/bilder/logo.gif" width="3em"  alt="Logo"></amp-img>
+ 	      	<amp-img src="/bilder/logo.gif" width="3em" height="3em"  alt="Logo"></amp-img>
             <h1>{{logoTxt}}</h1>
           </a>          
           <a href="#" ><amp-img  height="8vw"  class= "oversett" src="/bilder/translate.png"   alt="Oversett" /></a>

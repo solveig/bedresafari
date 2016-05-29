@@ -132,7 +132,7 @@ a:hover {
   	    <li class="opp">
   	      <a href= "#" >
  	      	<amp-img src="/bilder/logo.gif" width="3em" height="3em"  alt="Logo"></amp-img>
-            <h1>{{logoTxt}}</h1>
+            <h1>gg</h1>
           </a>          
           <a href="#" ><amp-img  height="8vw"  class= "oversett" src="/bilder/translate.png"   alt="Oversett" /></a>
        	  
@@ -143,5 +143,25 @@ a:hover {
     </nav>
   </header> 
  
-</body>
+
+<ul>
+    <amp-list width=100
+        height=20
+        layout=responsive
+        src="https://bedresafari.scalingo.io/href/ampLinker.json">
+           <template type="amp-mustache"
+          id="amp-sol-id">
+        <li>
+          <a href={{logoTxt}}>{{logoInfo}}</a>
+        </li>
+      </template>
+      <button overflow
+          role=button
+          aria-label="Show more"
+          class="list-overflow">
+        Show more
+      </button>
+    </amp-list>
+  </ul>
+  </body>
 </html>
