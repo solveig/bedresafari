@@ -12,10 +12,9 @@ app.get('/', function (req, res) {
 var path = require('path');
 
 app.use(express.static(__dirname + '/public'));
-res.sendFile(path.resolve('nogo.html'));
-//res.sendFile(path.resolve('BedreSafari.html')); // implementere nogo
-//res.sendFile(path.resolve('BedreSafari.html')); // OK teste amp se Copy of bedreSafari
- 
+//res.sendFile(path.resolve('nogo.html'));
+res.sendFile(path.resolve('BedreSafari.html')); // implementere nogo
+  
 })
 app.post('/', function(req, res, next) {
  console.log('post');
