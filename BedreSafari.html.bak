@@ -132,7 +132,7 @@ a:hover {
     <amp-list width=100
         height=20
         layout=responsive
-        src="https://bedresafari.scalingo.io/href/ampLinker.json">
+        src="https://bedresafari.scalingo.io/href/bedresafari.json">
            <template type="amp-mustache"
           id="amp-sol-id">
         <li>

@@ -125,18 +125,20 @@ a:hover {
   </style>
 </head>
 <body>
- 
   
+  	<amp-img src="/bilder/translate.png" width="60" height="60" layout="fill" class="doc_header_bg"></amp-img>
+   <h1>BedreSafari tester AMP</h1>  
+ 
 
-<ul>
+   <ul>
     <amp-list width=100
         height=20
         layout=responsive
-        src="https://bedresafari.scalingo.io/href/bedresafari.json">
+        src="https://bedresafari.scalingo.io/href/ampLinker.json">
            <template type="amp-mustache"
           id="amp-sol-id">
         <li>
-          <a>{{logoInfo}}</a>
+          <a href={{url}}>{{title}}</a>
         </li>
       </template>
       <button overflow
@@ -147,5 +149,6 @@ a:hover {
       </button>
     </amp-list>
   </ul>
+ 
   </body>
 </html>
