@@ -221,7 +221,7 @@ var LYDSAFARI_no       =
    '<p>Bli med på en eventyrlig lydreise i ditt indre univers.</p>'+
    '<p>Tonevariasjonene fra ditt indre danner tilsammen lydbildet av deg.</p>'+
    '<a  class="ylvis" href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >'+
-	 '<img class= "inside"width="16vw"  src="/bilder/ylvis.gif"   alt="Fra Norges Herligste og Energidama"/>Et lite eksempel på lydreise med Bård i Ylvis.'+
+	 '<img class= "inside"width="459px"  src="/bilder/ylvis.gif"   alt="Fra Norges Herligste og Energidama"/>Et lite eksempel på lydreise med Bård i Ylvis.'+
 	 '<p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" >Et lenger eksempel i denne artikkelen.</a></p>',
       
     '<p>Dette passer for jubilant, utdrikningslag, kjærester, famile og venner.</p>'+
@@ -275,7 +275,7 @@ var LYDSAFARI_sv       =
    '<p>Gå med i en äventyrlig lydreise av din inre universum.</p>'+
    '<p>Tone varianter av din inre bildar tillsammans ljudbild av dig.</p>'+
    '<a  class="ylvis" href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >'+
-	 '<img class= "inside"  width="16vw"  src="/bilder/ylvis.gif"   alt="Från Norges Herligste og Energidama"/>Ett litet exempel på lydreise med Bard i Ylvis.'+
+	 '<img class= "inside"  width="459px"  src="/bilder/ylvis.gif"   alt="Från Norges Herligste og Energidama"/>Ett litet exempel på lydreise med Bard i Ylvis.'+
 	 '<p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" >Ett ytterligare exempel i den här artikeln.</a></p>',
       
     '<p>Detta är lämpligt för jublande, familj och vänner. </p>'+
@@ -328,7 +328,7 @@ var LYDSAFARI_en       =
    '<p>Join an adventurous SoundSafari of your inner universe.</p>'+
    '<pTone variations of your inner together form the soundscape of you.</p>'+
    '<a  class="ylvis" href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >'+
-	 '<img class= "inside"  width="16vw" src="/bilder/ylvis.gif"   alt="From Norges Herligste and Energidama"/>A small example of SoundSafari with Bård in Ylvis.'+
+	 '<img class= "inside"  width="459px" src="/bilder/ylvis.gif"   alt="From Norges Herligste and Energidama"/>A small example of SoundSafari with Bård in Ylvis.'+
 	 '<p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" >A further example in this article..</a></p>',
     
  
@@ -415,7 +415,7 @@ var NATUR_en       =
 var bedresafari = function (nav,info,contact,links,me,speakLan) {
     var siLinkList = '<nav class="navMenu"><ul>';
     for (var i=0;  i <mainBar;i++) {
-      siLinkList = siLinkList + '<li class="liMenu"><a  class="mainCont" href="#" onclick="' + mainRef.navHref[i]+' return false;"' +'><h3>'+ mainRef.navBars[i]+'</h3><img class="imgMenu" width="26vw" src='+nav.barImg[i]+' alt= "Malt, fotografert, laget av Solveig Løvhaug" /></a><p>'+nav.barInfo[i]+'</p></li>';
+      siLinkList = siLinkList + '<li class="liMenu"><a  class="mainCont" href="#" onclick="' + mainRef.navHref[i]+' return false;"' +'><h3>'+ mainRef.navBars[i]+'</h3><img class="imgMenu" width="200px" src='+nav.barImg[i]+' alt= "Malt, fotografert, laget av Solveig Løvhaug" /></a><p>'+nav.barInfo[i]+'</p></li>';
     }     
     siLinkList = siLinkList + "</ul></nav>";
     document.getElementById('linkList').innerHTML = siLinkList;     
@@ -433,7 +433,7 @@ var  makeContent = function(nav,info,contact,links,me,speakLan,cnt,idx,thisFrom)
   siLinkList = siLinkList + '<nav class= "navMenu"><ul>';
   for ( i=0;  i <cnt;i++) {
      if (i=== 0) {  // using variables is the reason
-       siLinkList = siLinkList  + '<li class="liContent + liContentMer"><section><header><h2 id="'+ me.idHead[i] + '">' + me.head[i] + '</h2></header>' + '<img class="inside" width="16vw" src='+nav.barImg[idx]+' linklisalt= "Solveig Løvhaug ,fototgraf:Anja Lillerud i Halden Arbeiderblad." />' + me.body[i] + '</section></li>';
+       siLinkList = siLinkList  + '<li class="liContent + liContentMer"><section><header><h2 id="'+ me.idHead[i] + '">' + me.head[i] + '</h2></header>' + '<img class="inside" width="459px" src='+nav.barImg[idx]+' linklisalt= "Solveig Løvhaug ,fototgraf:Anja Lillerud i Halden Arbeiderblad." />' + me.body[i] + '</section></li>';
      } else {	
        siLinkList = siLinkList  + '<li class="liContent"><section><header><h2 id="'+ me.idHead[i] + '">' + me.head[i] + '</h2></header>' + me.body[i] + '</section></li>';
      }
