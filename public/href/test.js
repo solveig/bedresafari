@@ -105,17 +105,17 @@ var BEDREDATA_no       =
   '<p>X3DOM - 3D grafikk (X3D)</p>'+
   '<p>Integrerer 3D inn i HTML5 uten plugins. Resultatet ska se likt ut på de fleste device og browsere.</p>'+
 	'<p><br><a  href="http://www.lydsafari.no/ork/" target="_blank" >'+
-  '<figure><img id= "ork" src="/bilder/ork2.gif"   alt="Animasjon i X3DOM"/><figcaptain>En liten animasjon jeg har laget med X3DOM. </figcaptain></figure></a></p>'+
+  '<figure><img id= "ork" width="141px" height="200px" src="/bilder/ork2.gif"   alt="Animasjon i X3DOM"/><figcaptain>En liten animasjon jeg har laget med X3DOM. </figcaptain></figure></a></p>'+
   '<p><br><a href="http://www.x3dom.org/">Les mer om X3DOM</a></p>',
 	  
  
 	  '<p>MongoDB er en NoSql database , den er OpenSource.Jeg bruker den sammen med Node.js, JSON og Javascript.BIG DATA.<a href="https://www.mongodb.com/">Les mer mongodb.com</a></p>'+
 	  '<p>Jeg har brukt MongoDB siden 2013 i små private prosjekter. Har tatt kurs i MongoDB og bestått.</p>'+
-	  '<p><a href="http://www.x3dom.org/"><img id= "img1" src="/bilder/mongodb.gif"   alt="MongoDB kurs"/> </a></p>',
+	  '<p><a href="http://www.x3dom.org/"><img id= "img1" width="459px" height="200px" src="/bilder/mongodb.gif"   alt="MongoDB kurs"/> </a></p>',
 	  
 	  '<p>HTML og CSS har jeg brukt i mange år. Javascript og Node.js siden 2013.</p>'+
 	  '<p>Denne hjemmesiden er en "Single Page Website". Det fins kun en html fil, et javascript og en CSS fil. I tillegg har jeg brukt SSI-enabled HTML.</p>'+
-	  '<p>Jeg tok nylig et kurs i HTML5 og Javascript. Kursene anbefales. <img id= "img2" src="/bilder/bagdeHtml.gif"   alt="HTML5 og Javascript kurs"/></p>',
+	  '<p>Jeg tok nylig et kurs i HTML5 og Javascript. Kursene anbefales. <img id= "img2" width="570px" height="220px" src="/bilder/bagdeHtml.gif"   alt="HTML5 og Javascript kurs"/></p>',
     
     '<h3>er en del av "The World Wide Web Consortium (W3C)" standarden.</h3>'+
     
@@ -153,17 +153,17 @@ var BEDREDATA_en       =
   '<p>X3DOM - 3D Graphics (X3D)</p>'+
   '<p>Integrates 3D into HTML5 without plugins. The result shall be identical on most device and browsers.</p>'+
 	'<p><br><a  href="http://www.lydsafari.no/ork/" target="_blank" >'+
-  '<figure><img id= "ork" src="/bilder/ork2.gif"   alt="Animaation in X3DOM"/><figcaptain> A small animation I made with X3DOM </figcaptain></figure></a></p>'+
+  '<figure><img id= "ork" width="141px" height="200px" src="/bilder/ork2.gif"   alt="Animaation in X3DOM"/><figcaptain> A small animation I made with X3DOM </figcaptain></figure></a></p>'+
   '<p><br><a href="http://www.x3dom.org/">More info X3DOM.</a></p>',
 	  
  
 	'<p> MongoDB is a NoSQL database, it is OpenSource.I using it with Node.js, JSON and Javascript.BIG DATA. <a href="https://www.mongodb.com/">More info MongoDB</a> </ p> '+
   '<p> I have been using MongoDB since 2013 in small private projects. Has taken courses in MongoDB and passed. </p> '+
-  '<p><a href="http://www.x3dom.org/"><img id= "img1" src="/bilder/mongodb.gif"   alt="MongoDB kurs"/> </a></p>',
+  '<p><a href="http://www.x3dom.org/"><img id= "img1" width="459px" height="200px" src="/bilder/mongodb.gif"   alt="MongoDB kurs"/> </a></p>',
 	
   '<p> HTML and CSS I have used for years. JavaScript and Node.js since 2013. </p> '+
   '<p> This website is a "Single Page Website". There is only one html file, javascript and CSS file. In addition, I used SSI-enabled HTML. </p> '+
-  '<p> I recently took a course in HTML5 and JavaScript. The courses are recommended. <img id = "img2" src = "/bilder/bagdeHtml.gif" alt = "HTML5 and JavaScript courses" /> </p> ',
+  '<p> I recently took a course in HTML5 and JavaScript. The courses are recommended. <img id = "img2" width="570px" height="220px" src = "/bilder/bagdeHtml.gif" alt = "HTML5 and JavaScript courses" /> </p> ',
     
   '<h3> is part of "The World Wide Web Consortium (W3C)" standard. </h3>' +
     
@@ -224,7 +224,7 @@ var LYDSAFARI_no       =
    '<p>Bli med på en eventyrlig lydreise i ditt indre univers.</p>'+
    '<p>Tonevariasjonene fra ditt indre danner tilsammen lydbildet av deg.</p>'+
    '<a  class="ylvis" href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >'+
-	 '<img class= "inside" src="/bilder/ylvis.gif"   alt="Fra Norges Herligste og Energidama"/>Et lite eksempel på lydreise med Bård i Ylvis.'+
+	 '<img class= "inside"width="16vw"  src="/bilder/ylvis.gif"   alt="Fra Norges Herligste og Energidama"/>Et lite eksempel på lydreise med Bård i Ylvis.'+
 	 '<p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" >Et lenger eksempel i denne artikkelen.</a></p>',
       
     '<p>Dette passer for jubilant, utdrikningslag, kjærester, famile og venner.</p>'+
@@ -278,7 +278,7 @@ var LYDSAFARI_sv       =
    '<p>Gå med i en äventyrlig lydreise av din inre universum.</p>'+
    '<p>Tone varianter av din inre bildar tillsammans ljudbild av dig.</p>'+
    '<a  class="ylvis" href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >'+
-	 '<img class= "inside" src="/bilder/ylvis.gif"   alt="Från Norges Herligste og Energidama"/>Ett litet exempel på lydreise med Bard i Ylvis.'+
+	 '<img class= "inside"  width="16vw"  src="/bilder/ylvis.gif"   alt="Från Norges Herligste og Energidama"/>Ett litet exempel på lydreise med Bard i Ylvis.'+
 	 '<p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" >Ett ytterligare exempel i den här artikeln.</a></p>',
       
     '<p>Detta är lämpligt för jublande, familj och vänner. </p>'+
@@ -331,7 +331,7 @@ var LYDSAFARI_en       =
    '<p>Join an adventurous SoundSafari of your inner universe.</p>'+
    '<pTone variations of your inner together form the soundscape of you.</p>'+
    '<a  class="ylvis" href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >'+
-	 '<img class= "inside" src="/bilder/ylvis.gif"   alt="From Norges Herligste and Energidama"/>A small example of SoundSafari with Bård in Ylvis.'+
+	 '<img class= "inside"  width="16vw" src="/bilder/ylvis.gif"   alt="From Norges Herligste and Energidama"/>A small example of SoundSafari with Bård in Ylvis.'+
 	 '<p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" >A further example in this article..</a></p>',
     
  
@@ -418,7 +418,7 @@ var NATUR_en       =
 var bedresafari = function (nav,info,contact,links,me,speakLan) {
     var siLinkList = '<nav class="navMenu"><ul>';
     for (var i=0;  i <mainBar;i++) {
-      siLinkList = siLinkList + '<li class="liMenu"><a  class="mainCont" href="#" onclick="' + mainRef.navHref[i]+' return false;"' +'><h3>'+ mainRef.navBars[i]+'</h3><img class="imgMenu" src='+nav.barImg[i]+' alt= "Malt, fotografert, laget av Solveig Løvhaug" /></a><p>'+nav.barInfo[i]+'</p></li>';
+      siLinkList = siLinkList + '<li class="liMenu"><a  class="mainCont" href="#" onclick="' + mainRef.navHref[i]+' return false;"' +'><h3>'+ mainRef.navBars[i]+'</h3><img class="imgMenu" width="26vw" src='+nav.barImg[i]+' alt= "Malt, fotografert, laget av Solveig Løvhaug" /></a><p>'+nav.barInfo[i]+'</p></li>';
     }     
     siLinkList = siLinkList + "</ul></nav>";
     document.getElementById('linkList').innerHTML = siLinkList;     
@@ -436,7 +436,7 @@ var  makeContent = function(nav,info,contact,links,me,speakLan,cnt,idx,thisFrom)
   siLinkList = siLinkList + '<nav class= "navMenu"><ul>';
   for ( i=0;  i <cnt;i++) {
      if (i=== 0) {  // using variables is the reason
-       siLinkList = siLinkList  + '<li class="liContent + liContentMer"><section><header><h2 id="'+ me.idHead[i] + '">' + me.head[i] + '</h2></header>' + '<img class="inside" src='+nav.barImg[idx]+' linklisalt= "Solveig Løvhaug ,fototgraf:Anja Lillerud i Halden Arbeiderblad." />' + me.body[i] + '</section></li>';
+       siLinkList = siLinkList  + '<li class="liContent + liContentMer"><section><header><h2 id="'+ me.idHead[i] + '">' + me.head[i] + '</h2></header>' + '<img class="inside" width="16vw" src='+nav.barImg[idx]+' linklisalt= "Solveig Løvhaug ,fototgraf:Anja Lillerud i Halden Arbeiderblad." />' + me.body[i] + '</section></li>';
      } else {	
        siLinkList = siLinkList  + '<li class="liContent"><section><header><h2 id="'+ me.idHead[i] + '">' + me.head[i] + '</h2></header>' + me.body[i] + '</section></li>';
      }
