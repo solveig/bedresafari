@@ -1,0 +1,10 @@
+{
+ "items": [
+ "speak"               : "no",
+	"logoTxt"            : "BedreSafari",
+	"logo"                : "/bilder/logo.gif" ,
+	"logo2"               : "/bilder/solveig1.gif" ,
+  "logo2Title"          : "Solveig Løvhaug",
+  "infoTxt"            : "Konsulent tjenester, event og ting jeg ønsker å formidle." 
+ ]
+}
