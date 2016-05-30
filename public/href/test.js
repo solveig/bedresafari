@@ -51,44 +51,41 @@ var mainNav_en = {
 
 var main_no= 
 { "speak"               : "no",
-	"logo_txt"            : "BedreSafari",
-	"logo"                : "/bilder/logo.gif" ,
-	"logo2"               : "/bilder/solveig1.gif" ,
-  "logo2Title"          : "Solveig Løvhaug",
-  "info_txt"            : "Konsulent tjenester, event og ting jeg ønsker å formidle." ,
+	"logoTxt"            : "BedreSafari",
+  "infoTxt"            : "Konsulent tjenester, event og ting jeg ønsker å formidle." ,
 };
 var main_sv= 
 { "speak"               : "sv",
-	"logo_txt"            : "BedreSafari",
+	"logoTxt"            : "BedreSafari",
 	"logo"                : "/bilder/logo.gif" ,
 	"logo2"               : "/bilder/solveig1.gif" ,
   "logo2Title"          : "Solveig Løvhaug",
-  "info_txt"            : "Konsulttjänster, event och annat jag vill förmedla." ,
+  "infoTxt"            : "Konsulttjänster, event och annat jag vill förmedla." ,
 };
 var main_en       = 
 { "speak"               : "en",
-	"logo_txt"            : "BedreSafari",
+	"logoTxt"            : "BedreSafari",
 	"logo"                : "/bilder/logo.gif" ,
 	"logo2"               : "/bilder/solveig1.gif" ,
   "logo2Title"          : "Solveig Løvhaug",
- "info_txt"            : "Consulting services, event and things I want to convay.",
+ "infoTxt"            : "Consulting services, event and things I want to convay.",
  };
 
 var GALLERI_no       = 
 { "speak"                : "no",
-	"logo_txt"            : "GALLERI",
-  "info_txt"            : "Spirituelle malerier"       
+	"logoTxt"            : "GALLERI",
+  "infoTxt"            : "Spirituelle malerier"       
 };
 var GALLERI_en       = 
 { "speak"                : "en",
-	"logo_txt"            : "GALLERY",
-  "info_txt"            : "Spiritual paintings"       
+	"logoTxt"            : "GALLERY",
+  "infoTxt"            : "Spiritual paintings"       
 };
 var bedreBar = 7;
 var BEDREDATA_no       = 
 { "speak"               : "no",
-	"logo_txt"            : "BedreData",
-  "info_txt"            : "Dataprogram laget av Solveig.",
+	"logoTxt"            : "BedreData",
+  "infoTxt"            : "Dataprogram laget av Solveig.",
     "ref"               : ["#IT","#X3DOM", "#MongoDB", "#HTML", "#XML", "#Language", "#Database"],
   "head"                : ["IT-konsulenttjenester", "X3DOM", "MongoDB","HTML5,CSS3,Javascript,Node", "SGML,XML,XSLT,XSD,SVG", "Fortran,C,C++,PHP,EriPascal", "PL/SQL,Oracle,Sybase,Sybase IQ"],
   "idHead"              : ["IT", "X3DOM", "MongoDB", "HTML", "XML", "Language", "Database"],
@@ -136,8 +133,8 @@ var BEDREDATA_no       =
 };
 var BEDREDATA_en       = 
 { "speak"                : "no",
-	"logo_txt"            : "DATA",
-	"info_txt"            : "Computer program created by Solveig.",       
+	"logoTxt"            : "DATA",
+	"infoTxt"            : "Computer program created by Solveig.",       
    "ref"               : ["#IT", "#X3DOM", "#MongoDB", "#HTML", "#XML", "#Language", "#Database"],
   "head"                : ["IT consultancy", "X3DOM", "MongoDB","HTML5,CSS3,Javascript,Node", "SGML,XML,XSLT,XSD,SVG", "Fortran,C,C++,PHP,EriPascal", "PL/SQL,Oracle,Sybase,Sybase IQ"],
   "idHead"              : ["IT", "X3DOM", "MongoDB", "HTML", "XML", "Language", "Database"],
@@ -183,8 +180,8 @@ var BEDREDATA_en       =
 };
 var BEDREDATA_sv       = 
 { "speak"                : "no",
-	"logo_txt"            : "DATA",
-  "info_txt"            : "Computer program created by Solveig." ,      
+	"logoTxt"            : "DATA",
+  "infoTxt"            : "Computer program created by Solveig." ,      
    "ref"               : ["#IT","#X3DOM", "#MongoDB", "#HTML", "#XML", "#Language", "#Database"],
   "head"                : ["IT consultancy", "X3DOM", "MongoDB","HTML5, CSS3, Javascript og Node.js", "SGML, XML, XSLT, XSD, SVG", "Fortran, C, C++, PHP, EriPascal", "PL/SQL, Oracle, Sybase, Sybase IQ"],
   "idHead"              : ["IT", "X3DOM", "MongoDB", "HTML", "XML", "Language", "Database"],
@@ -197,8 +194,8 @@ var lydBar = 9;
 // Ylvis 
 var LYDSAFARI_no       = 
 { "speak"           : "no",
-	"logo_txt"        : "LYDSAFARI",
-  "info_txt"        : "Formidle naturens gjemte frekvenser.",
+	"logoTxt"        : "LYDSAFARI",
+  "infoTxt"        : "Formidle naturens gjemte frekvenser.",
   "ref"             : ["#Lydsafari", "#6Sans","#Personlig", "#Gruppe", "#Gjenstand", "#Plass", "#Kirke", "#Foredrag", "#Pris"],
   "head"            : ["Lydsafari", "Din 6. sans","Personlig lydreise", "Gruppe lydreise", "Lyd på gjenstand", "Lyd på plasser", "Undersøk kirkens hemmeligheter", "Foredrag", "Pris og tilgjengelighet"],
   "idHead"            : ["Lydsafari",  "6Sans","Personlig", "Gruppe", "Gjenstand", "Plass", "Kirke",  "Foredrag", "Pris"],
@@ -250,8 +247,8 @@ var LYDSAFARI_no       =
 };
 var LYDSAFARI_sv       = 
 { "speak"           : "no",
-	"logo_txt"        : "LYDSAFARI",
-  "info_txt"        : "Förmedla naturen glömde frekvenser.",
+	"logoTxt"        : "LYDSAFARI",
+  "infoTxt"        : "Förmedla naturen glömde frekvenser.",
   "ref"             : ["#Lydsafari", "#6Sans","#Personlig", "#Gruppe", "#Gjenstand", "#Plass", "#Kirke", "#Foredrag", "#Pris"],
   "head"            : ["Lydsafari", "Din 6. sinne","Personlig lydreise", "Grupp lydreise", "Ljud på föremål", "Ljud på platser", "Undersök kyrk hemligheter", "Presentationer", "Pris och tillgänglighet"],
   "idHead"            : ["Lydsafari",  "6Sans","Personlig", "Gruppe", "Gjenstand", "Plass", "Kirke",  "Foredrag", "Pris"],
@@ -304,8 +301,8 @@ var LYDSAFARI_sv       =
 };
 var LYDSAFARI_en       = 
 { "speak"                : "en",
-	"logo_txt"            : "LYDSAFARI",
-  "info_txt"            : "Convey nature forgot frequencies.",
+	"logoTxt"            : "LYDSAFARI",
+  "infoTxt"            : "Convey nature forgot frequencies.",
    "ref"             : ["#Lydsafari", "#6Sans","#Personlig", "#Gruppe", "#Gjenstand", "#Plass", "#Kirke", "#Foredrag", "#Pris"],
   "head"            : ["Lydsafari", "Your 6th Sense","Personal sound",  "Group sound", "Sound on subject", "Sound on sites", "Examine church secrets", "Speeches", "Pricing and  availability"],
   "idHead"            : ["Lydsafari",  "6Sans","Personlig",  "Gruppe", "Gjenstand", "Plass", "Kirke",  "Foredrag", "Pris"],
@@ -359,57 +356,57 @@ var LYDSAFARI_en       =
 
 var EMF_no       = 
 { "speak"                : "no",
-	"logo_txt"            : "EMF",
-  "info_txt"            : "Elektromagnetisk stråling."       
+	"logoTxt"            : "EMF",
+  "infoTxt"            : "Elektromagnetisk stråling."       
 };
 var EMF_en       = 
 { "speak"                : "en",
-	"logo_txt"            : "EMF",
-  "info_txt"            : "Electromagnetic radiation."       
+	"logoTxt"            : "EMF",
+  "infoTxt"            : "Electromagnetic radiation."       
 };
 
 
 var BERGYL_no       = 
 { "speak"                : "no",
-	"logo_txt"            : "BERGYL",
-  "info_txt"            : "Tankens byggestein?"       
+	"logoTxt"            : "BERGYL",
+  "infoTxt"            : "Tankens byggestein?"       
 };
 var BERGYL_en       = 
 { "speak"                : "en",
-	"logo_txt"            : "BERGYL",
-  "info_txt"            : "Thought Basic building block?"       
+	"logoTxt"            : "BERGYL",
+  "infoTxt"            : "Thought Basic building block?"       
 };
 
 var NBH_no       = 
 { "speak"                : "no",
-	"logo_txt"            : "NBH",
-  "info_txt"            : "Ny blå himmel."       
+	"logoTxt"            : "NBH",
+  "infoTxt"            : "Ny blå himmel."       
 };
 var NBH_en       = 
 { "speak"                : "en",
-	"logo_txt"            : "NBH",
- "info_txt"            : "New blue heaven."       
+	"logoTxt"            : "NBH",
+ "infoTxt"            : "New blue heaven."       
 };
 
 var SI_no       = 
 { "speak"                : "no",
-	"logo_txt"            : "SI",
-  "info_txt"            : "Spirituelle og åndlige temaer."       
+	"logoTxt"            : "SI",
+  "infoTxt"            : "Spirituelle og åndlige temaer."       
 };
 var SI_en       = 
 { "speak"                : "en",
-	"logo_txt"            : "NATUR",
-  "info_txt"            : "Spiritual themes."       
+	"logoTxt"            : "NATUR",
+  "infoTxt"            : "Spiritual themes."       
 };
 var NATUR_no       = 
 { "speak"                : "no",
-	"logo_txt"            : "NATUR",
-  "info_txt"            : "Naturen, dyr, trær, stener..."       
+	"logoTxt"            : "NATUR",
+  "infoTxt"            : "Naturen, dyr, trær, stener..."       
 };
 var NATUR_en       = 
 { "speak"                : "no",
-	"logo_txt"            : "NATURE",
-  "info_txt"            : "Nature, animals, trees, stones..."       
+	"logoTxt"            : "NATURE",
+  "infoTxt"            : "Nature, animals, trees, stones..."       
 };
 
     //"LYDSAFARI","BEDREDATA","EMF","BERGYL","NBH","SI","NATUR" color: #feb06c;
@@ -503,7 +500,7 @@ var startMe = function (fromWhere, language) {
    
     //alert("fra" + thisFrom + " lang: " + speakLan + 'location.href='+ vis);
     
-               // var infoNo = JSON.parse(main_no); alert('no'+infoNo.logo_txt); var infoEn = JSON.parse(main_en); er alt parsa
+               // var infoNo = JSON.parse(main_no); alert('no'+infoNo.logoTxt); var infoEn = JSON.parse(main_en); er alt parsa
   
     switch(speakLan) {
     case "no":
@@ -533,17 +530,15 @@ var startMe = function (fromWhere, language) {
     default:
       alert("Language deafult:" + speakLan);
     }	
-    //alert('hei'+info.info_txt);
-    //document.getElementById('headTitle').innerHTML= info.logo_txt;   
-    //console.log('test :'+info.logo_txt);
-    document.getElementById('logoTxt').innerHTML= info.logo_txt;
+    //alert('hei'+info.infoTxt);
+    //document.getElementById('headTitle').innerHTML= info.logoTxt;   
+    //console.log('test :'+info.logoTxt);
+    document.getElementById('logoTxt').innerHTML= info.logoTxt;
     document.getElementById('contactTxt').innerHTML= contact;   
     document.getElementById('contact2Txt').innerHTML= contact;   
     document.getElementById('blogTxt').innerHTML= isBlog;   
     document.getElementById('blog2Txt').innerHTML= isBlog;   
-    // document.getElementById('linkTxt').innerHTML= links;   
-    document.getElementById('logoHeader').setAttribute("src",info.logo);   
-    document.getElementById('infoTxt').innerHTML=info.info_txt;     
+     document.getElementById('infoTxt').innerHTML=info.infoTxt;     
   
     switch(thisFrom) {
     case "bedresafari":
