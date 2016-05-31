@@ -52,7 +52,7 @@ var mainNav_en = {
 var main_no= 
 { "speak"               : "no",
 	"logoTxt"            : "BedreSafari",
-  "infoTxt"            : "Konsulent tjenester, event og ting jeg ønsker å formidle." ,
+  "infoTxt"            : "Konsulent tjenester, event, meninger, ønsker og informasjon om Bergyl." ,
 };
 var main_sv= 
 { "speak"               : "sv",
@@ -60,7 +60,7 @@ var main_sv=
 	"logo"                : "/bilder/logo.gif" ,
 	"logo2"               : "/bilder/solveig1.gif" ,
   "logo2Title"          : "Solveig Løvhaug",
-  "infoTxt"            : "Konsulttjänster, event och annat jag vill förmedla." ,
+  "infoTxt"            : "Konsulttjänster, event, åsikter, önskemål och information om Bergyl." ,
 };
 var main_en       = 
 { "speak"               : "en",
@@ -68,7 +68,7 @@ var main_en       =
 	"logo"                : "/bilder/logo.gif" ,
 	"logo2"               : "/bilder/solveig1.gif" ,
   "logo2Title"          : "Solveig Løvhaug",
- "infoTxt"            : "Consulting services, event and things I want to convay.",
+ "infoTxt"            : "Consulting services, event, opinions, wishes and information Bergyl.",
  };
 
 var GALLERI_no       = 
