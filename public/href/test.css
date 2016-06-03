@@ -367,11 +367,8 @@ display:inline-block;
 img.imgMenu{
 	display: none;
 }	
-img.logo {
-	display: none;
-}	
 
-/* Gjelder for noe som er større enn tablet*/
+/* Gjelder for noe som er stÃ¸rre enn tablet*/
 @media only screen and (min-width: 768px){
 img.logo {
 	display: inline;
