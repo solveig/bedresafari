@@ -408,6 +408,31 @@ var NATUR_en       =
 	"logoTxt"            : "NATURE",
   "infoTxt"            : "Nature, animals, trees, stones..."       
 };
+var emf = function (nav,info,contact,links,me,speakLan) {
+siLinkList = "<h1>EMF ... working on...</h1>";   
+  document.getElementById('linkList').innerHTML = siLinkList;
+     document.getElementById('isFrom').innerHTML ='emf'; 
+};
+var bergyl = function (nav,info,contact,links,me,speakLan) {
+siLinkList = "<h1>Bergyl ... working on...</h1>";   
+  document.getElementById('linkList').innerHTML = siLinkList; 
+     document.getElementById('isFrom').innerHTML ='bergyl';
+};
+var nbh = function (nav,info,contact,links,me,speakLan) {
+siLinkList = "<h1>NBH ... working on...</h1>";   
+  document.getElementById('linkList').innerHTML = siLinkList;
+     document.getElementById('isFrom').innerHTML ='nbh'; 
+};
+var si= function (nav,info,contact,links,me,speakLan) {
+	siLinkList = "<h1>SI ... working on...</h1>";   
+  document.getElementById('linkList').innerHTML = siLinkList; 
+     document.getElementById('isFrom').innerHTML ='si';
+};
+var natur = function (nav,info,contact,links,me,speakLan) {
+	siLinkList = "<h1>Naturen ... working on...</h1>";   
+  document.getElementById('linkList').innerHTML = siLinkList; 
+     document.getElementById('isFrom').innerHTML ='natur';
+};
 
     //"LYDSAFARI","BEDREDATA","EMF","BERGYL","NBH","SI","NATUR" color: #feb06c;
 
@@ -445,31 +470,7 @@ var  makeContent = function(nav,info,contact,links,me,speakLan,cnt,idx,thisFrom)
   document.getElementById('isFrom').innerHTML =thisFrom;
 };
 
-var emf = function (nav,info,contact,links,me,speakLan) {
-siLinkList = "<h1>EMF ... working on...</h1>";   
-  document.getElementById('linkList').innerHTML = siLinkList;
-     document.getElementById('isFrom').innerHTML ='emf'; 
-};
-var bergyl = function (nav,info,contact,links,me,speakLan) {
-siLinkList = "<h1>Bergyl ... working on...</h1>";   
-  document.getElementById('linkList').innerHTML = siLinkList; 
-     document.getElementById('isFrom').innerHTML ='bergyl';
-};
-var nbh = function (nav,info,contact,links,me,speakLan) {
-siLinkList = "<h1>NBH ... working on...</h1>";   
-  document.getElementById('linkList').innerHTML = siLinkList;
-     document.getElementById('isFrom').innerHTML ='nbh'; 
-};
-var si= function (nav,info,contact,links,me,speakLan) {
-	siLinkList = "<h1>SI ... working on...</h1>";   
-  document.getElementById('linkList').innerHTML = siLinkList; 
-     document.getElementById('isFrom').innerHTML ='si';
-};
-var natur = function (nav,info,contact,links,me,speakLan) {
-	siLinkList = "<h1>Naturen ... working on...</h1>";   
-  document.getElementById('linkList').innerHTML = siLinkList; 
-     document.getElementById('isFrom').innerHTML ='natur';
-};
+
 // Making menu in header ==
 var makeMenu = function (who, isBlog, blogRef,blogTxt) {
  var siMenuList = "";

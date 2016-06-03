@@ -58,15 +58,7 @@ li.liMenu{
   overflow:hidden;
 } 
 
-img.imgMenu{
-	width: 26vw !important;
-	
-  min-width: 100px;
-  display:inline;
-  float: left; 
-  padding: 0.2vw 1.2vw;
-  margin:0 0.3vw 0 0;
-}  
+
 
 a{	
 	background-color: #c0e9ff;
@@ -371,10 +363,22 @@ display:inline-block;
   top: 2em;
   right: 0;; 
 
-
 }
+img.imgMenu{
+	display: none;
+}	
+
 /* Gjelder for noe som er større enn tablet*/
 @media only screen and (min-width: 768px){
+img.imgMenu{
+	width: 26vw !important;
+	
+  min-width: 100px;
+  display:inline;
+  float: left; 
+  padding: 0.2vw 1.2vw;
+  margin:0 0.3vw 0 0;
+}  
 
 #toLeft {
   margin:0 0 0 auto; 
