@@ -84,25 +84,20 @@ var BEDREDATA_en       =
 	'<p> MongoDB is a NoSQL database, it is OpenSource.I using it with Node.js, JSON and Javascript.BIG DATA. <a href="https://www.mongodb.com/">More info MongoDB</a> </ p> '+
   '<p> I have been using MongoDB since 2013 in small private projects. Has taken courses in MongoDB and passed. </p> '+
   '<p><a href="http://www.x3dom.org/"><img id= "img1" width="459px" height="200px" src="/bilder/mongodb.gif"   alt="MongoDB kurs"/> </a></p>',
-	
   '<p> HTML and CSS I have used for years. JavaScript and Node.js since 2013. </p> '+
   '<p> This website is a "Single Page Website". There is only one html file, javascript and CSS file. In addition, I used SSI-enabled HTML. </p> '+
   '<p> I recently took a course in HTML5 and JavaScript. The courses are recommended. <img id = "img2" width="570px" height="220px" src = "/bilder/bagdeHtml.gif" alt = "HTML5 and JavaScript courses" /> </p> ',
-    
   '<h3> is part of "The World Wide Web Consortium (W3C)" standard. </h3>' +
-    
-  '<p> I started working with data in 1980 and since I have worked in many different companies both as an employee and consultant, I have experience in many programming languages. </p> '+
+  '<p> I started working with data in 1980 and since I have worked in many different companies both as an employee and consultant, I have experience in many programming languages. </p> '+
   '<p> Fortran I started and ended my career before I retired. </p> '+
   '<p> EriPascal is a real-time system that I could very well and I thought it was funny. I had to hold my tongue right in the mouth when I made "symbolic debugger" for Eri-Pascal compiler. "But I got conscience problem with working with the products. Therefore I say today rejection of all jobs in the defense. </p> '+
   '<p> A funny C job was to change an ftp driver and another was to decode the Huffman table from a fax application. </p> <p> For OMX Technology, I worked among others with Business Objects, C and C ++. </p> ',
-
-  '<p> HTML and XML are based on SGML. In 1990 I got a consulting job to become SGML expert. A job I did was to create a DTD (Document Type Definition) for the text editor as Ericcson Radar used. </p> '+
+  '<p> HTML and XML are based on SGML. In 1990 I got a consulting job to become SGML expert. A job I did was to create a DTD (Document Type Definition) for the text editor as Ericcson Radar used. </p> '+
   '<p> Later I used XML, XSLT, XSD and SVG for many projects. HTML is also part of the W3C. </p> '+
-  '<p <br> <a href="> https://www.w3.org/">More info W3C.</a> </p>',   
-      
-  '<p> For me database once something negative, all for "high-level". I liked to code in assembler and C. </p> '+
-  '<p> So I got a consultant to optimize a C program and found that it defeats the solution was to use Pl/SQL. I was impressed with how much less code and how much safer code I get using the database. </p> '+
-  '<p> Since I have worked with many projects with PL / SQL and Oracle, Sybase and C ++ and Pl / SQL, Oracle and BussinessObjects. I have also worked with Sybase IQ as a data warehouse database. I was impressed with how fast it went.</p> '
+  '<p <br> <a href="> https://www.w3.org/">More info W3C.</a> </p>',
+  '<p> For me database once something negative, all for "high-level". I liked to code in assembler and C. </p> '+
+  '<p> So I got a consultant to optimize a C program and found that it defeats the solution was to use Pl/SQL. I was impressed with how much less code and how much safer code I get using the database. </p> '+
+  '<p> Since I have worked with many projects with PL / SQL and Oracle, Sybase and C ++ and Pl / SQL, Oracle and BussinessObjects. I have also worked with Sybase IQ as a data warehouse database. I was impressed with how fast it went.</p>'
   ]
 };
 var BEDREDATA_sv       = 
