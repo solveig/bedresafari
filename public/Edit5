@@ -1,0 +1,2 @@
+<script type="text/javascript" defer="true" src="/href/test.js"></script>  
+onload='startSafari("bedresafari","no");'>
