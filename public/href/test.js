@@ -684,6 +684,6 @@ function changeContent(isLang ) {
 	document.getElementsByClassName('oversettList')[0].classList.toggle('opened');
 	startSafari(isFrom1,isLang1);
 }  
-startSafari("bedresafari","no");
+
 
 
