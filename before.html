@@ -1,0 +1,172 @@
+<span class="ribbon">Notice where the orange box is.</span>
+
+.ribbon {
+  background-color: #5BC8F7;
+}
+
+.ribbon::before {
+  content: "Look at this orange box.";
+  background-color: #FFBA10;
+  border-color: black;
+  border-style: dotted;
+}
+
+gøy
+
+
+todolist
+<ul>
+  <li>Buy milk</li>
+  <li>Take the dog for a walk</li>
+  <li>Exercise</li>
+  <li>Write code</li>
+  <li>Play music</li>
+  <li>Relax</li>
+</ul>
+li {
+  list-style-type: none;
+  position: relative;
+  margin: 2px;
+  padding: 0.5em 0.5em 0.5em 2em;
+  background: lightgrey;
+  font-family: sans-serif;
+}
+
+li.done {
+  background: #CCFF99;
+}
+
+li.done::before {
+  content: '';
+  position: absolute;
+  border-color: #009933;
+  border-style: solid;
+  border-width: 0 0.3em 0.25em 0;
+  height: 1em;
+  top: 1.3em;
+  left: 0.6em;
+  margin-top: -1em;
+  transform: rotate(45deg);
+  width: 0.5em;
+}
+JavaScript content
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if( ev.target.tagName === 'LI') {
+     ev.target.classList.toggle('done'); 
+  }
+}, false);
+
+Float husk width hvis ikke ingen Float
+<div class="example">
+<span id="floatme">"Floated Before" should be generated on the left of the 
+viewport and not allow overflow in this line to flow under it. Likewise 
+should "Floated After" appear on the right of the viewport and not allow this 
+line to flow under it.</span>
+</div>
+
+#floatme { float: left; width: 50%; }
+
+/* To get an empty column, just indicate a hex code for a non-breaking space: \a0 as the content (use \0000a0 when following such a space with other characters) */
+.example::before {
+  content: "Floated Before";
+  float: left;
+  width: 25%
+}
+.example::after {
+  content: "Floated After";
+  float: right;
+  width:25%
+}
+
+/* For styling */
+.example::before, .example::after, .first {
+  background: yellow;
+  color: red;
+}
+
+....
+logo
+.linear-gradient{
+    background: linear-gradient(to bottom, blue, white);
+}
+linear-gradient{
+    width:100px;
+    height:100px;
+}
+
+background: radial-gradient(red 5%, yellow 25%, #1E90FF 50%);
+background: radial-gradient(ellipse closest-side, red, yellow 10%, #1E90FF 50%, white);
+background: radial-gradient(circle closest-side, red, yellow 10%, #1E90FF 50%, white);
+background: repeating-linear-gradient(-45deg, red, red 5px, white 5px, white 10px);
+
+hamburger
+// Variables
+$colorBack: #FCE38A;
+$colorElement: #0E5F76;
+
+// Base Styling
+body {
+  background-color: $colorBack;
+  margin: 0 auto;
+  max-width: 640px;
+  text-align: center;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  left: 25vw;
+  position: absolute;
+  top: 25vh;
+  width: 50vw;
+}
+
+// Navicon Styling
+.menu-icon {
+  background: linear-gradient(to bottom, $colorElement 0%, $colorElement 20%, transparent 20%, transparent 40%, $colorElement 40%, $colorElement 60%, transparent 60%, transparent 80%, $colorElement 80%, $colorElement 100%);
+  cursor: pointer;
+  height: 2em;
+  transition: opacity .5s ease;
+  width: 2em;
+  
+  &:hover {
+    opacity: .5;
+  }
+}
+
+z
+<div class="dashed-box">Dashed box
+  <span class="gold-box">Gold box</span>
+  <span class="green-box">Green box</span>
+</div>
+
+.dashed-box { 
+  position: relative;
+  z-index: 1;
+  border: dashed;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.gold-box { 
+  position: absolute;
+  z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+  background: gold;
+  width: 80%;
+  left: 60px;
+  top: 3em;
+}
+.green-box { 
+  position: absolute;
+  z-index: 2; /* put .green-box above .dashed-box */
+  background: lightgreen;
+  width: 20%;
+  left: 65%;
+  top: -25px;
+  height: 7em;
+  opacity: 0.9;
+}
