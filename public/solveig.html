@@ -5,98 +5,46 @@
 <meta charset="UTF-8">  
 <title>BedreSafari</title>
 <style>
-*,html{
- font-family: arial, sans-serif;
- margin: 0;
- padding: 0;
- outline: none;
- box-sizing: border-box;
-}
-/* Use rem its relative to its root element */
-body{
-   background-color: #c0e9ff; 
-  border:0.3vw solid  #ba5986;
-  color: black;
-  font-size: 16px; 
-}
-
-.logo{
-  width:9vw;
-  height:9vw;
-  border-left:1vw solid   #feb06c;
-  border-right:1vw solid   #feb06c;
-  margin: 1vw 0;
-  float:left;
-  clear:left;
-}
-.menu{
-	float:right;
-  width:6vw;
-  height:6vw;
-  margin: 1vw;
-  clear:right;
-}
-header {clear:both;
-	
-}
-article{
-  background: linear-gradient(to bottom,  #dbebf7, white);
-    border:0.3vw solid  #ba5986;
-  clear:both;
-}  		
-
-.bdlogo{
-background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%);
-}
-.bdmenu{
-background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%);
-}
-
-.sol{ float:left;
-  width:7vw;
-  height:7vw;
-   margin: 0.3vw;
-   clear:left;
-}
-.oversett{ float:right;
-  width:21vw;
-  height:6vw;
-    margin: 0.3vw 0;
-    clear:right;
-}
-.solstrek {
-    background-image: url('./bilder/solstrek.svg');
-    background-size : 7vw 7vw;
-}
-.flagg {
-    background-image: url('./bilder/oversett.svg');
-    background-size : 21vw 6vw;
-}
-
- 
+html, body, header, article, div, a { font-family: arial, sans-serif; margin: 0; padding: 0; outline: none; box-sizing: border-box; }
+body { background-color: #c0e9ff; border:0.3vw solid #ba5986; color: black; font-size: 16px; }
+header { clear:both; }
+article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw solid  #ba5986; clear:both; }  		
+.bslogo { background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
+.bsmenu { background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%); }
+.knapp9 { width:9vw; height:9vw; border-left:1vw solid   #feb06c; border-right:1vw solid   #feb06c; margin: 1vw 0; }
+.leftC { float:left; clear:left; }
+.rightC { float:right; clear:right; }
+.knapp21 { width:21vw; height:6vw; }
+.solstrek { background-image: url('./public/bilder/solstrekz.svg'); background-size : 9vw 9vw; }
+.oversett { background-image: url('./public/bilder/flaggh3z.svg'); background-size : 21vw 9vw; }
 </style>
+<script>
+var lastShow = "none";
+function show(who) {
+  if (lastShow != "none") { document.getElementById(lastShow).style.display="none";}
+  document.getElementById(who).style.display= "block";	
+	lastShow = who;
+}
+</script>
 </head>
- 
 <body>
-	<header>
- 
-<div class="logo bdlogo">
-</div>
-<div class="menu bdmenu">
-</div>
-<div class="sol solstrek">
-</div>
-<div class="oversett flagg">
-</div>
-
+<header>
+  <div class="knapp9 leftC bslogo">	
+  </div>
+  <div class="knapp9 rightC bsmenu">
+  </div>
+  <div class="knapp9 leftC solstrek">
+  </div>
+  <div class="knapp21 rightC flagg">
+  </div>
+  <h1>BedreSafari</h1>
 </header>	
 <article>
-<div class="">
-</div>
-<div class="">
-</div>
-<div class="">
-</div>
+<header >
+  <h1 id="bedresafari" class="Bedresafari">BedreSafari</h1>
+  <h1 id="lydsafari" class="lydsafari">LydSafari</h1>
+  <h1 id="bedredata" class="bedredata">BedreData</h1>
+</header>
 </article>	
 </body>
 </html>
