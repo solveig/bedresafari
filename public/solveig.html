@@ -18,6 +18,7 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 .knapp21 { width:21vw; height:6vw; }
 .leftC { float:left; clear:left; }
 .rightC { float:right; clear:right; }
+.boks { clear:both; }
 .flagg { background-image: url('/bilder/flaggh3z.svg'); background-size : 21vw 9vw; }
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia; font-size: 240%; float:left}
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
@@ -38,15 +39,16 @@ function show(who) {
   	<h1 class="logoTxt">BedreSafari</h1>
   <div class="knapp9 rightC bsmenu">
   </div>
-  <div class="knapp21 leftCk">
-  	<span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <a href="http://no.linkedin.com/in/solveiglovhaug/" itemprop="url" rel="author">
-        <img  width="50" height="50" src="/bilder/solstrekz.svg"  alt="Solveig" class="circle" > av <span itemprop="name">Solveig Løvhaug</span>
-      </a>
-    </span>
-  </div>
- 
-  <div class="knapp21 rightC flagg">
+  <div class="boks">
+    <div class="leftCk">
+  	  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <a href="http://no.linkedin.com/in/solveiglovhaug/" itemprop="url" rel="author">
+          <img  width="50" height="50" src="/bilder/solstrekz.svg"  alt="Solveig" class="circle" > av <span itemprop="name">Solveig Løvhaug</span>
+        </a>
+      </span>
+    </div> 
+    <div class="knapp21 rightC flagg">
+    </div>
   </div>
   
 </header>	
