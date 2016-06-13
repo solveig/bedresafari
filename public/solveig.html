@@ -19,59 +19,52 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 .leftC { float:left; clear:left; }
 .rightC { float:right; clear:right; }
 .boks { clear:both; }
-.flagg { background-image: url('/bilder/flaggh3z.svg'); background-size : 21vw 9vw; background-repeat: no-repeat;}
+.flagg{ background-image: url('/bilder/flaggh3z.svg'); background-size : 21vw 9vw; background-repeat: no-repeat;}
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia; font-size: 210%; float:left}
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
-.bedresafari {display: none; }
-.lydsafari {display: none; background-position: 0 0; }
-.bedredata {display: none; background-position: 0 0; }
 
-  #navlist {
-    position: absolute;
-}
-
-#navlist li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    top: 0;
-}
-
-#navlist li, #navlist a {
-    height: 44px;
-    display: block;
-}
-
-#home {
-    left: 0px;
-    width: 46px;
-    background: url('/bilder/flaggh3z.svg') 0 0;
-}
-
-#prev {
-    left: 63px;
-    width: 43px;
-    background: url('/bilder/flaggh3z.svg') -47px 0;
-}
-
-#next {
-    left: 129px;
-    width: 43px;
-    background: url('/bilder/flaggh3z.svg') -91px 0;
-}
+#flaglist li { margin : 0; padding : 0; list-style : none; position : absolute;  }
+#flaglist li, #flaglist a {height : 60px; display : inline-block; cursor: pointer; }
+#norsk { left : 0; width : 80px; background : url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:0px 0px; }
+#svensk { left: 90px; width: 95px; background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:-90px 0px; }
+#engelsk {left: 193px; width: 120px;background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position: -193px 0px; }
+#bedresafari { display : block; }
+#lydsafari { display : none; }
+#bedredata { display : none; }
+._no {display: inline-block }
+._sv, ._en { display: none }
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
 <link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
-
 <script>
-var lastShow = "none";
+var lastShow = "bedresafari";
+var lastLang = "_no";
 function show(who) {
-  if (lastShow != "none") { document.getElementById(lastShow).style.display="none";}
-  document.getElementById(who).style.display= "block";	
+  if (lastPart != who) { 
+  	document.getElementById(lastShow).style.display="none";
+    document.getElementById(who).style.display= "inline-block";	
+  }  
 	lastShow = who;
+	return false;
+}
+function transIt(isLang) {
+  if (lastLang != isLang) { 
+  	var x = document.getElementsByClassName(lastLang);
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x = document.getElementsByClassName(isLang);
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "inline-block";
+    }  
+    lastLang = isLang;
+  }  	
+	return false;
 }
 </script>
+ 
 </head>
 <body>
 <header>
@@ -88,29 +81,32 @@ function show(who) {
         </a>
       </span>
     </div> 
-    
-
-
-<ul id="navlist">
-  <li id="home"><a href=#bedresafari></a></li>
-  <li id="prev"><a href=#lydsafari></a></li>
-  <li id="next"><a href=#bedredata></a></li>
+     
+    <div class="knapp21 rightC">
+<ul id="flaglist">
+  <li id="norsk"  onclick="transIt('_no');"><a href=#bedresafari ></a></li>
+  <li id="svensk" onclick="transIt('_sv');"><a href=#lydsafari></a></li>
+  <li id="engelsk"  onclick="transIt('_en');" ><a href=#bedredata></a></li>
 </ul>
-
-    
-    <div class="knapp21 rightC flagg">
     	   
-      </span>
     </div>
   </div>
   
 </header>	
-<article>
-<header >
-  <h1 id="bedresafari" class="Bedresafari">BedreSafari</h1>
-  <h1 id="lydsafari" class="lydsafari">LydSafari</h1>
-  <h1 id="bedredata" class="bedredata">BedreData</h1>
-</header>
-</article>	
+ <div id="bedresafari">
+  <h1>BedreSafari</h1>
+  <p><span class="_no">Her er norsk tekst om bedresafri</span><span class="_sv">Her ær svenska teksten om bedresafri</span><span class="_en">here are english text about bedresafri</span></p>
+  <p><span class="_no">Her er norsk tekst om bedresafri</span><span class="_sv">Her ær svenska teksten om bedresafri</span><span class="_en">here are english text about bedresafri</span></p>
+</div>  
+<div id="lydsafari">
+  <h1">LydSafari</h1>
+  <p><span class="_no">Her er norsk tekst om lydsafri</span><span class="_sv">Her ær svenska teksten om lydsafri</span><span class="_en">here are english text about lydsafri</span></p>
+  <p><span class="_no">Her er norsk tekst om lydsafri</span><span class="_sv">Her ær svenska teksten om lydsafri</span><span class="_en">here are english text about lydsafri</span></p>
+</div>  
+<div id="bedredata">
+  	<h1>BedreData</h1>
+  <p><span class="_no">Her er norsk tekst om lydsafri</span><span class="_sv">Her ær svenska teksten om lydsafri</span><span class="_en">here are english text about lydsafri</span></p>
+  <p><span class="_no">Her er norsk tekst om lydsafri</span><span class="_sv">Her ær svenska teksten om lydsafri</span><span class="_en">here are english text about lydsafri</span></p>
+</div> 
 </body>
 </html>
