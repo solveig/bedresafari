@@ -42,7 +42,7 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 var lastShow = "bedresafari";
 var lastLang = "_no";
 function show(who) {
-  if (lastPart != who) { 
+  if (lastShow != who) { 
   	document.getElementById(lastShow).style.display="none";
     document.getElementById(who).style.display= "inline-block";	
   }  
@@ -72,7 +72,7 @@ function transIt(isLang) {
 <body>
 <header>
   <div class="knapp9b leftC bslogo">	
-  	
+  	<a href= "#"  onclick="show('lydsafari');"></a>
   </div>
   	<h1 class="logoTxt">BedreSafari</h1>
   <div class="knapp9 rightC bsmenu">
