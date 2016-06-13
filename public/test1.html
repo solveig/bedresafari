@@ -16,27 +16,27 @@ top : 0;
 height : 44px;
 display : block;
 }
-#home {
+#norsk {
 left : 0;
-width : 46px;
+width : 80px;
 background : url('/bilder/flaggh3z.svg');
 background-repeat:no-repeat;
 background-position:0px 0px;
 }
-#prev {
-    left: 63px;
-    width: 43px;
-    background: url('/bilder/flaggh3z.svg') -47px 0;
-     background-repeat:no-repeat;
-    background-position: -97px 0px;
+#svensk {
+    left: 90px;
+    width: 95px;
+    background: url('/bilder/flaggh3z.svg');
+    background-repeat:no-repeat;
+    background-position:-90px 0px;
 }
 
-#next {
-    left: 129px;
-    width: 43px;
-    background: url('/bilder/flaggh3z.svg') -91px 0;
+#engelsk {
+    left: 193px;
+    width: 120px;
+    background: url('/bilder/flaggh3z.svg');
      background-repeat:no-repeat;
-    background-position: -91px 0px;
+    background-position: -193px 0px;
 }
  
 .bedresafari {
@@ -57,9 +57,9 @@ display : none;
 <body>
  
 <ul id="navlist">
-  <li id="home"  onclick="document.getElementById('bedresafari').style.display='inline-block';"><a href=#bedresafari  ></a></li>
-  <li id="prev" onclick="document.getElementById('lydsafari').style.display='inline-block';"><a href=#lydsafari   ></a></li>
-  <li id="next"  onclick="document.getElementById('bedredata').style.display='inline-block';" ><a href=#bedredata ></a></li>
+  <li id="norsk"  onclick="document.getElementById('bedresafari').style.display='inline-block';"><a href=#bedresafari  ></a></li>
+  <li id="svensk" onclick="document.getElementById('lydsafari').style.display='inline-block';"><a href=#lydsafari   ></a></li>
+  <li id="engelsk"  onclick="document.getElementById('bedredata').style.display='inline-block';" ><a href=#bedredata ></a></li>
 </ul>
 bbb
   <h1 id="bedresafari" class="bedresafari">BedreSafari</h1>
