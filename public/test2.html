@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="no" itemscope itemtype="http://schema.org/Article">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">    
+<meta charset="UTF-8">  
+<title>BedreSafari</title>
+<style>
+#flaglist li { margin : 0; padding : 0; list-style : none; position : absolute;  }
+#flaglist li, #flaglist a {height : 60px; display : inline-block;}
+#norsk { left : 0; width : 80px; background : url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:0px 0px; }
+#svensk { left: 90px; width: 95px; background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:-90px 0px; }
+#engelsk {left: 193px; width: 120px;background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position: -193px 0px; }
+#bedresafari { display : none; }
+#lydsafari { display : none; }
+#bedredata { display : inline-block;}
+._no {display: inline }
+._sv, ._en { display: none }
+</style>
+<link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
+<link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" >  
+<script>
+var lastShow = "bedresafari";
+var lastLang = "_no";
+function show(who) {
+  if (lastPart != who) { 
+  	document.getElementById(lastShow).style.display="none";}
+    document.getElementById(who).style.display= "inline-block";	
+  }  
+	lastShow = who;
+	return false;
+}
+function translate(islang) {
+  if (lastLang != isLang) { 
+  	document.getElementByClassName(lastLang).style.display="none";}
+    document.getElementByClassName(isLang).style.display= "inline-block";	
+  }  
+	lastLang = isLang;
+	return false;
+}
+</script>
+</head>
+<body>
+ 
+<ul id="flaglist">
+  <li id="norsk"  onclick="translate('_no');"><a href=# ></a></li>
+  <li id="svensk" onclick="translate('_sv');"><a href=#></a></li>
+  <li id="engelsk"  onclick="translate('_en');" ><a href=#></a></li>
+</ul>
+<h1>ggg<br>ag </h1>
+<div id="bedresafari">
+  <h1>BedreSafari</h1>
+  <p><span class="_no">Her er norsk tekst om bedresafri</span><span class="_sv">Her ær svenska teksten om bedresafri</span><span class="_en">here are english text about bedresafri</span></p>
+</div>  
+<div id="lydSafari">
+  <h1">LydSafari</h1>
+  <p><span class="_no">Her er norsk tekst om lydsafri</span><span class="_sv">Her ær svenska teksten om lydsafri</span><span class="_en">here are english text about lydsafri</span></p>
+</div>  
+<div id="bedredata">
+  	<h1>BedreData</h1>
+  <p><span class="_no">Her er norsk tekst om bedredata</span><span class="_sv">Her ær svenska teksten om bedredata</span><span class="_en">here are english text about bedredata</span></p>
+</div>  
+</body>
+</html>
