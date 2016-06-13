@@ -25,6 +25,41 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 .bedresafari {display: none; background-position: 0 0; }
 .lydsafari {display: none; background-position: 0 0; }
 .bedredata {display: none; background-position: 0 0; }
+
+  #navlist {
+    position: relative;
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li, #navlist a {
+    height: 44px;
+    display: block;
+}
+
+#home {
+    left: 0px;
+    width: 46px;
+    background: url('img_navsprites.gif') 0 0;
+}
+
+#prev {
+    left: 63px;
+    width: 43px;
+    background: url('img_navsprites.gif') -47px 0;
+}
+
+#next {
+    left: 129px;
+    width: 43px;
+    background: url('img_navsprites.gif') -91px 0;
+}
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
 <link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
@@ -53,10 +88,18 @@ function show(who) {
         </a>
       </span>
     </div> 
+    
+
+
+<ul id="navlist">
+  <li id="home"><a href=#bedresafari></a></li>
+  <li id="prev"><a href=#lydsafari></a></li>
+  <li id="next"><a href=#bedredata></a></li>
+</ul>
+
+    
     <div class="knapp21 rightC flagg">
-    	  <a href=#bedresafari >  <span  style="background-position:0 50"> </span>
-           aa
-        </a>
+    	  
       </span>
     </div>
   </div>
