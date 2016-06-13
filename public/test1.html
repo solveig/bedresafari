@@ -5,59 +5,31 @@
 <meta charset="UTF-8">  
 <title>BedreSafari</title>
 <style>
-#navlist li {
-margin : 0;
-padding : 0;
-list-style : none;
-position : absolute;
-top : 0;
-}
-#navlist li, #navlist a {
-height : 60px;
-display : block;
-}
-#norsk {
-left : 0;
-width : 80px;
-background : url('/bilder/flaggh3z.svg');
-background-repeat:no-repeat;
-background-position:0px 0px;
-}
-#svensk {
-    left: 90px;
-    width: 95px;
-    background: url('/bilder/flaggh3z.svg');
-    background-repeat:no-repeat;
-    background-position:-90px 0px;
-}
-
-#engelsk {
-    left: 193px;
-    width: 120px;
-    background: url('/bilder/flaggh3z.svg');
-     background-repeat:no-repeat;
-    background-position: -193px 0px;
-}
- 
-#bedresafari {
-display : none;
-}
-#lydsafari {
-display : none;
-}
-#bedredata {
-display : none;
-}
+#flaglist li { margin : 0; padding : 0; list-style : none; position : absolute;  }
+#flaglist li, #flaglist a {height : 60px; display : inline-block;}
+#norsk { left : 0; width : 80px; background : url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:0px 0px; }
+#svensk { left: 90px; width: 95px; background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:-90px 0px; }
+#engelsk {left: 193px; width: 120px;background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position: -193px 0px; }
+#bedresafari { display : none; }
+#lydsafari { display : none; }
+#bedredata { display : none;}
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
-<link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
-
- 
+<link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" >  
+<script>
+var lastShow = "none";
+function show(who) {
+  if (lastShow != "none") { document.getElementById(lastShow).style.display="none";}
+  document.getElementById(who).style.display= "inline-block";	
+	lastShow = who;
+	return false;
+}
+</script>
 </head>
 <body>
  
-<ul id="navlist">
-  <li id="norsk"  onclick="document.getElementById('bedresafari').style.display='inline-block';"><a href=#bedresafari  ></a></li>
+<ul id="flaglist">
+  <li id="norsk"  onclick=" show('bedresafari');"><a href=#bedresafari ></a></li>
   <li id="svensk" onclick="document.getElementById('lydsafari').style.display='inline-block';"><a href=#lydsafari   ></a></li>
   <li id="engelsk"  onclick="document.getElementById('bedredata').style.display='inline-block';" ><a href=#bedredata ></a></li>
 </ul>
