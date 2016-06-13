@@ -1,0 +1,68 @@
+<!doctype html>
+<html id="bedresafari" lang="no" itemscope itemtype="http://schema.org/Article">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">    
+<meta charset="UTF-8">  
+<title>BedreSafari</title>
+<style>
+ 
+  #navlist {
+    position: relative;
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li, #navlist a {
+    height: 44px;
+    display: block;
+}
+
+#home {
+    left: 0px;
+    width: 46px;
+    background: url('/bilder/flaggh3z.svg')) 0 0;
+}
+
+#prev {
+    left: 63px;
+    width: 43px;
+    background: url('/bilder/flaggh3z.svg')) -47px 0;
+}
+
+#next {
+    left: 129px;
+    width: 43px;
+    background: url('/bilder/flaggh3z.svg')) -91px 0;
+}
+
+.bedresafari {display: none; }
+.lydsafari {display: none;  }
+.bedredata {display: none;  }
+
+</style>
+<link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
+<link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
+
+ 
+</head>
+<body>
+    
+
+
+<ul id="navlist">
+  <li id="home"><a href=#bedresafari  onclick="document.getElementById('bedresafari').style.display='inline-block';" ></a></li>
+  <li id="prev"><a href=#lydsafari  onclick="document.getElementById('lydsafari').style.display='inline-block';" ></a></li>
+  <li id="next"><a href=#bedredata  onclick="document.getElementById('bedredata').style.display='inline-block';" ></a></li>
+</ul>
+
+  <h1 id="bedresafari" class="Bedresafari">BedreSafari</h1>
+  <h1 id="lydsafari" class="lydsafari">LydSafari</h1>
+  <h1 id="bedredata" class="bedredata">BedreData</h1>
+</body>
+</html>
