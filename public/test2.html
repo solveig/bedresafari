@@ -31,10 +31,18 @@ function show(who) {
 }
 function transIt(isLang) {
   if (lastLang != isLang) { 
-  	document.getElementByClassName(lastLang).style.display="none";
-    document.getElementByClassName(isLang).style.display= "inline-block";	
-  }  
-	lastLang = isLang;
+  	var x = document.getElementsByClassName(lastLang);
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x = document.getElementsByClassName(isLang);
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "inline-block";
+    }  
+    lastLang = isLang;
+  }  	
 	return false;
 }
 </script>
