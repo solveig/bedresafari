@@ -20,19 +20,25 @@ display : block;
 left : 0;
 width : 46px;
 background : url('/bilder/flaggh3z.svg');
+background-repeat:no-repeat;
+background-position:0px 0px;
 }
-div {
-width : 200px;
-height : 200px;
-left : 0;
-background : url('/bilder/flaggh3z.svg');
+#prev {
+    left: 63px;
+    width: 43px;
+    background: url('/bilder/flaggh3z.svg') -47px 0;
+     background-repeat:no-repeat;
+    background-position: -97px 0px;
 }
-section {
-width : 200px;
-height : 200px;
-left : 0;
-background : url('bilder/flaggh3z.svg');
+
+#next {
+    left: 129px;
+    width: 43px;
+    background: url('/bilder/flaggh3z.svg') -91px 0;
+     background-repeat:no-repeat;
+    background-position: -91px 0px;
 }
+ 
 .bedresafari {
 display : none;
 }
@@ -49,21 +55,14 @@ display : none;
  
 </head>
 <body>
-	<div>
-		div 
-	</div>
-<section>
-	section
-</section>    
-aaa
-
+ 
 <ul id="navlist">
   <li id="home"  onclick="document.getElementById('bedresafari').style.display='inline-block';"><a href=#bedresafari  ></a></li>
   <li id="prev" onclick="document.getElementById('lydsafari').style.display='inline-block';"><a href=#lydsafari   ></a></li>
   <li id="next"  onclick="document.getElementById('bedredata').style.display='inline-block';" ><a href=#bedredata ></a></li>
 </ul>
 bbb
-  <h1 id="bedresafari" class="bedresafari">B</h1>
+  <h1 id="bedresafari" class="bedresafari">BedreSafari</h1>
   <h1 id="lydsafari" class="lydsafari">LydSafari</h1>
   <h1 id="bedredata" class="bedredata">BedreData</h1>
 </body>
