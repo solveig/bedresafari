@@ -29,7 +29,7 @@ function show(who) {
 	lastShow = who;
 	return false;
 }
-function translate(islang) {
+function transIt(islang) {
   if (lastLang != isLang) { 
   	document.getElementByClassName(lastLang).style.display="none";
     document.getElementByClassName(isLang).style.display= "inline-block";	
@@ -42,9 +42,9 @@ function translate(islang) {
 <body>
  
 <ul id="flaglist">
-  <li id="norsk"  onclick="translate('_no');"><a href=#bedresafari ></a></li>
-  <li id="svensk" onclick="translate('_sv');"><a href=#lydsafari></a></li>
-  <li id="engelsk"  onclick="translate('_en');" ><a href=#bedredata></a></li>
+  <li id="norsk"  onclick="transIt('_no');"><a href=#bedresafari ></a></li>
+  <li id="svensk" onclick="transIt('_sv');"><a href=#lydsafari></a></li>
+  <li id="engelsk"  onclick="transIt('_en');" ><a href=#bedredata></a></li>
 </ul>
 <h1>ggg<br>ag </h1>
 <div id="bedresafari">
