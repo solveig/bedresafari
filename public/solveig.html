@@ -20,6 +20,7 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 .rightC { float:right; clear:right; }
 .boks { clear:both; }
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia; font-size: 210%; float:left}
+@media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; }
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
 #flaglist ul {display: inline-block; }
 #flaglist li { margin : 0; padding : 0; list-style : none; position : contain; }
@@ -59,8 +60,7 @@ function transIt(isLang) {
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "inline-block";
     }  
-    lastLang = isLang;
-  }  	
+    lastLang = isLang;               
 	return false;
 }
 </script>
