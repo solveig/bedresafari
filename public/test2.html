@@ -10,10 +10,10 @@
 #norsk { left : 0; width : 80px; background : url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:0px 0px; }
 #svensk { left: 90px; width: 95px; background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:-90px 0px; }
 #engelsk {left: 193px; width: 120px;background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position: -193px 0px; }
-#bedresafari { display : none; }
+#bedresafari { display : block; }
 #lydsafari { display : none; }
-#bedredata { display : inline-block;}
-._no {display: inline }
+#bedredata { display : none; }
+._no {display: inline-block }
 ._sv, ._en { display: none }
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
@@ -42,16 +42,16 @@ function translate(islang) {
 <body>
  
 <ul id="flaglist">
-  <li id="norsk"  onclick="translate('_no');"><a href=# ></a></li>
-  <li id="svensk" onclick="translate('_sv');"><a href=#></a></li>
-  <li id="engelsk"  onclick="translate('_en');" ><a href=#></a></li>
+  <li id="norsk"  onclick="translate('_no');"><a href=#bedresafari ></a></li>
+  <li id="svensk" onclick="translate('_sv');"><a href=#lydsafari></a></li>
+  <li id="engelsk"  onclick="translate('_en');" ><a href=#bedredata></a></li>
 </ul>
 <h1>ggg<br>ag </h1>
 <div id="bedresafari">
   <h1>BedreSafari</h1>
   <p><span class="_no">Her er norsk tekst om bedresafri</span><span class="_sv">Her ær svenska teksten om bedresafri</span><span class="_en">here are english text about bedresafri</span></p>
 </div>  
-<div id="lydSafari">
+<div id="lydsafari">
   <h1">LydSafari</h1>
   <p><span class="_no">Her er norsk tekst om lydsafri</span><span class="_sv">Her ær svenska teksten om lydsafri</span><span class="_en">here are english text about lydsafri</span></p>
 </div>  
