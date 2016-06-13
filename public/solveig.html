@@ -5,7 +5,7 @@
 <meta charset="UTF-8">  
 <title>BedreSafari</title>
 <style>
-html, body, header, article, div, a, span { overflow: hidden;font-family: arial, sans-serif; margin: 0; padding: 0; outline: none; box-sizing: border-box; }
+html, body, header, article, div, a, span, ul, li { overflow: hidden;font-family: arial, sans-serif; margin: 0; padding: 0; outline: none; box-sizing: border-box; }
 body { background-color: #c0e9ff; border:0.3vw solid #ba5986; color: black; font-size: 16px; }
 header { clear:both; }
 a{ background-color: #c0e9ff; text-decoration: none; text-align: left; color: black; width:auto; }
@@ -13,15 +13,15 @@ a:hover { color:#feb06c; }
 article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw solid  #ba5986; clear:both; clear: both;}  		
 .bslogo {display: inline-block; background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
 .bsmenu { background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%); }
-.knapp9 { width:9vw; height:9vw; margin: 1vw 0; min-height: 60px; }
-.knapp9b { width:11vw; height:9vw; border-left:1vw solid   #feb06c; border-right:1vw solid   #feb06c; margin: 1vw 0;  min-height: 60px; }
+.knapp9 { width:9vw; height:9vw; margin: 1vw 0; min-width: 50px; min-height: 50px; }
+.knapp9b { width:11vw; height:9vw; border-left:1vw solid   #feb06c; border-right:1vw solid   #feb06c; margin: 1vw 0;  min-width: 50px; min-height: 50px; }
 .knapp21 { width:313px; height:80px; border:0.3vw solid  #ba5986;}
 .leftC { float:left; clear:left; }
 .rightC { float:right; clear:right; }
 .boks { clear:both; }
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia; font-size: 210%; float:left}
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
-
+#flaglist ul {display: inline-block; }
 #flaglist li { margin : 0; padding : 0; list-style : none; position : contain; }
 #flaglist li, #flaglist a { height: 60px;  display : inline-block; cursor: pointer; }
 #norsk { left : 0; width : 50px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px;  }
@@ -84,14 +84,14 @@ function transIt(isLang) {
       </span>
     </div> 
      
- <div>    
+     
 <ul id="flaglist" class="rightC">
   <li id="norsk"  onclick="transIt('_no');"><a href=#bedresafari ></a></li>
   <li id="svensk" onclick="transIt('_sv');"><a href=#lydsafari></a></li>
   <li id="engelsk"  onclick="transIt('_en');" ><a href=#bedredata></a></li>
 </ul>
 
-  </div>
+ 
   
 </header>	
  <div id="bedresafari">
