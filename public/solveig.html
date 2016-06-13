@@ -37,17 +37,7 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
-a.mainHead{	
-	background-color:#b4c8d6;
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  font-size: 2em;
-  padding: 0 0.1em;
-  margin: 0.1em;
-  display:inline-block;
-  float:left;
-}
+a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 180%; padding: 0 0.06em; margin: 0.06em; display:inline-block; float:left; }
 a.mainHead:hover{ color: #feb06c; }
 
 @media only screen and (min-width: 660px){ .knapp9b {  border-left:10px solid   #feb06c; border-right:10px solid   #feb06c; } }
@@ -92,13 +82,20 @@ function transIt(isLang) {
     </div>
   </a>
   <h1 class="logoTxt">BedreSafari</h1>
-   <a  href= "#"  onclick="show('lydsafari');">
+   
  <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened')">
     <div class="knapp9 rightC bsmenu">
     </div>
   </a>  
   <ul class="menuList" id="menuList">
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('lydsafari', 'no'); return false;">LYDSAFARI</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('bedredata', 'no'); return false;">BEDREDATA</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('emf', 'no'); return false;">EMF</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('bergyl', 'no'); return false;">BERGYL</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('nbh', 'no'); return false;">NBH</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('si', 'no'); return false;">SI</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('natur', 'no'); return false;">NATUR</a></li></ul>    
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); onclick="show('lydsafari');">LYDSAFARI</a></li>
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); onclick="show('bedredata');">BEDREDATA</a></li>
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); onclick="show('emf');">EMF</a></li>
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); onclick="show('bergyl');">BERGYL</a></li>
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); onclick="show('nbh');">NBH</a></li>
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); onclick="show('si');">SI</a></li>
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); onclick="show('natur');">NATUR</a></li>
+  </ul>    
     
   <div class="boks">
     <div class="leftCk">
@@ -132,5 +129,30 @@ function transIt(isLang) {
   <p><span class="_no">Her er norsk tekst om lydsafri</span><span class="_sv">Her ær svenska teksten om lydsafri</span><span class="_en">here are english text about lydsafri</span></p>
   <p><span class="_no">Her er norsk tekst om lydsafri</span><span class="_sv">Her ær svenska teksten om lydsafri</span><span class="_en">here are english text about lydsafri</span></p>
 </div> 
+<div id="emf">
+  	<h1>EMF</h1>
+  <p><span class="_no">Her er norsk tekst om emf</span><span class="_sv">Her ær svenska teksten om emf</span><span class="_en">here are english text about emf</span></p>
+  <p><span class="_no">Her er norsk tekst om </span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+</div> 
+<div id="bergyl">
+  	<h1>Bergyl</h1>
+  <p><span class="_no">Her er norsk tekst om bergyl</span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+  <p><span class="_no">Her er norsk tekst om </span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+</div>
+<div id="nbh">
+  	<h1>NBH</h1>
+  <p><span class="_no">Her er norsk tekst om NBH</span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+  <p><span class="_no">Her er norsk tekst om </span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+</div>
+<div id="si">
+  	<h1>SI</h1>
+  <p><span class="_no">Her er norsk tekst om SI</span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+  <p><span class="_no">Her er norsk tekst om </span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+</div>
+<div id="natur">
+  	<h1>NATTUR</h1>
+  <p><span class="_no">Her er norsk tekst om natur</span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+  <p><span class="_no">Her er norsk tekst om </span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
+</div>
 </body>
 </html>
