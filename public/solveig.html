@@ -18,7 +18,7 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 .knapp21 { width:313px; height:80px; border:0.3vw solid  #ba5986;}
 .leftC { float:left; clear:left; }
 .rightC { float:right; clear:right; }
-.boks { clear:both; }
+.boks {display: flex; clear:both;  width: 100%;}
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia; font-size: 210%; float:left}
 @media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; } }
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
@@ -34,6 +34,7 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 ._no {display: inline-block }
 ._sv, ._en { display: none }
 
+@media only screen and (min-width: 660px){ .knapp9b {  border-left:10px solid   #feb06c; border-right:10px solid   #feb06c; } }
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
 <link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
@@ -85,7 +86,7 @@ function transIt(isLang) {
         </a>
       </span>
     </div> 
-      </div> 
+      
      
      
 <ul id="flaglist" class="rightC">
@@ -93,7 +94,7 @@ function transIt(isLang) {
   <li id="svensk" onclick="transIt('_sv');"><a href=#lydsafari></a></li>
   <li id="engelsk"  onclick="transIt('_en');" ><a href=#bedredata></a></li>
 </ul>
-
+</div> 
  
   
 </header>	
