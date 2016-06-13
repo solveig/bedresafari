@@ -35,6 +35,21 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 ._no {display: inline-block }
 ._sv, ._en { display: none }
 
+.menuList.opened { display: inline-block; overflow:hidden; }
+.menuList { display: none; }
+a.mainHead{	
+	background-color:#b4c8d6;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  padding: 0 0.1em;
+  margin: 0.1em;
+  display:inline-block;
+  float:left;
+}
+a.mainHead:hover{ color: #feb06c; }
+
 @media only screen and (min-width: 660px){ .knapp9b {  border-left:10px solid   #feb06c; border-right:10px solid   #feb06c; } }
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
@@ -77,11 +92,14 @@ function transIt(isLang) {
     </div>
   </a>
   <h1 class="logoTxt">BedreSafari</h1>
-  
-  <a  href= "#"  onclick="show('lydsafari');">
+   <a  href= "#"  onclick="show('lydsafari');">
+ <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened')">
     <div class="knapp9 rightC bsmenu">
     </div>
   </a>  
+  <ul class="menuList" id="menuList">
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('lydsafari', 'no'); return false;">LYDSAFARI</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('bedredata', 'no'); return false;">BEDREDATA</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('emf', 'no'); return false;">EMF</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('bergyl', 'no'); return false;">BERGYL</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('nbh', 'no'); return false;">NBH</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('si', 'no'); return false;">SI</a></li><li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); startSafari('natur', 'no'); return false;">NATUR</a></li></ul>    
+    
   <div class="boks">
     <div class="leftCk">
   	  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
