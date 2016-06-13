@@ -23,7 +23,7 @@ var lastShow = "bedresafari";
 var lastLang = "_no";
 function show(who) {
   if (lastPart != who) { 
-  	document.getElementById(lastShow).style.display="none";}
+  	document.getElementById(lastShow).style.display="none";
     document.getElementById(who).style.display= "inline-block";	
   }  
 	lastShow = who;
@@ -31,7 +31,7 @@ function show(who) {
 }
 function translate(islang) {
   if (lastLang != isLang) { 
-  	document.getElementByClassName(lastLang).style.display="none";}
+  	document.getElementByClassName(lastLang).style.display="none";
     document.getElementByClassName(isLang).style.display= "inline-block";	
   }  
 	lastLang = isLang;
