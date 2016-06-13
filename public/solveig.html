@@ -30,14 +30,13 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 #svensk { left: 52px; width: 50px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:-52px 0px; }
 #engelsk {left: 106px; width: 80px;background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position: -122px 0px; }
 #bedresafari { display : block; }
-#lydsafari { display : none; }
-#bedredata { display : none; }
+#lydsafari, #bedredata, #emf, #bergyl, #nbh, #si, #natur { display : none; }
 ._no {display: inline-block }
 ._sv, ._en { display: none }
 
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
-a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 180%; padding: 0 0.06em; margin: 0.06em; display:inline-block; float:left; }
+a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 0.02em; display:inline-block; float:left; }
 a.mainHead:hover{ color: #feb06c; }
 
 @media only screen and (min-width: 660px){ .knapp9b {  border-left:10px solid   #feb06c; border-right:10px solid   #feb06c; } }
@@ -88,6 +87,7 @@ function transIt(isLang) {
     </div>
   </a>  
   <ul class="menuList" id="menuList">
+  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedresafari');">BEDRESAFARI</a></li>
   	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('lydsafari');">LYDSAFARI</a></li>
   	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedredata');">BEDREDATA</a></li>
   	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('emf');">EMF</a></li>
@@ -150,7 +150,7 @@ function transIt(isLang) {
   <p><span class="_no">Her er norsk tekst om </span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
 </div>
 <div id="natur">
-  	<h1>NATTUR</h1>
+  	<h1>NATUR</h1>
   <p><span class="_no">Her er norsk tekst om natur</span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
   <p><span class="_no">Her er norsk tekst om </span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
 </div>
