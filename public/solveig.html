@@ -25,20 +25,15 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 
 #flaglist li { margin : 0; padding : 0; list-style : none; position : contain; }
 #flaglist li, #flaglist a { height: 60px;  display : inline-block; cursor: pointer; }
-#norsk { left : 0; width : 60px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px;  }
-#svensk { left: 60px; width: 65px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:-96px 0px; }
-#engelsk {left: 130px; width: 90px;background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position: -130px 0px; }
+#norsk { left : 0; width : 50px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px;  }
+#svensk { left: 50px; width: 50px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:-52px 0px; }
+#engelsk {left: 102px; width: 90px;background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position: -102px 0px; }
 #bedresafari { display : block; }
 #lydsafari { display : none; }
 #bedredata { display : none; }
 ._no {display: inline-block }
 ._sv, ._en { display: none }
-@media only screen and (min-width: 768px){
-#flaglist li, #flaglist a { height: 80px;  display : inline-block; cursor: pointer; }	
-#norsk { left : 0; width : 80px; background : url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:0px 0px;  }
-#svensk { left: 90px; width: 95px; background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position:-90px 0px; }
-#engelsk {left: 193px; width: 120px;background: url('/bilder/flaggh3z.svg'); background-repeat:no-repeat; background-position: -193px 0px; }
-}
+
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
 <link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
@@ -89,7 +84,7 @@ function transIt(isLang) {
     </div> 
      
  <div>    
-<ul id="flaglist" >
+<ul id="flaglist" class="rightC">
   <li id="norsk"  onclick="transIt('_no');"><a href=#bedresafari ></a></li>
   <li id="svensk" onclick="transIt('_sv');"><a href=#lydsafari></a></li>
   <li id="engelsk"  onclick="transIt('_en');" ><a href=#bedredata></a></li>
