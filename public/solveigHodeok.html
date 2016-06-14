@@ -38,14 +38,6 @@ div.flagg { margin-top:20px; margin-bottom: 0px; margin-left: auto ; margin-righ
 .menuList { display: none; }
 a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 0.02em; display:inline-block; float:left; }
 a.mainHead:hover{ color: #feb06c; }
-article { background-color:#dbebf7; }
-section {	overflow: hidden; display: inline; }
-nav { background-color:#dbebf7; }
-header { background-color: #dbebf7; } 
-footer nav,header nav  { background-color: #c0e9ff; }
-footer { display:flex;}
-.left_float { float: left; }
-ul { list-style-type: none; }
 
 @media only screen and (min-width: 660px){ .knapp9b {  border-left:10px solid   #feb06c; border-right:10px solid   #feb06c; } }
 </style>
@@ -124,7 +116,6 @@ function transIt(isLang) {
  
   
 </header>	
-<article>
  <div id="bedresafari">
   <h1>BedreSafari</h1>
   <p><span class="_no">Her er norsk tekst om bedresafri</span><span class="_sv">Her ær svenska teksten om bedresafri</span><span class="_en">here are english text about bedresafri</span></p>
@@ -165,36 +156,5 @@ function transIt(isLang) {
   <p><span class="_no">Her er norsk tekst om natur</span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
   <p><span class="_no">Her er norsk tekst om </span><span class="_sv">Her ær svenska teksten om </span><span class="_en">here are english text about </span></p>
 </div>
-</article>
- <footer>
-  	<nav>        	
-      <ul>  
-       <li onclick="document.getElementById('kontaktMer').style.display='inline-block';">
-          <p id="contactTxt" class="kontakt showUp">KONTAKT</p>                  
-        </li>
-        <li onclick="document.getElementById('blogMer').style.display='inline-block';">
-          <p id="blogTxt" class="kontakt showUp">BLOGG</p>                  
-        </li>
-      
-       <li id="toLeft2">
-          <a class="copy" href="http://no.linkedin.com/in/solveiglovhaug/"><small>© 2016 LydSafari</small></a>
-        </li>
-       </ul>
-    </nav>
-  </footer>  
-  <aside id="kontaktMer" class="asideKontakt" onclick="document.getElementById('kontaktMer').style.display='none';">
-             <h1 id="contact2Txt">KONTAKT</h1> 
-             <p><span itemprop="name">Solveig Løvhaug</span></p>   	   
-      	     <p><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"> 
-                <span itemprop="addressLocality">Halden</span>, in <span itemprop="addressCountry">Norway.</span></span> 
-             </p>
-             <p>Email: <span itemprop="email">solveig@bedredata.no</span></p>
-             <p>Mobil: +47 970 94 414  Fast telefon: +47 69178930</p>
-  </aside>  
-    <aside id="blogMer" class="asideKontakt" onclick="document.getElementById('blogMer').style.display='none';">
-             <h1 id="blog2Txt">BLOGG</h1> 
-             <p>Blogggen kommer her etterhvert</p>   	         	                
-  </aside>  
-
 </body>
 </html>
