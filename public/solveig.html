@@ -19,16 +19,16 @@ article { background: linear-gradient(to bottom,  #dbebf7, white); border:0.3vw 
 .knapp21 { width:313px; height:80px; border:0.3vw solid  #ba5986;}
 .leftC { float:left; clear:left; }
 .rightC { float:right; clear:right; }
-.boks {display: flex; clear:both;  width: 100%;  border:1vw solid  blue;}
+.boks {display: flex; clear:both;  width: 100%;  border:1vw solid  blue; }
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia; font-size: 210%; float:left}
 @media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; } }
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
-div.flagg { margin:20px; float:right;}
+div.flagg { margin:20px 20px 0 20px; border:0.3vw solid red; }
 #flaglist li { margin : 0; padding : 0; list-style : none;}
-#flaglist li, #flaglist a { height: 60px;  display : inline-block; cursor: pointer; }
-#norsk {  width : 50px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px;  }
-#svensk {  width: 50px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:-52px 0px; }
-#engelsk {  width: 80px;background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position: -122px 0px; }
+#flaglist li, #flaglist a { height: 60px;  display : inline-block; cursor: pointer; border:0.3vw solid green;}
+#norsk {  width : 50px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px;  border:0.3vw solid black }
+#svensk {  width: 50px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:-52px 0px; border:0.3vw solid black }
+#engelsk {  width: 80px;background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position: -122px 0px; border:0.3vw solid black}
 #bedresafari { display : block; }
 #lydsafari, #bedredata, #emf, #bergyl, #nbh, #si, #natur { display : none; }
 ._no {display: inline-block }
@@ -106,11 +106,11 @@ function transIt(isLang) {
       </span>
     </div>    
     <div class="flagg">
-    <ul id="flaglist">
-      <li id="norsk"  onclick="transIt('_no');"><a href=#bedresafari ></a></li>
-      <li id="svensk" onclick="transIt('_sv');"><a href=#lydsafari></a></li>
-      <li id="engelsk"  onclick="transIt('_en');" ><a href=#bedredata></a></li>
-    </ul>
+      <ul id="flaglist">
+        <li id="norsk"  onclick="transIt('_no');"><a href=#bedresafari ></a></li>
+        <li id="svensk" onclick="transIt('_sv');"><a href=#lydsafari></a></li>
+        <li id="engelsk"  onclick="transIt('_en');" ><a href=#bedredata></a></li>
+      </ul>
     </div> 
   </div> 
  
