@@ -33,7 +33,7 @@ article { background-color: #dbebf7; border:0.3vw solid  #ba5986; clear:both; cl
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia; font-size: 210%; margin: 20px 0 0 0; float:left}
 @media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; } }
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
-div.flagg { margin-top:20px; margin-bottom: 0px; }
+div.flagg { margin-top:20px; margin-bottom: 0px; float: right;}
 #flaglist li { list-style : none;}
 #flaglist li, #flaglist a {   display : inline-block; cursor: pointer; }
 #norsk { width : 50px; height: 40px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px; }
@@ -118,7 +118,8 @@ function transIt(isLang) {
     <div class="leftC">
   	  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
         <a href="http://no.linkedin.com/in/solveiglovhaug/" itemprop="url" rel="author">
-          <img  width="50" height="50" src="/bilder/solstrekz.svg"  alt="Solveig" class="circle" > <span class="_no"> av </span><span class="_sv"> av </span><span class="_en"> of </span><span itemprop="name"> Solveig Løvhaug</span>
+          <canvas id="solStrek" class="circle" width=50 height=50>Your browser does not support the canvas tag.</canvas>
+          <span class="_no"> av </span><span class="_sv"> av </span><span class="_en"> of </span><span itemprop="name"> Solveig Løvhaug</span>
         </a>
       </span>
     </div>    
@@ -282,7 +283,9 @@ function transIt(isLang) {
   </aside>  
 <script type="text/javascript">  
 	var canvas=document.querySelector('#myHome');  
+	var canvas2=document.querySelector('#solStrek');  
 	var ctx=canvas.getContext('2d');  
+	var context=solStrek.getContext('2d');  
 	ctx.moveTo(12,0);  
 	ctx.lineTo(0, 12);  
 	ctx.lineTo(0,25); 
@@ -302,6 +305,34 @@ function transIt(isLang) {
   ctx.lineWidth=3;
 	ctx.strokeStyle = "#406584";  
 	ctx.stroke();
+	
+ var centerX = canvas2.width / 2;
+  var centerY = canvas2.height / 2;
+  var radius = 35;
+  var eyeRadius = 3;
+  var eyeXOffset = 12;
+  var eyeYOffset = 12;
+  
+  // draw the yellow circle
+  context.beginPath();
+  context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+  context.fillStyle = 'yellow';
+  context.fill();
+    
+  // draw the eyes
+  context.beginPath();
+  var eyeX = centerX - eyeXOffset;
+  var eyeY = centerY - eyeXOffset;
+  context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI, false);
+  var eyeX = centerX + eyeXOffset;
+  context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI, false);
+  context.fillStyle = 'black';
+  context.fill();
+  
+  // draw the mouth
+  context.beginPath();
+  context.arc(centerX, centerY, 12, 0, Math.PI, false);
+  context.stroke();
 </script>
 </body>
 </html>
