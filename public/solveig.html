@@ -29,11 +29,11 @@ article { background-color: #dbebf7; border:0.3vw solid  #ba5986; clear:both; cl
 .knapp21 { width:313px; height:80px; border:0.3vw solid  #ba5986;}
 .leftC { float:left; clear:left; }
 .rightC { float:right; clear:right; }
-.boks {display: flex; clear:both;  width: 100%;   }
+.boks { clear:both;    }
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia; font-size: 210%; margin: 20px 0 0 0; float:left}
 @media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; } }
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
-div.flagg { margin-top:20px; margin-bottom: 0px; margin-left: auto ; margin-right: auto ;}
+div.flagg { margin-top:20px; margin-bottom: 0px; }
 #flaglist li { list-style : none;}
 #flaglist li, #flaglist a {   display : inline-block; cursor: pointer; }
 #norsk { width : 50px; height: 40px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px; }
@@ -49,9 +49,8 @@ div.flagg { margin-top:20px; margin-bottom: 0px; margin-left: auto ; margin-righ
 a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 0.02em; display:inline-block; float:left; }
 a.mainHead:hover{ color: #feb06c; }
 section {	overflow: hidden; display: inline; }
-footer { display:flex;}
-.left_float { float: left; }
-.right_float { float: right; }
+.left_float { float: left; margin: 1.8vw 0.4vw 0 0.4vw;}
+.right_float { float: right; margin: 2.4vw 0.4vw 0 0.4vw;}
 ul { list-style-type: none; display: block; width: 100%; }
 .kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6; float:left; }
 .kontakt:hover { background-color: #3290d9; color:#feb06c; }
@@ -247,26 +246,27 @@ function transIt(isLang) {
   <p><span class="_no"></span>Naturen, dyr, trær, stener.<span class="_sv">Natur, djur, träd, stenar.</span><span class="_en">Nature, animals, trees, stones.</span></p>
 </div>
 </article>
- <div>
+ <footer>
   	<nav>        	
       <ul>  
-       <li onclick="document.getElementById('kontaktMer').style.display='inline-block';">
+        <li class="left_float">
+       	   <a  href= "#"  onclick="show('bedresafari');">
+             <canvas id="myHome" width=25 height=25>Your browser does not support the canvas tag.</canvas>
+           </a> 
+        </li>  
+        <li onclick="document.getElementById('kontaktMer').style.display='inline-block';">
           <p id="contactTxt" class="kontakt"><span class="_no">KONTAKT</span><span class="_sv">KONTAKT</span><span class="_en">CONTACT</span></p>                  
         </li>
         <li onclick="document.getElementById('blogMer').style.display='inline-block';">
           <p id="blogTxt" class="kontakt"><span class="_no">BLOGG</span><span class="_sv">BLOGG</span><span class="_en">BLOG</span></p>                  
         </li>
         <li class="right_float">
-       	 <a  href= "#"  onclick="show('bedresafari');">
-           <canvas id="myHome" width=25 height=25>Your browser does not support the canvas tag.</canvas>
-         </a> 
-         </li>  
-       <li class="right_float">
           <a  href="http://no.linkedin.com/in/solveiglovhaug/"><small>© 2016 LydSafari</small></a>
-        </li>
+        </li>        
+        
        </ul>
     </nav>
-  </div>  
+  </footer>  
   <aside id="kontaktMer" class="asideKontakt" onclick="document.getElementById('kontaktMer').style.display='none';">
              <h1 id="contact2Txt">KONTAKT</h1> 
              <p><span itemprop="name">Solveig Løvhaug</span></p>   	   
