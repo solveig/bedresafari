@@ -44,7 +44,7 @@ div.flagg { margin-top:20px; margin-bottom: 0px; float: right;}
 ._no {display: inline-block }
 ._sv, ._en { display: none }
 .solVise, img.imgMenu { display: none; }	
-
+#solStrek {display: inline-block; }
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
 a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 0.02em; display:inline-block; float:left; }
@@ -69,7 +69,8 @@ img.imgMenu{
   padding: 0.2vw 1.2vw;
   margin:0 0.3vw 0 0;
 }  
-.solVise { display: inline; }
+.solVise { display: inline-block; }
+#solStrek, .solVise { display: none }
  
 }
 </style>
@@ -108,7 +109,7 @@ function transIt(isLang) {
  
 </head>
 <body>
-<header id="home">
+<header id="homeBS">
 	
 	<a  href= "#bedresafari"  onclick="show('bedresafari');">
     <div class="knapp9b leftC bslogo">	
@@ -269,7 +270,7 @@ function transIt(isLang) {
   	<nav>        	
       <ul>  
         <li class="left_float">
-       	   <a  href= "#home"  onclick="show('bedresafari');">
+       	   <a  href= "#homeBS"  onclick="show('bedresafari');">
              <canvas id="myHome" width=25 height=25>Your browser does not support the canvas tag.</canvas>
            </a> 
         </li>  

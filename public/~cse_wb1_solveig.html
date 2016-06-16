@@ -43,18 +43,36 @@ div.flagg { margin-top:20px; margin-bottom: 0px; float: right;}
 #lydsafari, #bedredata, #emf, #bergyl, #nbh, #si, #natur { display : none; }
 ._no {display: inline-block }
 ._sv, ._en { display: none }
-
+.solVise, img.imgMenu { display: none; }	
+#solStrek {display: inline-block; }
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
 a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 0.02em; display:inline-block; float:left; }
 a.mainHead:hover{ color: #feb06c; }
 section {	overflow: hidden; display: inline; }
-.left_float { float: left; margin: 1.8vw 0.4vw 0 0.4vw;}
-.right_float { float: right; margin: 2.4vw 0.4vw 0 0.4vw;}
+.left_float { float: left; margin: 1.8vw 0.8vw 0 0.4vw;}
+.right_float { float: right; margin: 2.4vw 0.8vw 0 0.4vw;}
 ul { list-style-type: none; display: block; width: 100%; }
 .kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6; float:left; }
 .kontakt:hover { background-color: #3290d9; color:#feb06c; }
 aside.asideKontakt { position: fixed; top: 30%; left: 20%; display: none; float :right; width:70vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; }
+ 
+
+@media only screen and (min-width: 1025px){
+ 
+img.imgMenu{
+	width: 26vw !important;
+	
+  min-width: 100px;
+  display:inline;
+  float: left; 
+  padding: 0.2vw 1.2vw;
+  margin:0 0.3vw 0 0;
+}  
+.solVise { display: inline-block; }
+#solStrek, .solVise { display: none }
+ 
+}
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
 <link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
@@ -91,7 +109,7 @@ function transIt(isLang) {
  
 </head>
 <body>
-<header>
+<header id="homeBS">
 	
 	<a  href= "#bedresafari"  onclick="show('bedresafari');">
     <div class="knapp9b leftC bslogo">	
@@ -119,6 +137,7 @@ function transIt(isLang) {
   	  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
         <a href="http://no.linkedin.com/in/solveiglovhaug/" itemprop="url" rel="author">
           <canvas id="solStrek" class="circle" width=50 height=50>Your browser does not support the canvas tag.</canvas>
+           <img class="solVise circle" width="50" height="50" src='./bilder/solveig1.gif' alt="Logo" /> 
           <span class="_no"> av </span><span class="_sv"> av </span><span class="_en"> of </span><span itemprop="name"> Solveig Løvhaug</span>
         </a>
       </span>
@@ -251,7 +270,7 @@ function transIt(isLang) {
   	<nav>        	
       <ul>  
         <li class="left_float">
-       	   <a  href= "#"  onclick="show('bedresafari');">
+       	   <a  href= "#homeBS"  onclick="show('bedresafari');">
              <canvas id="myHome" width=25 height=25>Your browser does not support the canvas tag.</canvas>
            </a> 
         </li>  
