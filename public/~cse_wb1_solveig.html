@@ -50,16 +50,30 @@ div.flagg { margin-top:20px; margin-bottom: 0px; float: right;}
 #logoHeader { display: none; }
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
-a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 0.02em; display:inline-block; float:left; }
-a.mainHead:hover{ color: #feb06c; }
+a.mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 3vw; display:block; float:left; }
+a.mainMenu:hover{ color: #feb06c; }
 section {	overflow: hidden; display: inline; }
 .left_float { float: left; margin: 1.8vw 0.8vw 0 0.4vw;}
 .right_float { float: right; margin: 2.4vw 0.8vw 0 0.4vw;}
 ul { list-style-type: none; display: block; width: 100%; }
-.kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6; float:left; }
+.kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6;}
 .kontakt:hover { background-color: #3290d9; color:#feb06c; }
 aside.asideKontakt { position: fixed; top: 30%; left: 20%; display: none; float :right; width:70vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; }
+a.mainCont{	
+  float:left;
+	background-color:#dbebf7;
+  color: black;
+   font-weight: bold;  
+    padding: 0 1.2vw;    
+    text-decoration: none;
+    text-align: left; 
+ 
+  border:0vw solid  #b4c8d6;
+}
 
+a.mainCont:hover{
+ color: #feb06c;
+}  
  li.liMenu{
 	width: 92vw;
 	height:auto;
@@ -106,7 +120,8 @@ li.liContentMer{
 }
 }
 @media only screen and (min-width: 1024px){
- 
+ a.mainMenu{  margin: 1vw; display:inline-block; float:left; }
+
 img.imgMenu{
 	width: 26vw !important;
 	
@@ -144,7 +159,6 @@ var lastShow = "bedresafari";
 var lastLang = "_no";
 function show(who) {
   if (lastShow != who) { 
-  	console.log('who=" +who);
   	document.getElementById(lastShow).style.display="none";
     document.getElementById(who).style.display= "inline-block";	
   }  
@@ -188,14 +202,14 @@ function transIt(isLang) {
     </div>     
   </a>  
   <ul class="menuList" id="menuList">
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedresafari');">BEDRESAFARI</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('lydsafari');">LYDSAFARI</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedredata');">BEDREDATA</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('emf');">EMF</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bergyl');">BERGYL</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('nbh');">NBH</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('si');">SI</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('natur');">NATUR</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedresafari');">BEDRESAFARI</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('lydsafari');">LYDSAFARI</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedredata');">BEDREDATA</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('emf');">EMF</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bergyl');">BERGYL</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('nbh');">NBH</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('si');">SI</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('natur');">NATUR</a></li>
   </ul>    
     
   <div class="boks">
@@ -261,7 +275,96 @@ function transIt(isLang) {
     </ul>
 </nav> 
    </div>  
+   <div id="lydsafari">
+	<header>
+    <h1>LydSafari</h1>
+  </header>
+  <p><span class="_no">Event, foredrag, opplevelser og kanskje lydhealing. Undersøke kirkens hemmeligheter. Sanse og formidle naturens skjulte frekvenser.</span><span class="_sv">Händelse, föreläsningar, erfarenheter och ljud läkning, ljud healing. Undersök kyrka hemligheter. Sanse och förmedla naturens dolda frekvenser.</span><span class="_en">Event, speech and perhaps sound healing. Examine church secrets. Sense and convey nature's hidden frequencies.</span></p>
+  <p><span class="_no">Jeg har over 20 års erfaring med å sanse og formidle naturens gjemte frekvenser, energier fra folk, ting og plasser gjennom lyder. Det er selve opplevelsen som er viktig. Bare å være i det. Noen ganger skjer det lydhealing.</span><span class="_sv">Jag har över 20 års erfarenhet av känsla och förmedlar naturens dolda frekvenser, energier människor, saker och platser genom ljud. Det är själva upplevelsen som är viktig. Bara att vara där. Ibland händer det att ljud läka, ljud healing.</span><span class="_en">I have over 20 years experience of sense and convey nature's hidden frequencies, energies of people, things and places through sounds. It is the experience itself that is important. Just being in there. Sometimes it happens sound healing.</span></p>
+  <h2><span class="_no">Prøv noe nytt og spennende!</span><span class="_sv">Prova något nytt och spännande!</span><span class="_en">Try something new and exciting!</span></h2>
+  <h3><span class="_no">Lydreise</span><span class="_sv"></span>Lydreise<span class="_en">SoundSafari</span></h3>
+  <p><span class="_no">person, gruppe, gjenstand, plass</span><span class="_sv">person, grupp,föremål, utrymme</span><span class="_en">person, group, object, location</span></p>
+  <h3><span class="_no">Event</span><span class="_sv">Händelse</span><span class="_en">Event</span></h3>
+  <p><span class="_no">Test din 6. sans.</span><span class="_sv">Test din 6. sinne.</span><span class="_en">Test your 6th sense</span></p>
+  <p><span class="_no">Undersøk kirkens hemmeligheter.</span><span class="_sv">Undersök kyrk hemligheter.</span><span class="_en">Examine church secrets.</span><p>
+  <h3><span class="_no">Foredrag, kurs, workshop.</span><span class="_sv">Presentationer, kurs, workshop.</span><span class="_en">Speeches, courses, workshops</span></h3>
+  <p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" ><span class="_no">Les om LydSafari i Halden Arbeiderblad</span><span class="_sv">Läs om LydSafari Halden Arbeiderblad.</span><span class="_en">Read about LydSafari in Halden Arbeiderblad details.</span></a></p>
    
+  <h2><span style="color:#feb06c"> EVENT</span> </h2>
+  <h3><span class="_no">Lær hvordan man kan.</span><span class="_sv">Lär dig att.</span><span class="_en">Learn how to.</span></h3>
+  <p><span class="_no">Ta lyd av gjenstander og ta lyd av plasser.</span><span class="_sv">Ta ljud av föremål och ta ljud av utrymme.</span><span class="_en">Take sound from objects or take sound from locations.</span></p>
+  <p><span class="_no">Kjenne aura med hånda eller finne gjemte gjenstander.</span><span class="_sv">Känna aura med händer eller hitta gömda föremål.</span><span class="_en">Feel aura with your hands or find hidden objects.</span></p>
+  <h3><span class="_no">Oppleve</span><span class="_sv">Upptäck</span><span class="_en">Experience</span></h3>
+  <p><span class="_no">Kroppen beveger seg av seg selv og tårene renner.</span><span class="_sv">Kroppen rör sig av sig själv och tårar rinnande.</span><span class="_en">Body moves by itself and tears flowing.</span></p>
+  <p><span class="_no">Du føler frysninger eller varme.</span><span class="_sv">Känna frossa eller värme.</span><span class="_en">Feel chills or heating</span></p> 
+  <h3><span class="_no">Ta selv lyden til</span><span class="_sv">Ta även ljudet av</span><span class="_en">By yourself take sound from</span></h3>
+  <p><span class="_no">Gjenstand, tegning, maleri - høres det ut som en melodi.</span><span class="_sv">föremål, teckning, målning. Hva hørs? Spelas en melodi.</span><span class="_en">Object, drawing, paining or do you hear a melody.</span></p>
+  <p><span class="_no">Er lyden harmonisk, skurrende, skummel eller er det setninger som blir sagt.</span><span class="_sv">Är ljud harmonisk, raspiga, skumma eller låter det som fraser</span><span class="_en">Is the sound harmonic, jarring, scary or do you hear senteces.</span></p><p><br><br><br></p>         
+   
+  <p><span class="_no">Bli med på en eventyrlig lydreise i ditt indre univers.</span><span class="_sv">Gå med i en äventyrlig lydreise av din inre universum.</span><span class="_en">Join an adventurous SoundSafari of your inner universe.</span></p>
+  <p><span class="_no">Tonevariasjonene fra ditt indre danner tilsammen lydbildet av deg.</span><span class="_sv">Tone varianter av din inre bildar tillsammans ljudbild av dig.</span><span class="_en">Tone variations of your inner together form the soundscape of you.</span></p>
+  <a  class="ylvis" href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >
+	<img class= "inside" width="459"  src="/bilder/ylvis.png"   alt="Fra Norges Herligste og Energidama"/><span class="_no">Et lite eksempel på lydreise med Bård i Ylvis.</span><span class="_sv"></span><span class="_en"></span></a>
+	<p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" ><span class="_no">Et lenger eksempel i denne artikkelen.</span><span class="_sv">Ett litet exempel på lydreise med Bard i Ylvis.</span><span class="_en">A small example of SoundSafari with Bård in Ylvis.</span></a></p>
+      
+  <p><span class="_no">Dette passer for jubilant, utdrikningslag, kjærester, famile og venner.</span><span class="_sv">Detta är lämpligt för jublande, familj och vänner.</span><span class="_en">This is suitable for jubilant, bachelor parties, couple family and friends.</span></p>
+  <p><span class="_no">Tar lyd på gruppa som helhet og på enkelt personene og gjenstander som har betydning for personen eller forholdet.</span><span class="_sv">Med ljudet av gruppen som helhet och på enskilda personer och objekt av betydelse för den person eller förhållandet. </span><span class="_en">Taking sound of the group as a whole and on individuals and objects of significance for the person or the relationship.</span></p>
+   
+  <p><span class="_no">Tar lyd på gjenstanden.Det kan være et smykke,bilde, gjenstand, tegning, maleri eller et klesplagg.</span><span class="_sv">Med ljud på gjenstanden.Det kan vara en juvel, bild, objekt, teckning, målning eller ett klädesplagg.</span>Taking sound of the object. It may be a jewel, image, object, drawing, painting or a piece of clothing.<span class="_en"></span></p>
+    
+  <p><span class="_no">Tar lyd på plasser som personen tenker på eller som vi besøker.</span><span class="_sv"></span><span class="_en">Taking sound in places like the person thinking of or that we visit.</span></p>	
+       
+  <h2><span class="_no">Besøk en kirke. <span style="color:#feb06c"> EVENT</span></span><span class="_sv">Besök en kyrka.  <span style="color:#feb06c"> EVENT</span></span><span class="_en">Visit a church.<span style="color:#feb06c"> EVENT</span></span></h2> 
+  <h3><span class="_no">Salmesanger</span><span class="_sv">Psalm låtar</span><span class="_en">Psalm songs</span></h3>
+  <p><span class="_no">I kirker fins det usynlige energiveier(12) rundt alteret som høres ut som salmesanger. Folk som er følsomme, kan gå med ønskekvist eller bruke pendel vil kunne kjenne dem. Sangene er forskjellig fra kirke til kirke.</span><span class="_sv">I kyrkorna finns osynliga energi vägar (12) runt altaret som låter som psalmsånger. Människor som är känsliga, du går med slagruta eller använda shuttle kommer att kunna känna igen dem. Låtarna skiljer sig från kyrkan till kyrkan.</span><span class="_en">In the churches there are invisible energy pathways (12) around the altar that sounds like hymn songs. People who are sensitive, dowsing people or use shuttle will be able to recognize them. The songs are different from church to church. </span></p>
+  <h3><span class="_no">Folkesanger og dans</span><span class="_sv">Visor och dans</span><span class="_en">Folk Songs and dance</span></h3>
+  <p><span class="_no">Kultplassene eller horg har også usynlige energiveier(7). Kirker ble bygd i nærheten av horg. Ofte finner jeg horg i kirken. Lyden minner om folkesanger og kroppen min begynner å danse automatisk.</span><span class="_sv">Hgrgr har också osynliga energi vägar (7). Kyrkor byggdes nära hgrgr. Ofta finner jag hgrgr kyrka. Ljudet påminner om folkvisor och min kropp börjar dansa automatiskt.</span><span class="_en">Hgrgr also have invisible energy pathways (7). Churches were built near hgrgr. Often I find hgrgr in church. The sound is as folk songs and my body starts to dance automatically.</span></p>   	
+  <p><span class="_no">Kirken har blitt bygd med gammel kunnskap om jordenergier osv av frimurer ol. Kildematrialet om dette fins i Oslo Universitet arkiver sa Sverre Dag Mogstad. Han er forfatter av "Frimureri : mysterier, fellesskap, personlighetsdannelse.</span><span class="_sv">Kyrkan har byggts med gammal kunskap om jordens energi, etc. av frimurarnas ol. Källmaterial för detta återfinns i Oslo universitet arkiv sade Sverre Dag Mogstad. Han är författare till "frimureri:. Mysterier, gemenskap, teckenbildning</span><span class="_en">The church has been built with old knowledge about earth energies, etc. by Masonic ol. Source material for this is found in Oslo University archives said Sverre Dag Mogstad. He is the author of "Freemasonry: mysteries, community, character formation.</span></p>
+  <h3><span class="_no">Undersøk din kirke</span><span class="_sv">Undersök din kyrka</span><span class="_en">Examine your church</span></h3>
+  <p><span class="_no">Skaff tillatelse til bruk av kirken og send bud på meg. Her tar jeg ingen betaling utenom dekning av reiseutgifter.</span><span class="_sv"></span><span class="_en">Obtain permission to use the church and send for me. I do not take money for this other than payment of travel expenses.</span></p>
+ 
+  <p><span class="_no">Send bud på meg og jeg vil elske å holde foredrag, event, kurs i "å ta lyd" eller workshop rundt dette.</span><span class="_sv">Skicka för mig och jag skulle älska att föreläsa, händelse, kurs i" ta ljud "eller verkstad runt detta.</span><span class="_en">Send for me and I would love to speech, lecture, event, course in "taking sound" or workshop around this.</span></p>   	
+  <p><span class="_no">Kan koble foredrag i forhold til interesser som oppdragsgiveren har</span><span class="_sv">Kan ansluta samtal i förhållande till de intressen.</span><span class="_en">Can connect talks in relation to the interests of the contracting entity.</span></p>
+   
+  <p><span class="_no">Prisene avhenger av type oppdrag. Send en e-post med spørsmål. Er det vedledighet kan jeg gjøre det gratis, med få dekka eventuelle reisekostnader.</span><span class="_sv">Priserna beror på vilken typ av uppdrag. Skicka ett e-postmeddelande med frågor. Är det vedledighet jag kan göra det gratis, men få betalat för resekostnader.</span><span class="_en">Prices depend on the assignment type. Send an email with questions. Is that charity can I do it for free, with getting showered any travel costs.</span></p>
+  <p><span class="_no">Klikk på kontakt knappen nederst for mer kontaktinformasjon.</span><span class="_sv">Klikk på kontakt knappen nederst for mer kontaktinformasjon.</span><span class="_en">Click the contact button at the bottom for more contact information. </span></p>         
+</div>  
+<div id="bedredata">
+	<header>
+  <h1>BedreData</h1>
+   </header>
+  <p><span class="_no">IT konsulent tjenester. -X3DOM,-MongoDB.</span><span class="_sv">IT-konsulttjänster. -X3DOM, -MongoDB.</span><span class="_en">IT consulting services. -X3DOM, -MongoDB.</span></p>
+ </div> 
+<div id="emf">
+	<header>
+  <h1>EMF</h1>
+  </header>
+  <p><span class="_no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="_sv">Lägre gräns av elektromagnetisk strålning.</span><span class="_en">Lower limits on electromagnetic radiation.</span></p>
+</div> 
+<div id="bergyl">  	
+	<header>
+	<h1>Bergyl</h1>
+  </header>
+  <p><span class="_no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="_sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="_en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p>
+</div>
+<div id="nbh">
+	<header>
+ 	<h1>NBH</h1>
+  </header>
+  <p><span class="_no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="_sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="_en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
+</div>
+<div id="si">
+	<header>
+ 	<h1>SI</h1>
+  </header>
+  <p><span class="_no">Spirituelle og åndlige temaer.</span><span class="_sv">Andliga teman.</span><span class="_en">Spiritual themes.</span></p>
+</div>
+<div id="natur">
+	<header>
+  <h1>NATUR</h1>
+  </header>
+  <p><span class="_no"></span>Naturen, dyr, trær, stener.<span class="_sv">Natur, djur, träd, stenar.</span><span class="_en">Nature, animals, trees, stones.</span></p>
+</div>
 </section>
 </article>
  <footer>

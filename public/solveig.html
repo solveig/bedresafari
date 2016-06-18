@@ -50,16 +50,30 @@ div.flagg { margin-top:20px; margin-bottom: 0px; float: right;}
 #logoHeader { display: none; }
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
-a.mainHead{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 0.5vw; display:inline-block; float:left; }
-a.mainHead:hover{ color: #feb06c; }
+a.mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 3vw; display:block; float:left; }
+a.mainMenu:hover{ color: #feb06c; }
 section {	overflow: hidden; display: inline; }
 .left_float { float: left; margin: 1.8vw 0.8vw 0 0.4vw;}
 .right_float { float: right; margin: 2.4vw 0.8vw 0 0.4vw;}
 ul { list-style-type: none; display: block; width: 100%; }
-.kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6; float:left; }
+.kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6;}
 .kontakt:hover { background-color: #3290d9; color:#feb06c; }
 aside.asideKontakt { position: fixed; top: 30%; left: 20%; display: none; float :right; width:70vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; }
+a.mainCont{	
+  float:left;
+	background-color:#dbebf7;
+  color: black;
+   font-weight: bold;  
+    padding: 0 1.2vw;    
+    text-decoration: none;
+    text-align: left; 
+ 
+  border:0vw solid  #b4c8d6;
+}
 
+a.mainCont:hover{
+ color: #feb06c;
+}  
  li.liMenu{
 	width: 92vw;
 	height:auto;
@@ -106,7 +120,8 @@ li.liContentMer{
 }
 }
 @media only screen and (min-width: 1024px){
- 
+ a.mainMenu{  margin: 1vw; display:inline-block; float:left; }
+
 img.imgMenu{
 	width: 26vw !important;
 	
@@ -187,14 +202,14 @@ function transIt(isLang) {
     </div>     
   </a>  
   <ul class="menuList" id="menuList">
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedresafari');">BEDRESAFARI</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('lydsafari');">LYDSAFARI</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedredata');">BEDREDATA</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('emf');">EMF</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bergyl');">BERGYL</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('nbh');">NBH</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('si');">SI</a></li>
-  	<li><a class="mainHead" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('natur');">NATUR</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedresafari');">BEDRESAFARI</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('lydsafari');">LYDSAFARI</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bedredata');">BEDREDATA</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('emf');">EMF</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('bergyl');">BERGYL</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('nbh');">NBH</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('si');">SI</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('natur');">NATUR</a></li>
   </ul>    
     
   <div class="boks">
