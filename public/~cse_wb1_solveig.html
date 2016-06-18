@@ -16,7 +16,7 @@ h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
-p { margin:0; padding:0 0 0 1vw; }
+p { margin:0; padding:0 0 0 1vw; float:right; }
  
 a{  text-decoration: none; text-align: left; color: black; width:auto; }
 a:hover { color:#feb06c; }
@@ -123,8 +123,8 @@ li.liContentMer{
  a.mainMenu{  margin: 1vw; display:inline-block; float:left; }
 
 img.imgMenu{
-	width: 26vw !important;
-	
+	width: 8vw !important;
+	float: left;
   min-width: 100px;
   display:inline;
   float: left; 
@@ -237,40 +237,63 @@ function transIt(isLang) {
   	<nav class="navMenu">
     <ul>
   		<li class="liMenu">
-        <header>
-  	      <h1>BedreSafari</h1>
-        </header>
+        <a href="#" onclick="show('bedresafari');"> 
+        	<header>
+  	        <h1>BedreSafari</h1>
+          </header>
+    	    <img class="imgMenu" width="200" src="/bilder/logo.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">    
+        </a>
         <p><span class="_no">Hva jeg har å si, mine konsulent tjenester og event.</span><span class="_sv">Vad jag har att säga, min rådgivning och evenemang.</span><span class="_en">What I have to say, my consulting and event.</span></p>
         <a class="mainCont" href="#" onclick="show('lydsafari');"></a>
       </li>
       <li class="liMenu">
-    	  <h2>LydSafari</h2>
-    	  <img class="imgMenu" width="200" src="/bilder/solLydWeb.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">    
+    	  <a href="#" onclick="show('lydsafari');"> 
+    	  	<h2>LydSafari</h2>
+    	    <img class="imgMenu" width="200" src="/bilder/solLydWeb.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">    
+        </a>
         <p><span class="_no">Event, foredrag, opplevelser og kanskje lydhealing. Undersøke kirkens hemmeligheter. Sanse og formidle naturens skjulte frekvenser.</span><span class="_sv">Händelse, föreläsningar, erfarenheter och ljud läkning, ljud healing. Undersök kyrka hemligheter. Sanse och förmedla naturens dolda frekvenser.</span><span class="_en">Event, speech and perhaps sound healing. Examine church secrets. Sense and convey nature's hidden frequencies.</span></p>  
       </li>
       <li class="liMenu">
-        <h2>BedreData</h2>
+        <a href="#" onclick="show('bedredata');"> 
+        	<h2>BedreData</h2>
+          <img class="imgMenu" width="200px" src="/bilder/bedredataLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">
+        </a>
         <p><span class="_no">IT konsulent tjenester. -X3DOM,-MongoDB.</span><span class="_sv">IT-konsulttjänster. -X3DOM, -MongoDB.</span><span class="_en">IT consulting services. -X3DOM, -MongoDB.</span></p> 
       </li>
       <li class="liMenu">
-        <h2>EMF</h2>
+        <a href="#" onclick="show('emf');"> 
+        	<h2>EMF</h2>
+          <img class="imgMenu" width="200px" src="/bilder/emfLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">
+        </a>
         <p><span class="_no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="_sv">Lägre gräns av elektromagnetisk strålning.</span><span class="_en">Lower limits on electromagnetic radiation.</span></p> 
       </li>
       <li class="liMenu">
-        <h2>Bergyl</h2>
+        <a href="#" onclick="show('bergyl');"> 
+        	<h2>Bergyl</h2>
+          <img class="imgMenu" width="200px" src="/bilder/bergylLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">
+        </a>
         <p><span class="_no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="_sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="_en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p> 
  	    </li>
       <li class="liMenu">
-        <h2>NBH</h2>
+        <a href="#" onclick="show('nbh');"> 
+          <h2>NBH</h2>       
+          <img class="imgMenu" width="200px" src="/bilder/sky2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">
+        </a>
         <p><span class="_no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="_sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="_en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
  	    </li>
       <li class="liMenu">
-        <h2>SI</h2>
+        <a href="#" onclick="show('si');">
+        	<h2>SI</h2>
+          <img class="imgMenu" width="200px" src="/bilder/siLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">
+        </a>
         <p><span class="_no">Spirituelle og åndlige temaer.</span><span class="_sv">Andliga teman.</span><span class="_en">Spiritual themes.</span></p>
       </li>
       <li class="liMenu">
-        <h2>NATUR</h2>
-        <p><span class="_no"></span>Naturen, dyr, trær, stener.<span class="_sv">Natur, djur, träd, stenar.</span><span class="_en">Nature, animals, trees, stones.</span></p>
+        <a href="#" onclick="show('natur');"> 
+        	<h2>NATUR</h2>
+          <img class="imgMenu" width="200px" src="/bilder/naturLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">
+        </a>
+        <p><span class="_no">Naturen, dyr, trær, stener.</span><span class="_sv">Natur, djur, träd, stenar.</span><span class="_en">Nature, animals, trees, stones.</span></p>
       </li>
     </ul>
 </nav> 
