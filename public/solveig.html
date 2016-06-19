@@ -1,9 +1,7 @@
 <!doctype html>
 <html  lang="no" itemscope itemtype="http://schema.org/Article">
-	
-	
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0 ,">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ,">    
 <meta charset="UTF-8">  
 <title>BedreSafari</title>
 <style>
@@ -21,7 +19,6 @@ h6 { font-size: .75em; }
 p { margin:0; padding:0 0 0 1vw;}
  
 a{  text-decoration: none; text-align: left; color: black; width:auto; }
-a:focus { color:#feb06c; }
 article { background-color: #dbebf7; border:0.3vw solid  #ba5986; clear:both; clear: both;}  		
 #myHome { right: 100%;}
 .bslogo {display: inline-block; background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
@@ -29,7 +26,6 @@ article { background-color: #dbebf7; border:0.3vw solid  #ba5986; clear:both; cl
 
 .knapp9 { width:50px; height:50px; margin: 6px; }
 .knapp9b { width:60px; height:50px; border-left:6px solid   #feb06c; border-right:6px solid   #feb06c; margin: 6px 0;  }
-
 .knapp21 { width:313px; height:80px; border:0.3vw solid  #ba5986;}
 .leftC { float:left; clear:left; }
 .rightC { float:right; clear:right; }
@@ -53,40 +49,16 @@ div.flagg { margin-top:20px; margin-bottom: 0px; float: right;}
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
 a.mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 3vw; display:block; float:left; }
-a.mainMenu:focus{ color: #feb06c; }
 section {	overflow: hidden; display: inline; }
 .left_float { float: left; margin: 1.8vw 0.8vw 0 0.4vw;}
 .right_float { float: right; margin: 2.4vw 0.8vw 0 0.4vw;}
 ul { list-style-type: none; display: block; width: 100%; }
+li {display: inline-block; }
 .kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6;}
-.kontakt:focus { background-color: #3290d9; color:#feb06c; }
 aside.asideKontakt { position: fixed; top: 30%; left: 20%; display: none; float :right; width:70vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; }
-a.mainCont{	
-  float:left;
-	background-color:#dbebf7;
-  color: black;
-   font-weight: bold;  
-    padding: 0 1.2vw;    
-    text-decoration: none;
-    text-align: left; 
- 
-  border:0vw solid  #b4c8d6;
-}
+a.mainCont{	float:left; background-color:#dbebf7; color: black; font-weight: bold; padding: 0 1.2vw; text-decoration: none; text-align: left; border:0vw solid  #b4c8d6; }
+li.liMenu{ width: 92vw; height:auto; display:inline-block; border:0.3vw solid  #3290d9; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
 
-a.mainCont:focus{
- color: #feb06c;
-}  
- li.liMenu{
-	width: 92vw;
-	height:auto;
-  display:inline-block;
-
-  border:0.3vw solid  #3290d9;
-  margin: 1vw;
-  padding:1.2vw 0 0 0;
-
-  overflow:hidden;
-}
 li.liContent{
 	width: 88vw;
 	height:auto;
@@ -123,7 +95,6 @@ li.liContentMer{
 }
 @media only screen and (min-width: 1024px){
  a.mainMenu{  margin: 1vw; display:inline-block; float:left; }
-
 img.imgMenu{
 	width: 8vw !important;
 	float: left;
@@ -147,10 +118,13 @@ li.liMenu1{
 	width: 17vw;
 	height:60vh;
 }
-li.liMenu{
-	width: 17vw;
-	height:30vh;
-}
+li.liMenu{ width: 17vw; height:30vh; }
+
+a.mainMenu:hover{ color: #feb06c; }
+.kontakt:hover { background-color: #3290d9; color:#feb06c; }
+a.mainCont:hover{ color: #feb06c; }  
+a:hover { color:#feb06c; }
+
 
 }
 </style>
@@ -241,7 +215,7 @@ function transIt(isLang) {
   		<li class="liMenu">
         <a href="#" onclick="show('bedresafari');"> 
         	<header>
-  	        <h1>BedreSafari</h1>
+  	        <h2>BedreSafari</h2>
           </header>
     	    <img class="imgMenu" width="200" src="/bilder/logo.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">    
         </a>
