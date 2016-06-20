@@ -20,6 +20,7 @@ article { background-color: #dbebf7; }
 #myHome { right: 100%;}
 .bslogo {display: inline-block; background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
 .bsmenu { background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%); }
+.hamburger { display: inline;}
 .knapp9 { width:50px; height:50px; margin: 6px; }
 .knapp9b { width:60px; height:50px; border-left:6px solid   #feb06c; border-right:6px solid   #feb06c; margin: 6px 0;  }
 .knapp21 { width:313px; height:80px; border:0.3vw solid  #ba5986;}
@@ -41,7 +42,7 @@ img.imgMenu{ float: left; min-width: 100px; display:none; float: left; padding: 
 #logoHeader { display: none; }
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
-.mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 3vw; display:block; float:left; }
+.mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 130%; padding: 0 0.02em; margin: 1vw; display:block; }
 section {	overflow: hidden; display: inline; }
 .left_float { float: left; margin: 1.8vw 0.8vw 0 0.4vw;}
 .right_float { float: right; margin: 2.4vw 0.8vw 0 0.4vw;}
@@ -76,8 +77,10 @@ a:hover { color:#feb06c; }
 }
 
 @media only screen and (min-width: 1424px){
-body { width: 1424px;}
-.bsMenu {display: none;}
+.mainMenu{  margin: 1vw; display:inline-block; float:left; }	
+html {  background-color: white;}
+body { width: 1424px; margin:auto;}
+.hamburger { display: none;}
 .menuList { display: inline;}
 
 }	
@@ -132,7 +135,7 @@ function transIt(isLang) {
   </a>
   <h1  id="subH1" class="logoTxt">BedreSafari</h1>
    
- <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened')">
+ <a class="hamburger" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened')">
     <div class="knapp9 rightC bsmenu">
     </div>     
   </a>  
