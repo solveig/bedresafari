@@ -64,6 +64,7 @@ ul { list-style-type: none; display: inline-block; width: 100%; }
 li {display: inline; float:left;}
 .kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6;}
 aside.asideKontakt { position: fixed; top: 30%; left: 20%; display: none; float :right; width:70vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; }
+
 a.mainCont{	float:left; background-color:#dbebf7; color: black; font-weight: bold; padding: 0 1.2vw; text-decoration: none; text-align: left; border:0vw solid  #b4c8d6; }
 li.liMenu{ width: 92vw; height:auto; display:inline; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
  li.liContent{
@@ -106,7 +107,7 @@ li.liContentMer{
 }
 @media only screen and (min-width: 1024px){
  a.mainMenu{  margin: 1vw; display:inline-block; float:left; }
-img.imgMenu { display:inline; z-index: 100;}   
+img.imgMenu { display:inline; z-index: 100; width: 80px; height:auto;}   
 .solVise { display: inline; }
 #solStrek { display: none }
  
@@ -151,7 +152,7 @@ function transIt(isLang) {
     x = document.getElementsByClassName(isLang);
 
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "inline-block";
+        x[i].style.display = "inline";
     }  
   }
   lastLang = isLang;               
@@ -217,7 +218,7 @@ function transIt(isLang) {
         	<header>
   	        <h2>BedreSafari</h2>
           </header>
-    	    <img class="imgMenu" width="25" height="50" src="bilder/logo.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">    
+    	    <img class="imgMenu" width="50" height="50" src="bilder/logo.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">    
         </a>
         <p><span class="no">Hva jeg har å si, mine konsulent tjenester og event.</span><span class="sv">Vad jag har att säga, min rådgivning och evenemang.</span><span class="en">What I have to say, my consulting and event.</span></p>
         <a class="mainCont" href="#" onclick="show('lydsafari');"></a>
