@@ -63,7 +63,7 @@ section {	overflow: hidden; display: inline; }
 ul { list-style-type: none; display: inline-block; width: 100%; }
 li {display: inline; float:left;}
 .kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6;}
-aside.asideKontakt { position: fixed; top: 30%; left: 20%; display: none; float :right; width:70vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; }
+aside.asideKontakt { position: fixed; top: 30%; left: 20%; display: none; float :right; width:70vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; cursor: pointer;}
 
 a.mainCont{	float:left; background-color:#dbebf7; color: black; font-weight: bold; padding: 0 1.2vw; text-decoration: none; text-align: left; border:0vw solid  #b4c8d6; }
 li.liMenu{ width: 92vw; height:auto; display:inline; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
@@ -78,6 +78,8 @@ li.liMenu{ width: 92vw; height:auto; display:inline; margin: 1vw; padding:1.2vw 
   float:left;  
   overflow:hidden;
 }
+.closemsg::after { content: "\00D7"; display: inline-block; position: fixed; top: 33%; left: 87%; z-index: 5002; color: black; border:0.3vw solid #406584; border-radius: 20px;width: 20px; height: 20px; line-height: 18px; text-align: center; margin: 0.1vw; background-color: #b4c8d6; font-size: 200%; font-weight: bold; cursor: pointer; }
+ 
 
 @media only screen and (min-width: 768px){
 li.liMenu { width: 42vw; height:auto; z-index: 1; border:0.3vw solid  #3290d9; }
@@ -388,7 +390,7 @@ function transIt(isLang) {
        </ul>
     </nav>
   </footer>  
-  <aside id="kontaktMer" class="asideKontakt" onclick="document.getElementById('kontaktMer').style.display='none';">
+  <aside id="kontaktMer" class="asideKontakt closemsg" onclick="document.getElementById('kontaktMer').style.display='none';">
              <h1 id="contact2Txt">KONTAKT</h1> 
              <p><span itemprop="name">Solveig Løvhaug</span></p>   	   
       	     <p><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"> 
@@ -397,7 +399,7 @@ function transIt(isLang) {
              <p>Email: <span itemprop="email">solveig@bedredata.no</span></p>
              <p>Mobil: +47 970 94 414  Fast telefon: +47 69178930</p>
   </aside>  
-    <aside id="blogMer" class="asideKontakt" onclick="document.getElementById('blogMer').style.display='none';">
+    <aside id="blogMer" class="asideKontakt closemsg" onclick="document.getElementById('blogMer').style.display='none';">
              <h1 id="blog2Txt">BLOGG</h1> 
              <p>Blogggen kommer her etterhvert</p>   	         	                
   </aside>  
