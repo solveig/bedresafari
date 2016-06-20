@@ -6,7 +6,7 @@
 <title>BedreSafari</title>
 <style>
 html, body, header, footer, article, div, a, span, ul, li {font-family: arial, sans-serif; margin: 0; padding: 0; outline: none; box-sizing: border-box; }
-body { background-color: #c0e9ff; color: black; font-size: 16px; border:0.5vw solid  #ba5986; }
+body { background-color: #c0e9ff; color: black; font-size: 16px; border:7px ridge #ba5986; }
 .x {  overflow: hidden;}
 header, footer,article {  clear:both; }
 h1,h2,h3,h4 { margin: 0.1vw 0 0 0; padding:0 0 0 0.5vw; }
@@ -15,38 +15,35 @@ h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 p { margin:0; padding:0 0 0 1vw;}
- 
 a{  text-decoration: underline; text-align: left; color: black; width:auto; }
 article { background-color: #dbebf7; }  		
 #myHome { right: 100%;}
+.aaa {  background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
 .bslogo {display: inline-block; background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
 .bsmenu { background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%); }
-
+.hamburger { display: inline;}
 .knapp9 { width:50px; height:50px; margin: 6px; }
 .knapp9b { width:60px; height:50px; border-left:6px solid   #feb06c; border-right:6px solid   #feb06c; margin: 6px 0;  }
-.knapp21 { width:313px; height:80px; border:0.3vw solid  #ba5986;}
+.knapp21 { width:313px; height:80px; border:6px solid  #ba5986;}
 .leftC { float:left; clear:left; }
 .rightC { float:right; clear:right; }
 .boks { clear:both;    }
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia, sans-serif; font-size: 210%; margin: 20px 0 0 0; float:left}
 @media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; } }
-.circle{border-radius:50%; border:0.3vw solid   #feb06c;}
+.circle{border-radius:50%; border:6px solid   #feb06c;}
 .flagg { margin-top:20px; margin-bottom: 0px; float: right;}
-
 #norsk { width : 50px; height: 40px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px; }
 #svensk { width: 50px; height: 40px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:-52px 0px; }
 #engelsk { width: 80px; height: 40px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position: -122px 0px; }
-
 #LydSafari, #BedreData, #EMF, #Bergyl, #NBH, #Si, #Natur { display : none; }
 .no {display: inline;  }
 .sv, .en, .solVise { display: none }
-	
 img.imgMenu{ float: left; min-width: 100px; display:none; float: left; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }
 #solStrek {display: inline-block; }
 #logoHeader { display: none; }
 .menuList.opened { display: inline-block; overflow:hidden; }
 .menuList { display: none; }
-.mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 140%; padding: 0 0.02em; margin: 3vw; display:block; float:left; }
+.mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 120%; padding: 0 0.02em; margin: 1vw; display:block; }
 section {	overflow: hidden; display: inline; }
 .left_float { float: left; margin: 1.8vw 0.8vw 0 0.4vw;}
 .right_float { float: right; margin: 2.4vw 0.8vw 0 0.4vw;}
@@ -54,47 +51,40 @@ ul { list-style-type: none; display: inline-block; width: 100%; }
 li {display: inline; float:left;}
 .kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6;}
 .asideKontakt { position: fixed; top: 10%; left: 10%; display: none; float :right; width:80vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; cursor: pointer;}
-
 .mainCont{	float:left; background-color:#dbebf7; color: black; font-weight: bold; padding: 0 1.2vw; text-decoration: none; text-align: left; border:0vw solid  #b4c8d6; }
 .liMenu{ width: 92vw; height:auto; display:inline; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
- .liContent{
-	width: 88vw;
-	height:auto;
-  display:inline-block;
-  float: left;
-  border:0.3vw ridge  #3290d9;
-  margin: 1vw;
-  padding:1.2vw 0 0 0;
-  float:left;  
-  overflow:hidden;
-}
+.liContent{ width: 88vw; height:auto; display:inline; float: left; border:7px ridge #3290d9; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
 .closemsg::after { content: "\00D7"; display: inline-block; position: fixed; top: 12%; left: 78%; z-index: 5002; color: black; border:0.3vw solid #406584; border-radius: 20px;width: 20px; height: 20px; line-height: 18px; text-align: center; margin: 0.1vw; background-color: #b4c8d6; font-size: 200%; font-weight: bold; cursor: pointer; }
  
 @media only screen and (min-width: 768px){
-.liMenu { width: 42vw; height:auto; z-index: 1; border:0.3vw solid  #3290d9; }
+.liMenu { width: 42vw; height:auto; z-index: 1; border:7px solid  #3290d9; }
 img.imgMenu { display:none; z-index: 100;}  
-.liContent{
-	width: 46vw;
-	height:auto;
-}
+.liContent { width: 46vw; height:auto; }
 }	 
  
-@media only screen and (min-width: 1024px){
-.mainMenu{  margin: 1vw; display:inline-block; float:left; }
+@media only screen and (min-width: 1024px) {
+
+.hamburger { display: none;}
+.menuList { display: inline;}
+.mainMenu{  margin: 0.2vw; display:inline-block; float:left; }
 img.imgMenu { display:inline; z-index: 100; width: 80px; height:auto;}   
 .solVise { display: inline; }
 #solStrek { display: none }
- 
 #logoHeader { float: left; display: inline-block;	width:60px; height:60px; } 
 .bslogo {display: none; }
- 
-.liMenu{ width: 30vw; height:22vh; border:0.3vw solid  #3290d9; }
-
 .mainMenu:hover{ color: #feb06c; }
 .kontakt:hover { background-color: #3290d9; color:#feb06c; }
 .mainCont:hover{ color: #feb06c; }  
 a:hover { color:#feb06c; }
+@media only screen and (min-width: 1200px){
+html {  background-color: white;}
+body { width: 1200px; margin:auto;}
+.liContent { width: 540px; height:auto; }
+.liMenu{ width: 360px; height:22vh; border:7px solid  #3290d9; }
 }
+
+}
+ 
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
 <link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
@@ -106,7 +96,7 @@ function show(who) {
   	document.getElementById(lastShow).style.display="none";
     document.getElementById(who).style.display= "inline-block";	
     if (who != "BedreSafari") {
-      document.getElementById("subH1").innerHTML="BedreSafari / " + who;	
+      document.getElementById("subH1").innerHTML="<small>BedreSafari</small>/" + who;	
     } else {
         document.getElementById("subH1").innerHTML="BedreSafari";	
     }	 
@@ -146,11 +136,11 @@ function transIt(isLang) {
   </a>
   <h1  id="subH1" class="logoTxt">BedreSafari</h1>
    
- <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened')">
+ <a class="hamburger" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened')">
     <div class="knapp9 rightC bsmenu">
     </div>     
   </a>  
-  <ul class="menuList" id="menuList">
+  <ul class="menuList aaa" id="menuList">
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreSafari');">BEDRESAFARI</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('LydSafari');">LYDSAFARI</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreData');">BEDREDATA</a></li>
@@ -244,7 +234,7 @@ function transIt(isLang) {
       <p><span class="no">Du føler frysninger eller varme.</span><span class="sv">Känna frossa eller värme.</span><span class="en">Feel chills or heating</span></p> 
       <h3><span class="no">Ta selv lyden til</span><span class="sv">Ta även ljudet av</span><span class="en">By yourself take sound from</span></h3>
       <p><span class="no">Gjenstand, tegning, maleri - høres det ut som en melodi.</span><span class="sv">föremål, teckning, målning. Hva hørs? Spelas en melodi.</span><span class="en">Object, drawing, paining or do you hear a melody.</span></p>
-      <p><span class="no">Er lyden harmonisk, skurrende, skummel eller er det setninger som blir sagt.</span><span class="sv">Är ljud harmonisk, raspiga, skumma eller låter det som fraser</span><span class="en">Is the sound harmonic, jarring, scary or do you hear senteces.</span></p><p><br><br><br></p>         
+      <p><span class="no">Er lyden harmonisk, skurrende, skummel eller er det setninger som blir sagt.</span><span class="sv">Är ljud harmonisk, raspiga, skumma eller låter det som fraser.<br><br></span><span class="en">Is the sound harmonic, jarring, scary or do you hear senteces.<br><br></span></p><p><br><br><br></p>         
     </div> 
     <div class="liContent">
       <header><h1 id="Personlig"><span class="no">Personlig lydreise</span><span class="sv">Personlig lydreise</span><span class="en">Personal sound</span></h1></header>
@@ -299,9 +289,9 @@ function transIt(isLang) {
       <p><span class="no">Jobbet for energibransjen med PL/SQL, C, C ++, Sybase.</span><span class="sv">Arbetade för energibranschen med PL / SQL, C, C ++, Sybase. </span><span class="en">Worked for the energy industry with PL/SQL, C, C ++, Sybase.</span></p>
       <p><span class="no">For mer informasjon se min </span>
       	 <span class="sv">För mer information se mina </span>
-      	 <span class="en">For more information see my </p></span>
+      	 <span class="en">For more information see my </span>
       	 <a href="https://no.linkedin.com/in/solveiglovhaug" target="_blank" >LinkedIn profil</a>
-      	 <p><span class="no"> eller be om min CV.</span><span class="sv">eller begära mitt CV.</span><span class="en"> or request my resume.</span></p>
+      	 <span class="no"> eller be om min CV.</span><span class="sv">eller begära mitt CV.</span><span class="en"> or request my resume.</span></p>
       <p><span class="no">Jeg er pensjonist og klar for mindre oppgaver.</span><span class="sv">Jag pensionerad och redo för mindre uppgifter.</span><span class="en">I am retired and ready for smaller tasks.</span></p>
     </div>
     <div class="liContent">
@@ -309,11 +299,12 @@ function transIt(isLang) {
       <p><span class="no">X3DOM - 3D grafikk (X3D)</span><span class="sv">X3DOM - 3D-grafik (X3D)</span><span class="en">X3DOM - 3D Graphics (X3D)</span></p>
       <p><span class="no">Integrerer 3D inn i HTML5 uten plugins. Resultatet ska se likt ut på de fleste device og browsere.</span><span class="sv">Integrerar 3D i HTML5 utan plugins. Resultatet ska vara identiska på de flesta enhet och webbläsare.</span><span class="en">Integrates 3D into HTML5 without plugins. The result shall be identical on most device and browsers.</span></p>
 	    <p><br><a  href="http://www.lydsafari.no/ork/" target="_blank" >
-      <figure><img id= "ork" width="141px" height="200px" src="/bilder/ork2.gif"   alt="Animasjon i X3DOM"/><figcaptain><span class="no"><span class="no">En liten animasjon jeg har laget med X3DOM. </span><span class="sv">En liten animation som jag gjorde med X3DOM.</span><span class="en">A small animation I made with X3DOM</span></figcaptain></figure></a></p>
+      <figure><img id= "ork" width="141px" height="200px" src="/bilder/ork2.gif"   alt="Animasjon i X3DOM"/><figcaptain>
+      	<span class="no">En liten animasjon jeg har laget med X3DOM. </span><span class="sv">En liten animation som jag gjorde med X3DOM.</span><span class="en">A small animation I made with X3DOM</span></figcaptain></figure></a></p>
       <p><br><a href="http://www.x3dom.org/"><span class="no">Les mer om X3DOM</span><span class="sv">Läs mer om X3DOM detaljer </span><span class="en">More info X3DOM.</span></a></p>
     </div>
     <div class="liContent">
-      <header><h1>MongoDB</header>
+      <header><h1>MongoDB</h1></header>
  	    <p><span class="no">MongoDB er en NoSql database , den er OpenSource.Jeg bruker den sammen med Node.js, JSON og Javascript.BIG DATA.</span><span class="sv">MongoDB är en NoSQL databas, är det OpenSource.Jeg använda den med Node.js, JSON och Javascript.BIG DATA. </span><span class="en">MongoDB is a NoSQL database, it is OpenSource.I using it with Node.js, JSON and Javascript.BIG DATA. </span><a href="https://www.mongodb.com/"><span class="no">Les mer mongodb.com</span><span class="sv">Läs mer mongodb .com detaljer </span><span class="en">More info MongoDB</span></a></p>
 	    <p><span class="no">Jeg har brukt MongoDB siden 2013 i små private prosjekter. Har tatt kurs i MongoDB og bestått.</span><span class="sv">Jag har använt MongoDB sedan 2013 i små privata projekt. Har gått kurser i MongoDB och passerade.</span><span class="en">I have been using MongoDB since 2013 in small private projects. Has taken courses in MongoDB and passed.</span></p>
 	    <p><a href="http://www.x3dom.org/"><img id= "img1" width="459px" height="200px" src="/bilder/mongodb.gif"   alt="MongoDB kurs"/> </a></p>
@@ -329,26 +320,26 @@ function transIt(isLang) {
       <h3><span class="no">er en del av "The World Wide Web Consortium (W3C)" standarden.</span><span class="sv">är en del av "The World Wide Web Consortium (W3C)" standard.</span><span class="en">is part of "The World Wide Web Consortium (W3C)" standard. </span></h3>
       <p><span class="no">HTML og XML bygger på SGML. I 1990 fikk jeg en konsulent jobb om å bli SGML ekspert. En jobb jeg gjorde var å lage en DTD (Document Type Definition ) for den tekst-editoren som Ericcson Radar brukte.</span><span class="sv"></span> HTML och XML är baserade på SGML. År 1990 fick jag en konsult jobb att bli SGML expert. Ett jobb jag gjorde var att skapa en DTD (Document Type Definition) för textredigeraren som Ericcson Radar används.<span class="en">HTML and XML are based on SGML. In 1990 I got a consulting job to become SGML expert. A job I did was to create a DTD (Document Type Definition) for the text editor as Ericcson Radar used.</span></p>
       <p><span class="no">Senere har jeg brukt XML, XSLT, XSD og SVG i mange prosjekt. HTML er også en del av W3C.</span><span class="sv">Senare använde jag XML, XSLT, XSD och SVG för många projekt. HTML är också en del av W3C.</span><span class="en">Later I used XML, XSLT, XSD and SVG for many projects. HTML is also part of the W3C.</span></p>
-      <p<br><a href=">https://www.w3.org/"><span class="no">Les mer om W3C</span><span class="sv">Les mer om W3C detaljer </span><span class="en">More info W3C.</span></a></p>     
+      <p<br><a href="https://www.w3.org/"><span class="no">Les mer om W3C</span><span class="sv">Les mer om W3C detaljer </span><span class="en">More info W3C.</span></a></p>     
     </div>
     <div class="liContent">
       <header><h1>Fortran,C,C++,PHP,EriPascal</h1></header>
-      <p><span class="no">Jeg begynte å jobbe med data i 1980 og siden jeg har jobbet i mange forskjellige firmaer både som ansatt og konsulent, har jeg erfaring med mange programmering  språk.<span class="sv">Jag började arbeta med data i 1980 och eftersom jag har arbetat i många olika företag både som anställd och konsult, jag har erfarenhet av många programmeringsspråk.</span><span class="en">I started working with data in 1980 and since I have worked in many different companies both as an employee and consultant, I have experience in many programming languages</span> </p>
-      <p><span class="no">Fortran startet jeg med og avsluttet jeg min yrkeskarriere  før jeg ble pensjonist.<span class="sv">Fortran I started and ended my career before I retired.Fortran jag började och slutade min karriär innan jag gick i pension. </span><span class="en">Fortran I started and ended my career before I retired.</span> </p>
-      <p><span class="no">EriPascal er et sanntids system som jeg kunne veldig godt og jeg syns det var morsomt. Jeg måtte holde tunga rett i munn når jeg lagde "symbolsk debugger" for Eri-Pascal kompilatoren". Men jeg fikk samvittighetsproblem med å jobbe med produktene. Derfor sier jeg i dag nei til alle jobber innen forsvaret.<span class="sv">EriPascal är en realtids-system som jag kunde mycket väl och jag tyckte det var roligt. Jag var tvungen att hålla min tunga rätt i munnen när jag gjorde "symbolisk debugger" för Eri-Pascal kompilator. "Men jag fick samvete problem med att arbeta med produkterna. Därför säger jag i dag avvisande av alla jobb i försvaret.</span><span class="en">EriPascal is a real-time system that I could very well and I thought it was funny. I had to hold my tongue right in the mouth when I made "symbolic debugger" for Eri-Pascal compiler. "But I got conscience problem with working with the products. Therefore I say today rejection of all jobs in the defense. </span></p>
-      <p><span class="no">En morsom C jobb var å endre på en ftp-driver og en annen var å decode Huffman-tabell fra et fax-program.</p><p>For OMX Technology jobbet jeg bl.a. med BusinessObjects, C og C++.<span class="sv">En rolig C jobb var att ändra en ftp föraren och en annan var att avkoda Huffman tabellen från en fax program..</p><p>För OMX Technology, arbetade jag bland annat med Business Objects, C och C ++.</span><span class="en">A funny C job was to change an ftp driver and another was to decode the Huffman table from a fax application. </p> <p> For OMX Technology, I worked among others with Business Objects, C and C ++.</span></p>
+      <p><span class="no">Jeg begynte å jobbe med data i 1980 og siden jeg har jobbet i mange forskjellige firmaer både som ansatt og konsulent, har jeg erfaring med mange programmering språk.</span><span class="sv">Jag började arbeta med data i 1980 och eftersom jag har arbetat i många olika företag både som anställd och konsult, jag har erfarenhet av många programmeringsspråk.</span><span class="en">I started working with data in 1980 and since I have worked in many different companies both as an employee and consultant, I have experience in many programming languages.</span> </p>
+      <p><span class="no">Fortran startet jeg med og avsluttet jeg min yrkeskarriere  før jeg ble pensjonist.</span><span class="sv">Fortran I started and ended my career before I retired.Fortran jag började och slutade min karriär innan jag gick i pension. </span><span class="en">Fortran I started and ended my career before I retired.</span> </p>
+      <p><span class="no">EriPascal er et sanntids system som jeg kunne veldig godt og jeg syns det var morsomt. Jeg måtte holde tunga rett i munn når jeg lagde "symbolsk debugger" for Eri-Pascal kompilatoren". Men jeg fikk samvittighetsproblem med å jobbe med produktene. Derfor sier jeg i dag nei til alle jobber innen forsvaret.</span><span class="sv">EriPascal är en realtids-system som jag kunde mycket väl och jag tyckte det var roligt. Jag var tvungen att hålla min tunga rätt i munnen när jag gjorde "symbolisk debugger" för Eri-Pascal kompilator. "Men jag fick samvete problem med att arbeta med produkterna. Därför säger jag i dag avvisande av alla jobb i försvaret.</span><span class="en">EriPascal is a real-time system that I could very well and I thought it was funny. I had to hold my tongue right in the mouth when I made "symbolic debugger" for Eri-Pascal compiler. "But I got conscience problem with working with the products. Therefore I say today rejection of all jobs in the defense. </span></p>
+      <p><span class="no">En morsom C jobb var å endre på en ftp-driver og en annen var å decode Huffman-tabell fra et fax-program.</p><p>For OMX Technology jobbet jeg bl.a. med BusinessObjects, C og C++.</span><span class="sv">En rolig C jobb var att ändra en ftp föraren och en annan var att avkoda Huffman tabellen från en fax program..</p><p>För OMX Technology, arbetade jag bland annat med Business Objects, C och C ++.</span><span class="en">A funny C job was to change an ftp driver and another was to decode the Huffman table from a fax application. </p> <p> For OMX Technology, I worked among others with Business Objects, C and C ++.</span></p>
     </div>
     <div class="liContent">
       <header><h1>PL/SQL,Oracle,Sybase,Sybase IQ</h1></header>
-      <p><span class="no">For meg var database en gang noe negativt, alt for "høy-nivå". jeg likte å kode i assembler og C.<span class="sv">För mig databas när något negativt, allt för" hög nivå ". Jag tyckte om att koda i assembler och C.</span><span class="en"> For me database once something negative, all for "high-level". I liked to code in assembler and C.</span> </p>
-      <p><span class="no">Så fikk jeg en konsulent jobb å optimere et C program og fant ut at den bese løsningen var å bruke PL/SQL. Jeg ble imponert over hvor mye mindre kode og hvor mye sikrere kode jeg får ved å bruke database.<span class="sv">å jag fick en konsult för att optimera ett C-program och fann att det motverkar lösning var att använda PL / SQL. Jag var imponerad med hur mycket mindre kod och hur mycket säkrare kod jag får använda databasen.</span><span class="en">So I got a consultant to optimize a C program and found that it defeats the solution was to use Pl/SQL. I was impressed with how much less code and how much safer code I get using the database. </span></p>
-      <p><span class="no">Siden har jeg jobbet med mange prosjekt med PL/SQL og Oracle, Sybase og C++ og Pl/SQL, Oracle og BussinessObjects. Jeg har også jobbet med Sybase IQ som er en datavarehus-database. Jeg ble imponert over hvor fort det gikk.<span class="sv">Eftersom jag har arbetat med många projekt med PL / SQL och Oracle, Sybase och C ++ och PL / SQL, Oracle och BussinessObjects. Jag har också arbetat med Sybase IQ som ett datalager databas. Jag var imponerad med hur snabbt det gick. </span><span class="en">Since I have worked with many projects with PL / SQL and Oracle, Sybase and C ++ and Pl / SQL, Oracle and BussinessObjects. I have also worked with Sybase IQ as a data warehouse database. I was impressed with how fast it went.</span></p>' 
+      <p><span class="no">For meg var database en gang noe negativt, alt for "høy-nivå". jeg likte å kode i assembler og C.</span><span class="sv">För mig databas när något negativt, allt för" hög nivå ". Jag tyckte om att koda i assembler och C.</span><span class="en"> For me database once something negative, all for "high-level". I liked to code in assembler and C.</span> </p>
+      <p><span class="no">Så fikk jeg en konsulent jobb å optimere et C program og fant ut at den bese løsningen var å bruke PL/SQL. Jeg ble imponert over hvor mye mindre kode og hvor mye sikrere kode jeg får ved å bruke database.</span><span class="sv">å jag fick en konsult för att optimera ett C-program och fann att det motverkar lösning var att använda PL / SQL. Jag var imponerad med hur mycket mindre kod och hur mycket säkrare kod jag får använda databasen.</span><span class="en">So I got a consultant to optimize a C program and found that it defeats the solution was to use Pl/SQL. I was impressed with how much less code and how much safer code I get using the database. </span></p>
+      <p><span class="no">Siden har jeg jobbet med mange prosjekt med PL/SQL og Oracle, Sybase og C++ og Pl/SQL, Oracle og BussinessObjects. Jeg har også jobbet med Sybase IQ som er en datavarehus-database. Jeg ble imponert over hvor fort det gikk.</span><span class="sv">Eftersom jag har arbetat med många projekt med PL / SQL och Oracle, Sybase och C ++ och PL / SQL, Oracle och BussinessObjects. Jag har också arbetat med Sybase IQ som ett datalager databas. Jag var imponerad med hur snabbt det gick. </span><span class="en">Since I have worked with many projects with PL / SQL and Oracle, Sybase and C ++ and Pl / SQL, Oracle and BussinessObjects. I have also worked with Sybase IQ as a data warehouse database. I was impressed with how fast it went.</span></p>' 
     </div>   
   </section> 
   <section id="EMF">
     <div class="liContent">
 	    <header><h1>EMF <small>oversikt</small></h1></header>
-      <p><span class="no"><span class="no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="sv">Lägre gräns av elektromagnetisk strålning.</span><span class="en">Lower limits on electromagnetic radiation.</span></p>
+      <p><span class="no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="sv">Lägre gräns av elektromagnetisk strålning.</span><span class="en">Lower limits on electromagnetic radiation.</span></p>
     </div>
     <div class="liContent">
       <header><h1></h1></header>
@@ -381,7 +372,7 @@ function transIt(isLang) {
   <section id="Bergyl">  	
    <div class="liContent">
   	  <header><h1>Bergyl <small>oversikt</small></h1></header>
-      <p><span class="no"><span class="no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p>
+      <p><span class="no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p>
     </div>
     <div class="liContent">
       <header><h1></h1></header>
@@ -414,7 +405,7 @@ function transIt(isLang) {
   <section id="NBH">
 	  <div class="liContent">
      <header><h1>NBH <small>oversikt</small></h1></header>
-      <p><span class="no"><span class="no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
+      <p><span class="no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
     </div>
     <div class="liContent">
       <header><h1></h1></header>
@@ -447,7 +438,7 @@ function transIt(isLang) {
   <section id="Si">
     <div class="liContent">
       <header><h1>SI <small>oversikt</small></h1></header>
-      <p><span class="no"><span class="no">Spirituelle og åndlige temaer.</span><span class="sv">Andliga teman.</span><span class="en">Spiritual themes.</span></p>
+      <p><span class="no">Spirituelle og åndlige temaer.</span><span class="sv">Andliga teman.</span><span class="en">Spiritual themes.</span></p>
     </div>
     <div class="liContent">
       <header><h1></h1></header>
@@ -481,7 +472,7 @@ function transIt(isLang) {
   <section id="Natur" >
     <div class="liContent">
 	    <header><h1>NATUR <small>oversikt</small></h1></header>
-      <p><span class="no"></span><span class="no">Naturen, dyr, trær, stener.<span class="sv">Natur, djur, träd, stenar.</span><span class="en">Nature, animals, trees, stones.</span></p>
+      <p></span><span class="no">Naturen, dyr, trær, stener.<span class="sv">Natur, djur, träd, stenar.</span><span class="en">Nature, animals, trees, stones.</span></p>
     </div>
     <div class="liContent">
       <header><h1></h1></header>
