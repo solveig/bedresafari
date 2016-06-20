@@ -18,6 +18,7 @@ p { margin:0; padding:0 0 0 1vw;}
 a{  text-decoration: underline; text-align: left; color: black; width:auto; }
 article { background-color: #dbebf7; }  		
 #myHome { right: 100%;}
+.aaa {  background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
 .bslogo {display: inline-block; background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
 .bsmenu { background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%); }
 .hamburger { display: inline;}
@@ -139,7 +140,7 @@ function transIt(isLang) {
     <div class="knapp9 rightC bsmenu">
     </div>     
   </a>  
-  <ul class="menuList" id="menuList">
+  <ul class="menuList aaa" id="menuList">
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreSafari');">BEDRESAFARI</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('LydSafari');">LYDSAFARI</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreData');">BEDREDATA</a></li>
