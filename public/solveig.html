@@ -15,13 +15,11 @@ h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 p { margin:0; padding:0 0 0 1vw;}
- 
 a{  text-decoration: underline; text-align: left; color: black; width:auto; }
 article { background-color: #dbebf7; }  		
 #myHome { right: 100%;}
 .bslogo {display: inline-block; background: radial-gradient(ellipse closest-side,black , #b4c8d6 6%, #733e32 7%, white 8%, #b4c8d6 9%, #733e32 12%, white 15%, #b4c8d6 18%, #733e32 40%, #b4c8d6 53%, #ba5986 54%); }
 .bsmenu { background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%); }
-
 .knapp9 { width:50px; height:50px; margin: 6px; }
 .knapp9b { width:60px; height:50px; border-left:6px solid   #feb06c; border-right:6px solid   #feb06c; margin: 6px 0;  }
 .knapp21 { width:313px; height:80px; border:0.3vw solid  #ba5986;}
@@ -32,15 +30,12 @@ article { background-color: #dbebf7; }
 @media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; } }
 .circle{border-radius:50%; border:0.3vw solid   #feb06c;}
 .flagg { margin-top:20px; margin-bottom: 0px; float: right;}
-
 #norsk { width : 50px; height: 40px; background : url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:0px 0px; }
 #svensk { width: 50px; height: 40px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position:-52px 0px; }
 #engelsk { width: 80px; height: 40px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position: -122px 0px; }
-
 #LydSafari, #BedreData, #EMF, #Bergyl, #NBH, #Si, #Natur { display : none; }
 .no {display: inline;  }
 .sv, .en, .solVise { display: none }
-	
 img.imgMenu{ float: left; min-width: 100px; display:none; float: left; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }
 #solStrek {display: inline-block; }
 #logoHeader { display: none; }
@@ -54,29 +49,15 @@ ul { list-style-type: none; display: inline-block; width: 100%; }
 li {display: inline; float:left;}
 .kontakt  { text-align:center; border:0.1vw solid #406584; border-radius: 2vw; padding: 0.8vw; margin: 1.3vw 0.2vw; font-size: 140%; font-weight: bold; display: inline-block; background:#b4c8d6;}
 .asideKontakt { position: fixed; top: 10%; left: 10%; display: none; float :right; width:80vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; cursor: pointer;}
-
 .mainCont{	float:left; background-color:#dbebf7; color: black; font-weight: bold; padding: 0 1.2vw; text-decoration: none; text-align: left; border:0vw solid  #b4c8d6; }
 .liMenu{ width: 92vw; height:auto; display:inline; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
- .liContent{
-	width: 88vw;
-	height:auto;
-  display:inline-block;
-  float: left;
-  border:0.3vw ridge  #3290d9;
-  margin: 1vw;
-  padding:1.2vw 0 0 0;
-  float:left;  
-  overflow:hidden;
-}
+.liContent{ width: 88vw; height:auto; display:inline; float: left; border:0.3vw ridge  #3290d9; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
 .closemsg::after { content: "\00D7"; display: inline-block; position: fixed; top: 12%; left: 78%; z-index: 5002; color: black; border:0.3vw solid #406584; border-radius: 20px;width: 20px; height: 20px; line-height: 18px; text-align: center; margin: 0.1vw; background-color: #b4c8d6; font-size: 200%; font-weight: bold; cursor: pointer; }
  
 @media only screen and (min-width: 768px){
 .liMenu { width: 42vw; height:auto; z-index: 1; border:0.3vw solid  #3290d9; }
 img.imgMenu { display:none; z-index: 100;}  
-.liContent{
-	width: 46vw;
-	height:auto;
-}
+.liContent { width: 46vw; height:auto; }
 }	 
  
 @media only screen and (min-width: 1024px){
@@ -84,17 +65,19 @@ img.imgMenu { display:none; z-index: 100;}
 img.imgMenu { display:inline; z-index: 100; width: 80px; height:auto;}   
 .solVise { display: inline; }
 #solStrek { display: none }
- 
 #logoHeader { float: left; display: inline-block;	width:60px; height:60px; } 
 .bslogo {display: none; }
- 
-.liMenu{ width: 30vw; height:22vh; border:0.3vw solid  #3290d9; }
 
+.liMenu{ width: 30vw; height:22vh; border:0.3vw solid  #3290d9; }
 .mainMenu:hover{ color: #feb06c; }
 .kontakt:hover { background-color: #3290d9; color:#feb06c; }
 .mainCont:hover{ color: #feb06c; }  
 a:hover { color:#feb06c; }
 }
+
+@media only screen and (min-width: 1424px){
+body { width: 1424;}
+}	
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 769px)"  >
 <link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 769px)" > 
