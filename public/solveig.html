@@ -40,7 +40,7 @@ article { background-color: #dbebf7; }
 img.imgMenu{ float: left; min-width: 100px; display:none; float: left; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }
 #solStrek {display: inline-block; }
 #logoHeader { display: none; }
-.menuList.opened { display: inline-block; overflow:hidden; }
+.menuList.opened { display: inline; overflow:hidden; background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%);}
 .menuList { display: none; }
 .mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 120%; padding: 0 0.02em; margin: 1vw; display:block; }
 section {	overflow: hidden; display: inline; }
@@ -127,7 +127,7 @@ function transIt(isLang) {
 <body>
 <header id="homeBS">
 	
-	<a  href= "#BedreSafari"  onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreSafari');">
+	<a  href= "#BedreSafari"  onclick="show('BedreSafari');">
     <div class="knapp9b leftC bslogo">	
     </div>
     <img id='logoHeader' width="50" height="50" src='bilder/logo.gif' alt="Logo" />  	
@@ -139,8 +139,8 @@ function transIt(isLang) {
     <div class="knapp9 rightC bsmenu">
     </div>     
   </a>  
-  <ul class="menuList aaa" id="menuList">
-  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreSafari');">BEDRESAFARI</a></li>
+  <ul class="menuList" id="menuList">
+  	<li><a class="mainMenun" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreSafari');">BEDRESAFARI</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('LydSafari');">LYDSAFARI</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreData');">BEDREDATA</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('EMF');">EMF</a></li>
@@ -174,35 +174,35 @@ function transIt(isLang) {
     <nav class="navMenu">
       <ul>
   		  <li class="liMenu">
-          <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreSafari');"><header><h2>BedreSafari</h2></header><img class="imgMenu" width="50" height="50" src="bilder/logo.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('BedreSafari');"><header><h2>BedreSafari</h2></header><img class="imgMenu" width="50" height="50" src="bilder/logo.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">Hva jeg har å si, mine konsulent tjenester og event.</span><span class="sv">Vad jag har att säga, min rådgivning och evenemang.</span><span class="en">What I have to say, my consulting and event.</span></p>
         </li>
         <li class="liMenu">
-    	    <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('LydSafari');"><h2>LydSafari</h2><img class="imgMenu" width="104" height="100" src="bilder/solLydWeb.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">    </a>
+    	    <a href="#" onclick="show('LydSafari');"><h2>LydSafari</h2><img class="imgMenu" width="104" height="100" src="bilder/solLydWeb.gif" alt="Malt, fotografert, laget av Solveig Løvhaug">    </a>
           <p><span class="no">Event, foredrag, opplevelser og kanskje lydhealing. Undersøke kirkens hemmeligheter. Sanse og formidle naturens skjulte frekvenser.</span><span class="sv">Händelse, föreläsningar, erfarenheter och ljud läkning, ljud healing. Undersök kyrka hemligheter. Sanse och förmedla naturens dolda frekvenser.</span><span class="en">Event, speech and perhaps sound healing. Examine church secrets. Sense and convey nature's hidden frequencies.</span></p>  
         </li>
         <li class="liMenu">
-          <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreData');"><h2>BedreData</h2><img class="imgMenu" width="98" height="100" src="bilder/bedredataLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('BedreData');"><h2>BedreData</h2><img class="imgMenu" width="98" height="100" src="bilder/bedredataLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">IT konsulent tjenester. -X3DOM,-MongoDB.</span><span class="sv">IT-konsulttjänster. -X3DOM, -MongoDB.</span><span class="en">IT consulting services. -X3DOM, -MongoDB.</span></p> 
         </li>
         <li class="liMenu">
-          <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('EMF');"> <h2>EMF</h2><img class="imgMenu" width="100" height="100" src="bilder/emfLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('EMF');"> <h2>EMF</h2><img class="imgMenu" width="100" height="100" src="bilder/emfLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="sv">Lägre gräns av elektromagnetisk strålning.</span><span class="en">Lower limits on electromagnetic radiation.</span></p> 
         </li>
         <li class="liMenu">
-        	<a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('Bergyl');"><h2>Bergyl</h2><img class="imgMenu" width="95" height="100" src="bilder/bergylLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+        	<a href="#" onclick="show('Bergyl');"><h2>Bergyl</h2><img class="imgMenu" width="95" height="100" src="bilder/bergylLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p> 
  	      </li>
         <li class="liMenu">
-        	<a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('NBH');"><h2>NBH</h2><img class="imgMenu" width="72" height="60" src="bilder/sky2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+        	<a href="#" onclick="show('NBH');"><h2>NBH</h2><img class="imgMenu" width="72" height="60" src="bilder/sky2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
  	      </li>
         <li class="liMenu">
-          <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('Si');"><h2>SI</h2><img class="imgMenu" width="101" height="100" src="bilder/siLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('Si');"><h2>SI</h2><img class="imgMenu" width="101" height="100" src="bilder/siLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">Spirituelle og åndlige temaer.</span><span class="sv">Andliga teman.</span><span class="en">Spiritual themes.</span></p>
         </li>
         <li class="liMenu">
-          <a href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('Natur');"> <h2>NATUR</h2><img class="imgMenu" width="102" height="100" src="bilder/naturLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('Natur');"> <h2>NATUR</h2><img class="imgMenu" width="102" height="100" src="bilder/naturLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">Naturen, dyr, trær, stener.</span><span class="sv">Natur, djur, träd, stenar.</span><span class="en">Nature, animals, trees, stones.</span></p>
         </li>
       </ul>
@@ -506,7 +506,7 @@ function transIt(isLang) {
   	<nav>        	
       <ul>  
         <li class="left_float">
-       	   <a  href= "#homeBS"  onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreSafari');">
+       	   <a  href= "#homeBS"  onclick="show('BedreSafari');">
              <canvas id="myHome" width=25 height=25>Your browser does not support the canvas tag.</canvas>
            </a> 
         </li>  
