@@ -42,7 +42,7 @@ img.imgMenu{ float: left; min-width: 100px; display:none; float: left; padding: 
 #logoHeader { display: none; }
 .menuList.opened { display: inline; overflow:hidden; }
 .menuList { display: none;  }
-.mainMenu{	 opacity: 0.7; border-radius: 0.5vw; background: radial-gradient(ellipse closest-side, white 1%, #b4c8d6 2%, #733e32 3%,   #b4c8d6 13%, #ba5986 24%); text-decoration: none; text-align: center; color: #fff; font-size: 120%; padding: 1vw; margin: 1vw; display:block; }
+.mainMenu{	 opacity: 0.7; border-radius: 0.5vw; background: radial-gradient(ellipse closest-side, white 44%, #b4c8d6 42%, #733e32 43%,   #b4c8d6 53%, #ba5986 54%); text-decoration: none; text-align: center; color: #fff; font-size: 120%; padding: 0.1vw; margin: 1vw; display:block; }
 section {	overflow: hidden; display: inline; }
 .left_float { float: left; margin: 1.8vw 0.8vw 0 0.4vw;}
 .right_float { float: right; margin: 2.4vw 0.8vw 0 0.4vw;}
@@ -119,7 +119,7 @@ function transIt(isLang) {
   lastLang = isLang;               
 	return false;
 }
-  
+
 
 </script>
  
@@ -599,6 +599,16 @@ function transIt(isLang) {
   context.beginPath();
   context.arc(centerX, centerY, 12, 0, Math.PI, false);
   context.stroke();
+  
+function visReklame() { 
+  var x = document.getElementsById("reklame");
+  var i;
+  for (i = 0; i < x.length; i++) {
+        x[i].style.display = "block";
+  }      
+	return false;
+}  
+setTimeout(function(){ visReklame(); }, 12000);  
 </script>
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
