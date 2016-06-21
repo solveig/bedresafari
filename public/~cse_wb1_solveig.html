@@ -40,7 +40,7 @@ article { background-color: #dbebf7; }
 img.imgMenu{ float: left; min-width: 100px; display:none; float: left; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }
 #solStrek {display: inline-block; }
 #logoHeader { display: none; }
-.menuList.opened { display: inline-block; overflow:hidden; }
+.menuList.opened { display: inline; overflow:hidden; background: linear-gradient(180deg, #c0e9ff 20%,  #ba5986 30%,   #c0e9ff 40%,  #ba5986 50%, #c0e9ff 60%,  #ba5986 70%, #c0e9ff 80%, #c0e9ff 90%);}
 .menuList { display: none; }
 .mainMenu{	background-color:#b4c8d6; text-decoration: none; text-align: center; color: #fff; font-size: 120%; padding: 0 0.02em; margin: 1vw; display:block; }
 section {	overflow: hidden; display: inline; }
@@ -139,9 +139,9 @@ function transIt(isLang) {
     <div class="knapp9 rightC bsmenu">
     </div>     
   </a>  
-  <ul class="menuList aaa" id="menuList">
-  	<li><a class="mainMenu" href="#" onclick="show('BedreSafari');">BEDRESAFARI</a></li>
-  	<li><a class="mainMenu" href="#" onclick="show('LydSafari');">LYDSAFARI</a></li>
+  <ul class="menuList" id="menuList">
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreSafari');">BEDRESAFARI</a></li>
+  	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('LydSafari');">LYDSAFARI</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('BedreData');">BEDREDATA</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('EMF');">EMF</a></li>
   	<li><a class="mainMenu" href="#" onclick="document.getElementsByClassName('menuList')[0].classList.toggle('opened'); show('Bergyl');">BERGYL</a></li>
@@ -233,7 +233,7 @@ function transIt(isLang) {
       <p><span class="no">Du føler frysninger eller varme.</span><span class="sv">Känna frossa eller värme.</span><span class="en">Feel chills or heating</span></p> 
       <h3><span class="no">Ta selv lyden til</span><span class="sv">Ta även ljudet av</span><span class="en">By yourself take sound from</span></h3>
       <p><span class="no">Gjenstand, tegning, maleri - høres det ut som en melodi.</span><span class="sv">föremål, teckning, målning. Hva hørs? Spelas en melodi.</span><span class="en">Object, drawing, paining or do you hear a melody.</span></p>
-      <p><span class="no">Er lyden harmonisk, skurrende, skummel eller er det setninger som blir sagt.</span><span class="sv">Är ljud harmonisk, raspiga, skumma eller låter det som fraser.<br><br></span><span class="en">Is the sound harmonic, jarring, scary or do you hear senteces.<br><br></span></p><p><br><br><br></p>         
+      <p><span class="no">Er lyden harmonisk, skurrende, skummel eller er det setninger som blir sagt.</span><span class="sv">Är ljud harmonisk, raspiga, skumma eller låter det som fraser.</span><span class="en">Is the sound harmonic, jarring, scary or do you hear senteces.</span></p><p><br><br><br><br><br></p>         
     </div> 
     <div class="liContent">
       <header><h1 id="Personlig"><span class="no">Personlig lydreise</span><span class="sv">Personlig lydreise</span><span class="en">Personal sound</span></h1></header>
