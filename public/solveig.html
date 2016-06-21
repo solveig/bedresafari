@@ -54,7 +54,7 @@ li {display: inline; float:left;}
 .liMenu{ width: 92vw; height:auto; display:inline; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
 .liContent{ width: 88vw; height:auto; display:inline; float: left; border:7px ridge #3290d9; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
 .closemsg::after { content: "\00D7"; display: inline-block; position: fixed; top: 12%; left: 78%; z-index: 5002; color: black; border:0.3vw solid #406584; border-radius: 20px;width: 20px; height: 20px; line-height: 18px; text-align: center; margin: 0.1vw; background-color: #b4c8d6; font-size: 200%; font-weight: bold; cursor: pointer; }
- 
+#reklame{ background: white url("/bilder/reklame.svg") no-repeat left center; border:0.2vw solid  #ba5986; display: none; } 
 @media only screen and (min-width: 768px){
 .liMenu { width: 42vw; height:auto; z-index: 1; border:7px solid  #3290d9; }
 img.imgMenu { display:none; z-index: 100;}  
@@ -62,7 +62,7 @@ img.imgMenu { display:none; z-index: 100;}
 }	 
  
 @media only screen and (min-width: 1024px) {
-
+#reklame{ display: block; } 
 .hamburger { display: none;}
 .menuList { display: inline;}
 .mainMenu{  margin: 0.2vw; display:inline-block; float:left; }
@@ -501,6 +501,18 @@ function transIt(isLang) {
     </div>
   </section>
 </article>
+<aside id="reklame">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- blue -->
+    <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-9811550092276141"
+    data-ad-slot="1766588110"
+    data-ad-format="auto"></ins>
+    <script>
+     (   adsbygoogle = window.adsbygoogle || []).push({});
+  </script>  
+ </aside>    
  <footer>
   	<nav>        	
       <ul>  
@@ -588,5 +600,15 @@ function transIt(isLang) {
   context.arc(centerX, centerY, 12, 0, Math.PI, false);
   context.stroke();
 </script>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52422029-1', 'auto');
+  ga('send', 'pageview');
+
+</script>   
 </body>
 </html>
