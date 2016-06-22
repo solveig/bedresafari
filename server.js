@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 var path = require('path');
 
 app.use(express.static(__dirname + '/public'));
-res.sendFile(path.resolve('solveig.html'));
+res.sendFile(path.resolve('solveig.html'));  // ligger on www
 //res.sendFile(path.resolve('BedreSafari.html')); // implementere nogo
   
 })
