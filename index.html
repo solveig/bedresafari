@@ -4,8 +4,6 @@
 <title>BedreSafari</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0 ">    
 <meta charset="UTF-8">  
-<link itemprop="mainEntityOfPage" itemscope itemtype="https://www.lydsafari.no/index.html" />
-
 <meta name="description" content="IT-rådgivning Mongodb, X3DOM.LydSafari: Event, tale om lyd safari, healing. Undersøker kirke hemmeligheter, høre Salmene sanger, folkesanger, føler dance.Sense og formidle naturens skjulte frequencies.SISI er en oversiktsside over hva Solveig Løvhaug sier på nettet i dag og hennes services.Bedredata: Rådgivning i HTML, CSS, Javascript , Node JS."/>
 <meta name="keywords" content="IT, konsulenttjenester, X3DOM, MongoDB, Event, tale, 6. Sans, lyd healing, kirke hemmeligheter, salmer sang, folkesanger, dans, HTML, CSS, XML, Javascript , Node.js, X3DOM, Sisi, LEDSAFARI, Bedredata, Bergyl , NBH, EMF, NATURE"/>
 <meta name="author" content="Solveig Løvhaug"/>
@@ -13,7 +11,7 @@
 <meta content='Solveig Løvhaug' name='creator'/>
 <meta content='2.mai 2016' name='created'/>
 <meta content='2.mai 2016' name='modified'/>
-<meta itemprop="datePublished" content="2011-03-25" id="date">   
+
 <meta content=' Copyright (c) LydSafari. 2015 to present' name='rights'/>
 <meta content='Solveig Løvhaug' name='Image'/>
 <meta content=' Solveig Løvhaug  is owner' name='accessRights'/>
@@ -38,6 +36,7 @@ article { background-color: #dbebf7; }
 .rightC { float:right; clear:right; }
 .boks { clear:both;    }
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia, sans-serif; font-size: 210%; margin: 20px 0 0 0; float:left}
+.njet { display:none;}
 @media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; } }
 .circle{border-radius:50%; border:4px solid   #feb06c;}
 .flagg { margin-top:20px; margin-bottom: 0px; float: right;}
@@ -46,10 +45,10 @@ article { background-color: #dbebf7; }
 #engelsk { width: 80px; height: 40px; background: url('/bilder/flaggh3z_mini.svg'); background-repeat:no-repeat; background-position: -122px 0px; }
 #LydSafari, #BedreData, #EMF, #Bergyl, #NBH, #Si, #Natur { display : none; }
 .no {display: inline;  }
-.sv, .en, .solVise { display: none }
-img.imgMenu{ float: left; min-width: 100px; display:none; float: left; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }
+.sv, .en, .solVise { display: none; width: 52px; height: 50px; }
+img.imgMenu{ float: left; width: 100px; height: 100px; min-width: 100px; display:none; float: left; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }
 #solStrek {display: inline-block; }
-#logoHeader { display: none; }
+#logoHeader { display: none; width: 50px; height: 50px;}
 .menuList.opened { display: inline; overflow:hidden; }
 .menuList { display: none;  }
 .mainMenu{	background: linear-gradient(180deg, #feb06c 8%, #ba5986 14%, white 20%, white 78%,  #ba5986 82%,  #feb06c 93%,  #feb06c  98%); opacity: 1; border-radius: 0.5vw; text-decoration: none; text-align: center; color: #3290d9; font-size: 140%; padding: 0.1vw; margin: 1vw; display:block; }
@@ -85,13 +84,14 @@ img.imgMenu { display:inline; z-index: 100; width: 80px; height:auto;}
 .kontakt:hover { background-color: #3290d9; color:#feb06c; }
 .mainCont:hover{ color: #feb06c; }  
 a:hover { color:#feb06c; }
+}
 @media only screen and (min-width: 1200px){
 html {  background-color: white;}
 body { width: 1200px; margin:auto;}
 .liContent { width: 540px; height:auto; }
 .liMenu{ width: 360px; height:22vh; border:7px solid  #3290d9; }
 }
-}
+
 </style>
 <link rel="icon" href="/bilder/favicon.ico" media="screen and (min-width: 1025px)"  >
 <link rel="icon" type="image/gif" href="/bilder/animated_favicon1.gif" media="screen and (min-width: 1025px)" > 
@@ -132,12 +132,13 @@ function transIt(isLang) {
  
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
+<article itemprop="mainEntityOfPage" itemscope itemtype="https://www.lydsafari.no/index.html">
 <header id="homeBS">
 	
 	<a  href= "#BedreSafari"  onclick="show('BedreSafari');">
     <div class="knapp9b leftC bslogo">	
     </div>
-    <img id='logoHeader' width="50" height="50" src='/bilder/logo.png' alt="Logo" />  	
+    <img id='logoHeader' width="125" height="120" src='/bilder/logo.png' alt="Logo" />  	
 
   </a>
   <h1  id="subH1" class="logoTxt">BedreSafari</h1>
@@ -162,7 +163,7 @@ function transIt(isLang) {
   	  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
         <a href="http://no.linkedin.com/in/solveiglovhaug/" itemprop="url" rel="author">
           <canvas id="solStrek" class="circle" width=50 height=50>Your browser does not support the canvas tag.</canvas>
-           <img class="solVise circle" width="50" height="50" src='/bilder/solveig1.png' alt="Logo" /> 
+           <img class="solVise circle" width="208" height="200" src='/bilder/solveig1.png' alt="Logo" /> 
           <span class="no"> av </span><span class="sv"> av </span><span class="en"> of </span><span itemprop="name"> Solveig Løvhaug</span>
         </a>
       </span>
@@ -176,8 +177,11 @@ function transIt(isLang) {
     </div> 
   </div>   
 </header>	
-<article>
+	
   <section id="BedreSafari">
+  	<header>
+  		<h2 class="njet">BedreSafari</h2>
+  	</header>
     <nav class="navMenu">
       <ul>
   		  <li class="liMenu">
@@ -185,11 +189,11 @@ function transIt(isLang) {
           <p><span class="no">Hva jeg har å si, mine konsulent tjenester og event.</span><span class="sv">Vad jag har att säga, min rådgivning och evenemang.</span><span class="en">What I have to say, my consulting and event.</span></p>
         </li>
         <li class="liMenu">
-    	    <a href="#" onclick="show('LydSafari');"><h2>LydSafari</h2><img class="imgMenu" width="104" height="100" src="/bilder/solLydWeb.png" alt="Malt, fotografert, laget av Solveig Løvhaug">    </a>
+    	    <a href="#" onclick="show('LydSafari');"><h2>LydSafari</h2><img class="imgMenu" width="208" height="200" src="/bilder/solLydWeb.png" alt="Malt, fotografert, laget av Solveig Løvhaug">    </a>
           <p><span class="no">Event, foredrag, opplevelser og kanskje lydhealing. Undersøke kirkens hemmeligheter. Sanse og formidle naturens skjulte frekvenser.</span><span class="sv">Händelse, föreläsningar, erfarenheter och ljud läkning, ljud healing. Undersök kyrka hemligheter. Sanse och förmedla naturens dolda frekvenser.</span><span class="en">Event, speech and perhaps sound healing. Examine church secrets. Sense and convey nature's hidden frequencies.</span></p>  
         </li>
         <li class="liMenu">
-          <a href="#" onclick="show('BedreData');"><h2>BedreData</h2><img class="imgMenu" width="98" height="100" src="/bilder/bedredataLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('BedreData');"><h2>BedreData</h2><img class="imgMenu" width="197" height="200" src="/bilder/bedredataLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">IT konsulent tjenester. -X3DOM,-MongoDB.</span><span class="sv">IT-konsulttjänster. -X3DOM, -MongoDB.</span><span class="en">IT consulting services. -X3DOM, -MongoDB.</span></p> 
         </li>
         <li class="liMenu">
@@ -197,19 +201,19 @@ function transIt(isLang) {
           <p><span class="no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="sv">Lägre gräns av elektromagnetisk strålning.</span><span class="en">Lower limits on electromagnetic radiation.</span></p> 
         </li>
         <li class="liMenu">
-        	<a href="#" onclick="show('Bergyl');"><h2>Bergyl</h2><img class="imgMenu" width="95" height="100" src="/bilder/bergylLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+        	<a href="#" onclick="show('Bergyl');"><h2>Bergyl</h2><img class="imgMenu" width="191" height="200" src="/bilder/bergylLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p> 
  	      </li>
         <li class="liMenu">
-        	<a href="#" onclick="show('NBH');"><h2>NBH</h2><img class="imgMenu" width="72" height="60" src="/bilder/sky2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+        	<a href="#" onclick="show('NBH');"><h2>NBH</h2><img class="imgMenu" width="145" height="120" src="/bilder/sky2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
  	      </li>
         <li class="liMenu">
-          <a href="#" onclick="show('Si');"><h2>SI</h2><img class="imgMenu" width="101" height="100" src="/bilder/siLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('Si');"><h2>SI</h2><img class="imgMenu" width="203" height="200" src="/bilder/siLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">Spirituelle og åndlige temaer.</span><span class="sv">Andliga teman.</span><span class="en">Spiritual themes.</span></p>
         </li>
         <li class="liMenu">
-          <a href="#" onclick="show('Natur');"> <h2>NATUR</h2><img class="imgMenu" width="102" height="100" src="/bilder/naturLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('Natur');"> <h2>NATUR</h2><img class="imgMenu" width="204" height="200" src="/bilder/naturLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
           <p><span class="no">Naturen, dyr, trær, stener.</span><span class="sv">Natur, djur, träd, stenar.</span><span class="en">Nature, animals, trees, stones.</span></p>
         </li>
       </ul>
@@ -217,7 +221,7 @@ function transIt(isLang) {
   </section>  
   <section id="LydSafari">
 	  <div class="liContent">
-      <header><h1>LydSafari <small>oversikt</small></h1></header>
+      <header><h2>LydSafari <small>oversikt</small></h2></header>
       <p><span class="no">Event, foredrag, opplevelser og kanskje lydhealing. Undersøke kirkens hemmeligheter. Sanse og formidle naturens skjulte frekvenser.</span><span class="sv">Händelse, föreläsningar, erfarenheter och ljud läkning, ljud healing. Undersök kyrka hemligheter. Sanse och förmedla naturens dolda frekvenser.</span><span class="en">Event, speech and perhaps sound healing. Examine church secrets. Sense and convey nature's hidden frequencies.</span></p>
       <p><span class="no">Jeg har over 20 års erfaring med å sanse og formidle naturens gjemte frekvenser, energier fra folk, ting og plasser gjennom lyder. Det er selve opplevelsen som er viktig. Bare å være i det. Noen ganger skjer det lydhealing.</span><span class="sv">Jag har över 20 års erfarenhet av känsla och förmedlar naturens dolda frekvenser, energier människor, saker och platser genom ljud. Det är själva upplevelsen som är viktig. Bara att vara där. Ibland händer det att ljud läka, ljud healing.</span><span class="en">I have over 20 years experience of sense and convey nature's hidden frequencies, energies of people, things and places through sounds. It is the experience itself that is important. Just being in there. Sometimes it happens sound healing.</span></p>
       <h2><span class="no">Prøv noe nytt og spennende!</span><span class="sv">Prova något nytt och spännande!</span><span class="en">Try something new and exciting!</span></h2>
@@ -230,7 +234,7 @@ function transIt(isLang) {
       <p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="blank" ><span class="no">Les om LydSafari i Halden Arbeiderblad</span><span class="sv">Läs om LydSafari Halden Arbeiderblad.</span><span class="en">Read about LydSafari in Halden Arbeiderblad details.</span></a></p>
     </div>    
     <div class="liContent">  
-      <header><h1 id="6Sans"><span class="no">Din 6. sans</span><span class="sv">Din 6. sinne</span><span class="en">Your 6th Sense</span></h1></header>
+      <header><h2 id="6Sans"><span class="no">Din 6. sans</span><span class="sv">Din 6. sinne</span><span class="en">Your 6th Sense</span></h2></header>
       <h2><span style="color:#feb06c"> EVENT</span> </h2>
       <h3><span class="no">Lær hvordan man kan.</span><span class="sv">Lär dig att.</span><span class="en">Learn how to.</span></h3>
       <p><span class="no">Ta lyd av gjenstander og ta lyd av plasser.</span><span class="sv">Ta ljud av föremål och ta ljud av utrymme.</span><span class="en">Take sound from objects or take sound from locations.</span></p>
@@ -243,7 +247,7 @@ function transIt(isLang) {
       <p><span class="no">Er lyden harmonisk, skurrende, skummel eller er det setninger som blir sagt.</span><span class="sv">Är ljud harmonisk, raspiga, skumma eller låter det som fraser.</span><span class="en">Is the sound harmonic, jarring, scary or do you hear senteces.</span></p><p><br><br><br><br><br></p>         
     </div> 
     <div class="liContent">
-      <header><h1 id="Personlig"><span class="no">Personlig lydreise</span><span class="sv">Personlig lydreise</span><span class="en">Personal sound</span></h1></header>
+      <header><h2 id="Personlig"><span class="no">Personlig lydreise</span><span class="sv">Personlig lydreise</span><span class="en">Personal sound</span></h2></header>
       <p><span class="no">Bli med på en eventyrlig lydreise i ditt indre univers.</span><span class="sv">Gå med i en äventyrlig lydreise av din inre universum.</span><span class="en">Join an adventurous SoundSafari of your inner universe.</span></p>
       <p><span class="no">Tonevariasjonene fra ditt indre danner tilsammen lydbildet av deg.</span><span class="sv">Tone varianter av din inre bildar tillsammans ljudbild av dig.</span><span class="en">Tone variations of your inner together form the soundscape of you.</span></p>
       <a href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >
@@ -251,20 +255,20 @@ function transIt(isLang) {
 	    <p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" ><span class="no">Et lenger eksempel i denne artikkelen.</span><span class="sv">Ett litet exempel på lydreise med Bard i Ylvis.</span><span class="en">A small example of SoundSafari with Bård in Ylvis.</span></a></p>
     </div>   
     <div class="liContent">
-       <header><h1 id="Gruppe"><span class="no">Gruppe lydreise</span><span class="sv">Grupp lydreise</span><span class="en">Group sound</span></h1></header>
+       <header><h2 id="Gruppe"><span class="no">Gruppe lydreise</span><span class="sv">Grupp lydreise</span><span class="en">Group sound</span></h2></header>
        <p><span class="no">Dette passer for jubilant, utdrikningslag, kjærester, famile og venner.</span><span class="sv">Detta är lämpligt för jublande, familj och vänner.</span><span class="en">This is suitable for jubilant, bachelor parties, couple family and friends.</span></p>
       <p><span class="no">Tar lyd på gruppa som helhet og på enkelt personene og gjenstander som har betydning for personen eller forholdet.</span><span class="sv">Med ljudet av gruppen som helhet och på enskilda personer och objekt av betydelse för den person eller förhållandet. </span><span class="en">Taking sound of the group as a whole and on individuals and objects of significance for the person or the relationship.</span></p>
     </div>
     <div class="liContent">
-      <header><h1 id="Gjenstand"><span class="no">Lyd på gjenstand</span><span class="sv">Ljud på föremål</span><span class="en">Sound on subject</span></h1></header>
+      <header><h2 id="Gjenstand"><span class="no">Lyd på gjenstand</span><span class="sv">Ljud på föremål</span><span class="en">Sound on subject</span></h2></header>
       <p><span class="no">Tar lyd på gjenstanden.Det kan være et smykke,bilde, gjenstand, tegning, maleri eller et klesplagg.</span><span class="sv">Med ljud på gjenstanden.Det kan vara en juvel, bild, objekt, teckning, målning eller ett klädesplagg.</span>Taking sound of the object. It may be a jewel, image, object, drawing, painting or a piece of clothing.<span class="en"></span></p>
     </div>
     <div class="liContent">  
-      <header><h1 id="Plass"><span class="no">Lyd på plass</span><span class="sv">Ljud på platser</span><span class="en">Sound on sites</span></h1></header>
+      <header><h2 id="Plass"><span class="no">Lyd på plass</span><span class="sv">Ljud på platser</span><span class="en">Sound on sites</span></h2></header>
       <p><span class="no">Tar lyd på plasser som personen tenker på eller som vi besøker.</span><span class="sv">Med ljud på platser som personen tänker på eller som vi besökte.</span><span class="en">Taking sound in places like the person thinking of or that we visit.</span></p>	
     </div>    
     <div class="liContent">
-      <header><h1 id="Kirke"><span class="no">Undersøk kirkens hemmeligheter</span><span class="sv">Undersök kyrk hemligheter</span><span class="en">Examine church secrets</span></h1></header>
+      <header><h2 id="Kirke"><span class="no">Undersøk kirkens hemmeligheter</span><span class="sv">Undersök kyrk hemligheter</span><span class="en">Examine church secrets</span></h2></header>
       <h2><span class="no">Besøk en kirke. <span style="color:#feb06c"> EVENT</span></span><span class="sv">Besök en kyrka.  <span style="color:#feb06c"> EVENT</span></span><span class="en">Visit a church.<span style="color:#feb06c"> EVENT</span></span></h2> 
       <h3><span class="no">Salmesanger</span><span class="sv">Psalm låtar</span><span class="en">Psalm songs</span></h3>
       <p><span class="no">I kirker fins det usynlige energiveier(12) rundt alteret som høres ut som salmesanger. Folk som er følsomme, kan gå med ønskekvist eller bruke pendel vil kunne kjenne dem. Sangene er forskjellig fra kirke til kirke.</span><span class="sv">I kyrkorna finns osynliga energi vägar (12) runt altaret som låter som psalmsånger. Människor som är känsliga, du går med slagruta eller använda shuttle kommer att kunna känna igen dem. Låtarna skiljer sig från kyrkan till kyrkan.</span><span class="en">In the churches there are invisible energy pathways (12) around the altar that sounds like hymn songs. People who are sensitive, dowsing people or use shuttle will be able to recognize them. The songs are different from church to church. </span></p>
@@ -275,19 +279,19 @@ function transIt(isLang) {
       <p><span class="no">Skaff tillatelse til bruk av kirken og send bud på meg. Her tar jeg ingen betaling utenom dekning av reiseutgifter.</span><span class="sv"></span><span class="en">Obtain permission to use the church and send for me. I do not take money for this other than payment of travel expenses.</span></p>
     </div>
     <div class="liContent">
-      <header><h1 id="Foredeag"><span class="no">Foredrag</span><span class="sv">Presentationer</span><span class="en">Speeches</span></h1></header>
+      <header><h2 id="Foredeag"><span class="no">Foredrag</span><span class="sv">Presentationer</span><span class="en">Speeches</span></h2></header>
       <p><span class="no">Send bud på meg og jeg vil elske å holde foredrag, event, kurs i "å ta lyd" eller workshop rundt dette.</span><span class="sv">Skicka för mig och jag skulle älska att föreläsa, händelse, kurs i" ta ljud "eller verkstad runt detta.</span><span class="en">Send for me and I would love to speech, lecture, event, course in "taking sound" or workshop around this.</span></p>   	
       <p><span class="no">Kan koble foredrag i forhold til interesser som oppdragsgiveren har</span><span class="sv">Kan ansluta samtal i förhållande till de intressen.</span><span class="en">Can connect talks in relation to the interests of the contracting entity.</span></p>
     </div>
     <div class="liContent">
-       <header><h1 id="Pris"><span class="no">Pris og tilgjengelighet</span><span class="sv">Pris och tillgänglighet</span><span class="en">Pricing and  availability</span></h1></header>
+       <header><h2 id="Pris"><span class="no">Pris og tilgjengelighet</span><span class="sv">Pris och tillgänglighet</span><span class="en">Pricing and  availability</span></h2></header>
        <p><span class="no">Prisene avhenger av type oppdrag. Send en e-post med spørsmål. Er det vedledighet kan jeg gjøre det gratis, med få dekka eventuelle reisekostnader.</span><span class="sv">Priserna beror på vilken typ av uppdrag. Skicka ett e-postmeddelande med frågor. Är det vedledighet jag kan göra det gratis, men få betalat för resekostnader.</span><span class="en">Prices depend on the assignment type. Send an email with questions. Is that charity can I do it for free, with getting showered any travel costs.</span></p>
       <p><span class="no">Klikk på kontakt knappen nederst for mer kontaktinformasjon.</span><span class="sv">Klikk på kontakt knappen nederst for mer kontaktinformasjon.</span><span class="en">Click the contact button at the bottom for more contact information. </span></p>         
     </div>
   </section>      
   <section id="BedreData">
      <div class="liContent">
-      <header><h1><span class="no">IT-konsulenttjenester</span><span class="sv">IT-konsulttjänster företrädesvis inom X3DOM och MongoDB.</span><span class="en">IT consultancy preferably within X3DOM and MongoDB.</span></h1></header>
+      <header><h2><span class="no">IT-konsulenttjenester</span><span class="sv">IT-konsulttjänster företrädesvis inom X3DOM och MongoDB.</span><span class="en">IT consultancy preferably within X3DOM and MongoDB.</span></h2></header>
       <p><span class="no">IT-konsulenttjenester helst innen X3DOM og MongoDB.</span><span class="sv"></span><span class="en"></span></p>
       <p><span class="no">Har jobbet med egne prosjekt siden 2014 (MongoDB, Node.js, Javascript , HTML, CSS, X3DOM).</span><span class="sv">Efter att ha arbetat med projektet sedan 2014 (MongoDB, Node.js, JavaScript, HTML, CSS, X3DOM).</span><span class="en">Having worked with MongoDB, Node.js, JavaScript, HTML, CSS and X3DOM since 2014.</span></p>
       <p><span class="no">5 år med Fortran for Lindorff og Soliditet. Kreditt informasjon.</span><span class="sv">5 år med Fortran för Lindorff och solvens. Kreditinformation.</span><span class="en">5 years with Fortran for Lindorff and Soliditet. Credit information.</span></p>  
@@ -301,39 +305,39 @@ function transIt(isLang) {
       <p><span class="no">Jeg er pensjonist og klar for mindre oppgaver.</span><span class="sv">Jag pensionerad och redo för mindre uppgifter.</span><span class="en">I am retired and ready for smaller tasks.</span></p>
     </div>   
     <div class="liContent">
-      <header><h1>PL/SQL,Oracle,Sybase,Sybase IQ</h1></header>
+      <header><h2>PL/SQL,Oracle,Sybase,Sybase IQ</h2></header>
       <p><span class="no">For meg var database en gang noe negativt, alt for "høy-nivå". jeg likte å kode i assembler og C.</span><span class="sv">För mig databas när något negativt, allt för" hög nivå ". Jag tyckte om att koda i assembler och C.</span><span class="en"> For me database once something negative, all for "high-level". I liked to code in assembler and C.</span> </p>
       <p><span class="no">Så fikk jeg en konsulent jobb å optimere et C program og fant ut at den bese løsningen var å bruke PL/SQL. Jeg ble imponert over hvor mye mindre kode og hvor mye sikrere kode jeg får ved å bruke database.</span><span class="sv">å jag fick en konsult för att optimera ett C-program och fann att det motverkar lösning var att använda PL / SQL. Jag var imponerad med hur mycket mindre kod och hur mycket säkrare kod jag får använda databasen.</span><span class="en">So I got a consultant to optimize a C program and found that it defeats the solution was to use Pl/SQL. I was impressed with how much less code and how much safer code I get using the database. </span></p>
       <p><span class="no">Siden har jeg jobbet med mange prosjekt med PL/SQL og Oracle, Sybase og C++ og Pl/SQL, Oracle og BussinessObjects. Jeg har også jobbet med Sybase IQ som er en datavarehus-database. Jeg ble imponert over hvor fort det gikk.</span><span class="sv">Eftersom jag har arbetat med många projekt med PL / SQL och Oracle, Sybase och C ++ och PL / SQL, Oracle och BussinessObjects. Jag har också arbetat med Sybase IQ som ett datalager databas. Jag var imponerad med hur snabbt det gick. </span><span class="en">Since I have worked with many projects with PL / SQL and Oracle, Sybase and C ++ and Pl / SQL, Oracle and BussinessObjects. I have also worked with Sybase IQ as a data warehouse database. I was impressed with how fast it went.</span></p>' 
     </div>   
     <div class="liContent">
-      <header><h1>MongoDB</h1></header>
+      <header><h2>MongoDB</h2></header>
  	    <p><span class="no">MongoDB er en NoSql database , den er OpenSource.Jeg bruker den sammen med Node.js, JSON og Javascript.BIG DATA.</span><span class="sv">MongoDB är en NoSQL databas, är det OpenSource.Jeg använda den med Node.js, JSON och Javascript.BIG DATA. </span><span class="en">MongoDB is a NoSQL database, it is OpenSource.I using it with Node.js, JSON and Javascript.BIG DATA. </span><a href="https://www.mongodb.com/"><span class="no">Les mer mongodb.com</span><span class="sv">Läs mer mongodb .com detaljer </span><span class="en">More info MongoDB</span></a></p>
 	    <p><span class="no">Jeg har brukt MongoDB siden 2013 i små private prosjekter. Har tatt kurs i MongoDB og bestått.</span><span class="sv">Jag har använt MongoDB sedan 2013 i små privata projekt. Har gått kurser i MongoDB och passerade.</span><span class="en">I have been using MongoDB since 2013 in small private projects. Has taken courses in MongoDB and passed.</span></p>
 	    <p><a href="http://www.x3dom.org/"><img id= "img1" width="459" height="200" src="/bilder/mongodb.png"   alt="MongoDB kurs"/> </a></p>
     </div>
     <div class="liContent">
-      <header><h1>HTML5,CSS3,Javascript,Node</h1></header>
+      <header><h2>HTML5,CSS3,Javascript,Node</h2></header>
       <p><span class="no">HTML og CSS har jeg brukt i mange år. Javascript og Node.js siden 2013.</span><span class="sv">HTML och CSS jag har använt i flera år. JavaScript och Node.js sedan 2013.</span><span class="en">HTML and CSS I have used for years. JavaScript and Node.js since 2013.</span></p>
 	    <p><span class="no">Denne hjemmesiden er en "Single Page Website". Det fins kun en html fil, et javascript og en CSS fil. I tillegg har jeg brukt SSI-enabled HTML.</span><span class="sv">Den här webbplatsen är en" En sida webbplats ". Det finns bara en html-fil, JavaScript och CSS-fil. Dessutom har jag använt SSI-aktiverade HTML</span><span class="en">This website is a "Single Page Website". There is only one html file, javascript and CSS file. In addition, I used SSI-enabled HTML.</span></p>
 	    <p><span class="no">Jeg tok nylig et kurs i HTML5 og Javascript. Kursene anbefales.</span><span class="sv">Jag tog nyligen en kurs i HTML5 och JavaScript. Kurserna rekommenderas.</span><span class="en"> I recently took a course in HTML5 and JavaScript. The courses are recommended.</span><img id= "img2" width="570" height="220" src="/bilder/bagdeHtml.png"   alt="HTML5 og Javascript kurs"/></p>
     </div>
     <div class="liContent">
-      <header><h1>Fortran,C,C++,PHP,EriPascal</h1></header>
+      <header><h2>Fortran,C,C++,PHP,EriPascal</h2></header>
       <p><span class="no">Jeg begynte å jobbe med data i 1980 og siden jeg har jobbet i mange forskjellige firmaer både som ansatt og konsulent, har jeg erfaring med mange programmering språk.</span><span class="sv">Jag började arbeta med data i 1980 och eftersom jag har arbetat i många olika företag både som anställd och konsult, jag har erfarenhet av många programmeringsspråk.</span><span class="en">I started working with data in 1980 and since I have worked in many different companies both as an employee and consultant, I have experience in many programming languages.</span> </p>
       <p><span class="no">Fortran startet jeg med og avsluttet jeg min yrkeskarriere  før jeg ble pensjonist.</span><span class="sv">Fortran I started and ended my career before I retired.Fortran jag började och slutade min karriär innan jag gick i pension. </span><span class="en">Fortran I started and ended my career before I retired.</span> </p>
       <p><span class="no">EriPascal er et sanntids system som jeg kunne veldig godt og jeg syns det var morsomt. Jeg måtte holde tunga rett i munn når jeg lagde "symbolsk debugger" for Eri-Pascal kompilatoren". Men jeg fikk samvittighetsproblem med å jobbe med produktene. Derfor sier jeg i dag nei til alle jobber innen forsvaret.</span><span class="sv">EriPascal är en realtids-system som jag kunde mycket väl och jag tyckte det var roligt. Jag var tvungen att hålla min tunga rätt i munnen när jag gjorde "symbolisk debugger" för Eri-Pascal kompilator. "Men jag fick samvete problem med att arbeta med produkterna. Därför säger jag i dag avvisande av alla jobb i försvaret.</span><span class="en">EriPascal is a real-time system that I could very well and I thought it was funny. I had to hold my tongue right in the mouth when I made "symbolic debugger" for Eri-Pascal compiler. "But I got conscience problem with working with the products. Therefore I say today rejection of all jobs in the defense. </span></p>
       <p><span class="no">En morsom C jobb var å endre på en ftp-driver og en annen var å decode Huffman-tabell fra et fax-program. For OMX Technology jobbet jeg bl.a. med BusinessObjects, C og C++.</span><span class="sv">En rolig C jobb var att ändra en ftp föraren och en annan var att avkoda Huffman tabellen från en fax program. För OMX Technology, arbetade jag bland annat med Business Objects, C och C ++.</span><span class="en">A funny C job was to change an ftp driver and another was to decode the Huffman table from a fax application. For OMX Technology, I worked among others with Business Objects, C and C ++.</span></p>
     </div>
      <div class="liContent">
-      <header><h1>SGML,XML,XSLT,XSD,SVG</h1></header>
+      <header><h2>SGML,XML,XSLT,XSD,SVG</h2></header>
       <h3><span class="no">er en del av "The World Wide Web Consortium (W3C)" standarden.</span><span class="sv">är en del av "The World Wide Web Consortium (W3C)" standard.</span><span class="en">is part of "The World Wide Web Consortium (W3C)" standard. </span></h3>
       <p><span class="no">HTML og XML bygger på SGML. I 1990 fikk jeg en konsulent jobb om å bli SGML ekspert. En jobb jeg gjorde var å lage en DTD (Document Type Definition ) for den tekst-editoren som Ericcson Radar brukte.</span><span class="sv"></span> HTML och XML är baserade på SGML. År 1990 fick jag en konsult jobb att bli SGML expert. Ett jobb jag gjorde var att skapa en DTD (Document Type Definition) för textredigeraren som Ericcson Radar används.<span class="en">HTML and XML are based on SGML. In 1990 I got a consulting job to become SGML expert. A job I did was to create a DTD (Document Type Definition) for the text editor as Ericcson Radar used.</span></p>
       <p><span class="no">Senere har jeg brukt XML, XSLT, XSD og SVG i mange prosjekt. HTML er også en del av W3C.</span><span class="sv">Senare använde jag XML, XSLT, XSD och SVG för många projekt. HTML är också en del av W3C.</span><span class="en">Later I used XML, XSLT, XSD and SVG for many projects. HTML is also part of the W3C.</span></p>
       <p><a href="https://www.w3.org/"><span class="no">Les mer om W3C</span><span class="sv">Les mer om W3C detaljer </span><span class="en">More info W3C.</span></a></p>     
     </div>
     <div class="liContent">
-      <header><h1>X3DOM</h1></header>
+      <header><h2>X3DOM</h2></header>
       <p><span class="no">X3DOM - 3D grafikk (X3D)</span><span class="sv">X3DOM - 3D-grafik (X3D)</span><span class="en">X3DOM - 3D Graphics (X3D)</span></p>
       <p><span class="no">Integrerer 3D inn i HTML5 uten plugins. Resultatet ska se likt ut på de fleste device og browsere.</span><span class="sv">Integrerar 3D i HTML5 utan plugins. Resultatet ska vara identiska på de flesta enhet och webbläsare.</span><span class="en">Integrates 3D into HTML5 without plugins. The result shall be identical on most device and browsers.</span></p>
 	    <p><br><a  href="http://www.lydsafari.no/ork/" target="_blank" >
@@ -343,168 +347,36 @@ function transIt(isLang) {
     </div>  </section> 
   <section id="EMF">
     <div class="liContent">
-	    <header><h1>EMF <small>oversikt</small></h1></header>
+	    <header><h2>EMF <small>oversikt</small></h2></header>
       <p><span class="no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="sv">Lägre gräns av elektromagnetisk strålning.</span><span class="en">Lower limits on electromagnetic radiation.</span></p>
     </div>
     <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
+      <header><h2>kjenne aura</h2></header>
+    </div>    
   </section> 
   <section id="Bergyl">  	
    <div class="liContent">
-  	  <header><h1>Bergyl <small>oversikt</small></h1></header>
+  	  <header><h2>Bergyl <small>oversikt</small></h2></header>
       <p><span class="no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
     </div>
   </section>
   <section id="NBH">
 	  <div class="liContent">
-     <header><h1>NBH <small>oversikt</small></h1></header>
+     <header><h2>NBH <small>oversikt</small></h2></header>
       <p><span class="no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
+    </div>     
   </section>
   <section id="Si">
     <div class="liContent">
-      <header><h1>SI <small>oversikt</small></h1></header>
+      <header><h2>SI <small>oversikt</small></h2></header>
       <p><span class="no">Spirituelle og åndlige temaer.</span><span class="sv">Andliga teman.</span><span class="en">Spiritual themes.</span></p>
     </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-      <header><h1></h1></header>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
+  
    </section>
   <section id="Natur" >
     <div class="liContent">
-	    <header><h1>NATUR <small>oversikt</small></h1></header>
+	    <header><h2>NATUR <small>oversikt</small></h2></header>
       <p><span class="no">Naturen, dyr, trær, stener.</span><span class="sv">Natur, djur, träd, stenar.</span><span class="en">Nature, animals, trees, stones.</span></p>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-     <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
-    </div>
-    <div class="liContent">
-      <header><h1></h1></header>
     </div>
   </section>
 </article>
@@ -542,7 +414,7 @@ function transIt(isLang) {
     </nav>
   </footer>  
   <aside id="kontaktMer" class="asideKontakt closemsg" onclick="document.getElementById('kontaktMer').style.display='none';">
-             <h1 id="contact2Txt">KONTAKT</h1> 
+             <h2 id="contact2Txt">KONTAKT</h2> 
              <p><span itemprop="name">Solveig Løvhaug</span></p>   	   
       	     <p><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"> 
                 <span itemprop="addressLocality">Halden</span>, in <span itemprop="addressCountry">Norway.</span></span> 
@@ -551,7 +423,7 @@ function transIt(isLang) {
              <p>Mobil: +47 970 94 414  Fast telefon: +47 69178930</p>
   </aside>  
     <aside id="blogMer" class="asideKontakt closemsg" onclick="document.getElementById('blogMer').style.display='none';">
-             <h1 id="blog2Txt">BLOGG</h1> 
+             <h2 id="blog2Txt">BLOGG</h2> 
              <p>Blogggen kommer her etterhvert</p>   	         	                
   </aside>  
 <script type="text/javascript">  
