@@ -18,11 +18,11 @@
 <meta content='../license.html' name='license'/>
 <style>
 html, body, header, footer, article, div, a, span, ul, li {font-family: arial, sans-serif; margin: 0; padding: 0; outline: none; box-sizing: border-box; }
-body { background-color: #c0e9ff; color: black; font-size: 16px; border:7px ridge #ba5986;}
+body { background-color: #c0e9ff; color: black; font-size: 16px; line-height: 1.5em; border:7px ridge #ba5986;}
 header, footer,article {  clear:both; }
 h1,h2,h3,h4 { margin: 0.1vw 0 0 0; padding:0 0 0 0.5vw; color: #3290d9;  }
 h1 { font-size: 2em; } h2 { font-size: 1.5em; } h3 { font-size: 1.17em; } h4 { font-size: 1.12em; }
-p { margin:0; padding:0 0 0 1vw;}
+p { margin:0; padding:0 0 0 1vw; }
 a {  text-decoration: underline; text-align: left; color:  #3290d9; width:auto; }
 article { background-color: #dbebf7; }  		
 #myHome { right: 100%;}
@@ -37,6 +37,8 @@ article { background-color: #dbebf7; }
 .boks { clear:both;    }
 .logoTxt { display: inline; color:#feb06c; letter-spacing: -0.05em; font-family: verdana,georgia, sans-serif; font-size: 210%; margin: 20px 0 0 0; float:left}
 .njet { display:none;}
+.smallCh {font-size: 50%; color: #3290d9;}
+.hidden { display:none; }
 @media only screen and (max-width: 261px){ .logoTxt {  font-size: 180%; } }
 .circle{border-radius:50%; border:4px solid   #feb06c;}
 .flagg { margin-top:20px; margin-bottom: 0px; float: right;}
@@ -46,7 +48,10 @@ article { background-color: #dbebf7; }
 #LydSafari, #BedreData, #EMF, #Bergyl, #NBH, #Si, #Natur { display : none; }
 .no {display: inline;  }
 .sv, .en, .solVise { display: none; width: 52px; height: 50px; }
-img.imgMenu{ float: left; width: 100px; height: 100px; min-width: 100px; display:none; float: left; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }
+img.imgMenu{  width: 100px; height: 100px; min-width: 100px; display:none; float: left; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }
+img.imgMenu2 { float: left; z-index: 100; width: 160px; height:auto; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }   
+img.imgMenu3 { float: right; z-index: 100; width: 260px; height:auto; padding: 0.2vw 1.2vw; margin:0 0.3vw 0 0; }   
+
 #solStrek {display: inline-block; }
 #logoHeader { display: none; width: 50px; height: 50px;}
 .menuList.opened { display: inline; overflow:hidden; }
@@ -61,15 +66,15 @@ li {display: inline; float:left;}
 .asideKontakt { position: fixed; top: 10%; left: 10%; display: none; float :right; width:80vw; border:0.5vw solid #406584; border-radius: 20vw; margin : 0.8vw; background: white; text-align:center; cursor: pointer;}
 .mainCont{	float:left; background-color:#dbebf7; color: black; font-weight: bold; padding: 0 1.2vw; text-decoration: none; text-align: left; border:0vw solid  #b4c8d6; }
 .liMenu{ width: 92vw; height:auto; display:inline; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
-.liContent{ width: 88vw; height:auto; display:inline; float: left; border:7px ridge #3290d9; margin: 1vw; padding:1.2vw 0 0 0; overflow:hidden; }
+.liContent{ width: 88vw; height:auto; display:inline-block;  border:7px ridge #3290d9; margin: 1vw; padding:1.2vw 1vw 0 0 ; overflow:hidden; }
+.liContent2{ width: 88vw; height:auto; display:inline-block;  border:7px ridge #3290d9; margin: 1vw; padding:1.2vw 1vw 0 0 ; overflow:hidden; }
 .closemsg::after { content: "\00D7"; display: inline-block; position: fixed; top: 12%; left: 78%; z-index: 5002; color: black; border:0.3vw solid #406584; border-radius: 20px;width: 20px; height: 20px; line-height: 18px; text-align: center; margin: 0.1vw; background-color: #b4c8d6; font-size: 200%; font-weight: bold; cursor: pointer; }
 #reklame{ background: white url("/bilder/reklame.svg") no-repeat left center; border:0.2vw solid  #ba5986; display: block; } 
 @media only screen and (min-width: 768px){
-.liMenu { width: 42vw; height:auto; z-index: 1; border:7px solid  #3290d9; }
+.liMenu { width: 42vw; max-width: 540px; height:auto; z-index: 1; border:7px solid  #3290d9; }
 img.imgMenu { display:none; z-index: 100;}  
 .liContent { width: 46vw; height:auto; }
-}	 
- 
+}	  
 @media only screen and (min-width: 1024px) {
 #reklame{ display: block; } 
 .hamburger { display: none;}
@@ -87,9 +92,11 @@ a:hover { color:#feb06c; }
 }
 @media only screen and (min-width: 1200px){
 html {  background-color: white;}
-body { width: 1200px; margin:auto;}
+body { width: 1200px; height: auto; margin:auto;}
+
 .liContent { width: 540px; height:auto; }
-.liMenu{ width: 360px; height:22vh; border:7px solid  #3290d9; }
+.liContent2 { width: 1110px; height:auto; }
+
 }
 
 </style>
@@ -103,7 +110,7 @@ function show(who) {
   	document.getElementById(lastShow).style.display="none";
     document.getElementById(who).style.display= "inline-block";	
     if (who != "BedreSafari") {
-      document.getElementById("subH1").innerHTML="<small>BedreSafari</small>/" + who;	
+      document.getElementById("subH1").innerHTML='<span class="smallCh">BedreSafari:</span>' + who;	
     } else {
         document.getElementById("subH1").innerHTML="BedreSafari";	
     }	 
@@ -126,6 +133,22 @@ function transIt(isLang) {
   }
   lastLang = isLang;               
 	return false;
+}
+function linkMe(where) {
+  switch(where) {
+    case "dowsing":
+     
+      break;
+    case "sv":
+     
+      break;
+    case "en":
+     
+       break;
+    default:
+      alert("LinkMe default:" + where);
+    }	
+    return false;
 }
 
 </script>
@@ -182,38 +205,42 @@ function transIt(isLang) {
   	<header>
   		<h2 class="njet">BedreSafari</h2>
   	</header>
-    <nav class="navMenu">
+    <nav>
       <ul>
   		  <li class="liMenu">
-          <a href="#" onclick="show('BedreSafari');"><header><h2>BedreSafari</h2></header><img class="imgMenu" width="50" height="50" src="/bilder/logo.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
-          <p><span class="no">Hva jeg har å si, mine konsulent tjenester og event.</span><span class="sv">Vad jag har att säga, min rådgivning och evenemang.</span><span class="en">What I have to say, my consulting and event.</span></p>
+          <a href="#" onclick="show('BedreSafari');"><header><h2>BedreSafari</h2></header><img class="imgMenu" width="50" height="50" src="/bilder/logo.png" alt="Logo til BedreSafari laget av Kari Egeberg"></a>
+          <p><span class="no">BedreSafari er en samling av mine nettsider.<br>Det er saker jeg brenner for, mine interesser,<br>konsulent tjenester,<br>foredrag, workshop, kurs og event.<br><small>Hvert nettsted har sin egen blå boks. Trykk å se.</small>
+            </span><span class="sv">BedreSafari är en samling av mina webbplatser.<br>Det finns frågor jag brinner för, mina intressen,<br>konsulttjänster,<br> föreläsningar, workshops, kurser och evenemang.<br><small>Varje plats har sin egen blå rutan. Tryck på för att se.</small></span>
+            <span class="en">BedreSafari is a collection of my sites.<br>There are issues I'm passionate about, my interests,<br>consulting services,<br>lectures, workshops, courses and events.<br><small>Each site has its own blue box. Press to see.</small></span></p>
         </li>
         <li class="liMenu">
-    	    <a href="#" onclick="show('LydSafari');"><h2>LydSafari</h2><img class="imgMenu" width="208" height="200" src="/bilder/solLydWeb.png" alt="Malt, fotografert, laget av Solveig Løvhaug">    </a>
-          <p><span class="no">Event, foredrag, opplevelser og kanskje lydhealing. Undersøke kirkens hemmeligheter. Sanse og formidle naturens skjulte frekvenser.</span><span class="sv">Händelse, föreläsningar, erfarenheter och ljud läkning, ljud healing. Undersök kyrka hemligheter. Sanse och förmedla naturens dolda frekvenser.</span><span class="en">Event, speech and perhaps sound healing. Examine church secrets. Sense and convey nature's hidden frequencies.</span></p>  
+    	    <a href="#" onclick="show('LydSafari');"><h2>LydSafari</h2><img class="imgMenu" width="208" height="200" src="/bilder/solLydWeb.png" alt="Bilde av Solveig Løvhaug  i middelalderklær med logo til LydSafari på Festningen i Halden i middelalderklær(Foto: Anja Lillerud)">    </a>
+          <p><span class="no">LydSafari er lydhealing og en reise i lyd.<br>Sans og lær naturens skjulte frekvenser.<br>Hør salmesangene fra alteret,<br>hør folketonene og kjenn dansen fra horget i din kirke.<br><small>"Din 6.sans" er event/workshop/kurs jeg arrangerer rundt dette.</small></span>
+          	<span class="sv">LydSafari är ljud healing och en resa i ljud.<br>Uppfatta och lära naturens dolda frekvenser.<br>Lyssna psalm låtar från altaret,<br>höra folkvisor och känne dans från hgrgr i din kyrka.<br><small>"Din 6.sinne" är händelsen/workshop/kurs som jag organiserar runt detta.</small></span>
+          	<span class="en">LydSafari is sound healing and a journey into sound.<br>Perceive and learn nature's hidden frequencies.<br>Listen hymn songs from the altar,<br>hear folk songs and feel the dance of hgrgr in your church.<br><small>"Your 6th Sense" is event/workshop/course that I organize around this.</small></span></p>  
         </li>
         <li class="liMenu">
-          <a href="#" onclick="show('BedreData');"><h2>BedreData</h2><img class="imgMenu" width="197" height="200" src="/bilder/bedredataLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
-          <p><span class="no">IT konsulent tjenester. -X3DOM,-MongoDB.</span><span class="sv">IT-konsulttjänster. -X3DOM, -MongoDB.</span><span class="en">IT consulting services. -X3DOM, -MongoDB.</span></p> 
+          <a href="#" onclick="show('BedreData');"><h2>BedreData</h2><img class="imgMenu" width="197" height="200" src="/bilder/bedredataLogo2.png" alt="Logo til BedreData malt av Solveig Løvhaug"></a>
+          <p><span class="no">IT konsulent tjenester.</span><span class="sv">IT-konsulttjänster.</span><span class="en">IT consulting services.</span><small><br>HTML5, CSS3, Javascript, Node.js<br>MongoDB, Oracle Pl/Sql, Sybase, Sybase IQ<br>X3DOM, X3D, SVG<br>Fortran, C, C++, Pascal</small></p> 
         </li>
         <li class="liMenu">
-          <a href="#" onclick="show('EMF');"> <h2>EMF</h2><img class="imgMenu" width="100" height="100" src="/bilder/emfLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('EMF');"> <h2>EMF</h2><img class="imgMenu" width="100" height="100" src="/bilder/emfLogo2.png" alt="Logo til EMF malt av Solveig Løvhaug"></a>
           <p><span class="no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="sv">Lägre gräns av elektromagnetisk strålning.</span><span class="en">Lower limits on electromagnetic radiation.</span></p> 
         </li>
         <li class="liMenu">
-        	<a href="#" onclick="show('Bergyl');"><h2>Bergyl</h2><img class="imgMenu" width="191" height="200" src="/bilder/bergylLogo2.gif" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
-          <p><span class="no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p> 
+        	<a href="#" onclick="show('Bergyl');"><h2>Bergyl</h2><img class="imgMenu" width="191" height="200" src="/bilder/bergylLogo2.gif" alt="Bergyl er  3D geometrisk figur programmert av Solveig Løvhaug"></a>
+          <p><span class="no">Bergyl er geometriske figurer i 3 dimensjoner og masse andre ting. Noe er ukjent. Bergyl skapes når hjernen min spør om Bergyl for en bestemt ting.</span><span class="sv">Bergyl är geometriska former i 3 dimensioner och en hel del annat, någon okänd. Bergyl skapas när min hjärna frågar om Bergyl för en viss sak.</span><span class="en">Bergyl is geometric shapes in 3 dimensions and a lot of other things, some unknown. Bergyl  is created when my brain asks about Bergyl for a particular thing.  </span></p> 
  	      </li>
         <li class="liMenu">
-        	<a href="#" onclick="show('NBH');"><h2>NBH</h2><img class="imgMenu" width="145" height="120" src="/bilder/sky2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+        	<a href="#" onclick="show('NBH');"><h2>NBH</h2><img class="imgMenu" width="145" height="120" src="/bilder/sky2.png" alt="Logo til NBH laget av Alf Langrind"></a>
           <p><span class="no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
  	      </li>
         <li class="liMenu">
-          <a href="#" onclick="show('Si');"><h2>SI</h2><img class="imgMenu" width="203" height="200" src="/bilder/siLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('Si');"><h2>SI</h2><img class="imgMenu" width="203" height="200" src="/bilder/siLogo2.png" alt="Logo til SI maltl av Solveig Løvhaug"></a>
           <p><span class="no">Spirituelle og åndlige temaer.</span><span class="sv">Andliga teman.</span><span class="en">Spiritual themes.</span></p>
         </li>
         <li class="liMenu">
-          <a href="#" onclick="show('Natur');"> <h2>NATUR</h2><img class="imgMenu" width="204" height="200" src="/bilder/naturLogo2.png" alt="Malt, fotografert, laget av Solveig Løvhaug"></a>
+          <a href="#" onclick="show('Natur');"> <h2>NATUR</h2><img class="imgMenu" width="204" height="200" src="/bilder/naturLogo2.png" alt="Kua Eva og logo til Natur malt av Solveig Løvhaug"></a>
           <p><span class="no">Naturen, dyr, trær, stener.</span><span class="sv">Natur, djur, träd, stenar.</span><span class="en">Nature, animals, trees, stones.</span></p>
         </li>
       </ul>
@@ -221,21 +248,17 @@ function transIt(isLang) {
   </section>  
   <section id="LydSafari">
 	  <div class="liContent">
-      <header><h2>LydSafari <small>oversikt</small></h2></header>
-      <p><span class="no">Event, foredrag, opplevelser og kanskje lydhealing. Undersøke kirkens hemmeligheter. Sanse og formidle naturens skjulte frekvenser.</span><span class="sv">Händelse, föreläsningar, erfarenheter och ljud läkning, ljud healing. Undersök kyrka hemligheter. Sanse och förmedla naturens dolda frekvenser.</span><span class="en">Event, speech and perhaps sound healing. Examine church secrets. Sense and convey nature's hidden frequencies.</span></p>
-      <p><span class="no">Jeg har over 20 års erfaring med å sanse og formidle naturens gjemte frekvenser, energier fra folk, ting og plasser gjennom lyder. Det er selve opplevelsen som er viktig. Bare å være i det. Noen ganger skjer det lydhealing.</span><span class="sv">Jag har över 20 års erfarenhet av känsla och förmedlar naturens dolda frekvenser, energier människor, saker och platser genom ljud. Det är själva upplevelsen som är viktig. Bara att vara där. Ibland händer det att ljud läka, ljud healing.</span><span class="en">I have over 20 years experience of sense and convey nature's hidden frequencies, energies of people, things and places through sounds. It is the experience itself that is important. Just being in there. Sometimes it happens sound healing.</span></p>
-      <h2><span class="no">Prøv noe nytt og spennende!</span><span class="sv">Prova något nytt och spännande!</span><span class="en">Try something new and exciting!</span></h2>
-      <h3><span class="no">Lydreise</span><span class="sv"></span>Lydreise<span class="en">SoundSafari</span></h3>
-      <p><span class="no">person, gruppe, gjenstand, plass</span><span class="sv">person, grupp,föremål, utrymme</span><span class="en">person, group, object, location</span></p>
-      <h3><span class="no">Event</span><span class="sv">Händelse</span><span class="en">Event</span></h3>
-      <p><span class="no">Test din 6. sans.</span><span class="sv">Test din 6. sinne.</span><span class="en">Test your 6th sense</span></p>
-      <p><span class="no">Undersøk kirkens hemmeligheter.</span><span class="sv">Undersök kyrk hemligheter.</span><span class="en">Examine church secrets.</span></p>
-      <h3><span class="no">Foredrag, kurs, workshop.</span><span class="sv">Presentationer, kurs, workshop.</span><span class="en">Speeches, courses, workshops</span></h3>
-      <p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="blank" ><span class="no">Les om LydSafari i Halden Arbeiderblad</span><span class="sv">Läs om LydSafari Halden Arbeiderblad.</span><span class="en">Read about LydSafari in Halden Arbeiderblad details.</span></a></p>
+       <header><h2>LydSafari <small>oversikt</small></h2></header><img class="imgMenu2" width="208" height="200" src="/bilder/solLydWeb.png" alt="Solveig Løvhaug (Foto: Anja Lillerud)"> 
+       <p><span class="no">LydSafari er lydhealing og en reise i lyd.<br>Sans og lær naturens skjulte frekvenser.<br>Hør salmesangene fra alteret,<br>hør folketonene og kjenn dansen fra horget i din kirke.<br><small>"Din 6.sans" er event/workshop/kurs jeg arrangerer rundt dette.</small></span>
+          	<span class="sv">LydSafari är ljud healing och en resa i ljud.<br>Uppfatta och lära naturens dolda frekvenser.<br>Lyssna psalm låtar från altaret,<br>höra folkvisor och känne dans från hgrgr i din kyrka.<br><small>"Din 6.sinne" är händelsen/workshop/kurs som jag organiserar runt detta.</small></span>
+          	<span class="en">LydSafari is sound healing and a journey into sound.<br>Perceive and learn nature's hidden frequencies.<br>Listen hymn songs from the altar,<br>hear folk songs and feel the dance of hgrgr in your church.<br><small>"Your 6th Sense" is event/workshop/course that I organize around this.</small></span></p>  
+        <p><span class="no">Jeg har over 20 års erfaring med å sanse og formidle naturens gjemte frekvenser, energier fra folk, ting og plasser gjennom lyd.</span> 
+      	<span class="sv">Jag har över 20 års erfarenhet av att uppfatta och förmedla naturens dolda frekvenser, energier från människor, saker och platser genom ljud.</span>
+      	<span class="en">I have over 20 years experience of perceiving and conveying nature's hidden frequencies, energies of people, things and places through sound.</span></p>
+       <p><small><span class="no">Les om LydSafari og lydhealing i </span><span class="sv">Läs om LydSafari och ljud healing i </span><span class="en">Read about LydSafari and sound healing in </span><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="blank" >Halden Arbeiderblad.</a></small></p>
     </div>    
     <div class="liContent">  
-      <header><h2 id="6Sans"><span class="no">Din 6. sans</span><span class="sv">Din 6. sinne</span><span class="en">Your 6th Sense</span></h2></header>
-      <h2><span style="color:#feb06c"> EVENT</span> </h2>
+      <header><h2 id="6Sans"><span class="no">Din 6. sans <small>er Event/Workshop/Kurs</small></span><span class="sv">Din 6. sinne <small> är Händelsen/Workshop/Kurs</small></span><span class="en">Your 6th Sense <small> is Event/Workshop/Course </small></span></h2></header>
       <h3><span class="no">Lær hvordan man kan.</span><span class="sv">Lär dig att.</span><span class="en">Learn how to.</span></h3>
       <p><span class="no">Ta lyd av gjenstander og ta lyd av plasser.</span><span class="sv">Ta ljud av föremål och ta ljud av utrymme.</span><span class="en">Take sound from objects or take sound from locations.</span></p>
       <p><span class="no">Kjenne aura med hånda eller finne gjemte gjenstander.</span><span class="sv">Känna aura med händer eller hitta gömda föremål.</span><span class="en">Feel aura with your hands or find hidden objects.</span></p>
@@ -244,34 +267,46 @@ function transIt(isLang) {
       <p><span class="no">Du føler frysninger eller varme.</span><span class="sv">Känna frossa eller värme.</span><span class="en">Feel chills or heating</span></p> 
       <h3><span class="no">Ta selv lyden til</span><span class="sv">Ta även ljudet av</span><span class="en">By yourself take sound from</span></h3>
       <p><span class="no">Gjenstand, tegning, maleri - høres det ut som en melodi.</span><span class="sv">föremål, teckning, målning. Hva hørs? Spelas en melodi.</span><span class="en">Object, drawing, paining or do you hear a melody.</span></p>
-      <p><span class="no">Er lyden harmonisk, skurrende, skummel eller er det setninger som blir sagt.</span><span class="sv">Är ljud harmonisk, raspiga, skumma eller låter det som fraser.</span><span class="en">Is the sound harmonic, jarring, scary or do you hear senteces.</span></p><p><br><br><br><br><br></p>         
+      <p><span class="no">Er lyden harmonisk, skurrende, skummel eller er det setninger som blir sagt.</span><span class="sv">Är ljud harmonisk, raspiga, skumma eller låter det som fraser.</span><span class="en">Is the sound harmonic, jarring, scary or do you hear senteces.</span></p>         
     </div> 
+    <div class="liContent2">
+      <header><h2 id="Lydhealing"><span class="no">Lydhealing</span><span class="sv">Ljud läkning / Ljud healing</span><span class="en">Sound healing</span></h2></header>     
+     <p><span class="no">Besøk meg i skogen i Bøklevene 10 minutter fra Halden. Jeg fokuserer på deg og tenker at jeg skal ta lyd på deg og annet som er viktig akkurat nå. Jeg synger ikke, men jeg lar lyden gå i gjennom meg. Lyden som kommer ut av meg består av frekvenser. De interfererer med frekvenser som fins i din aura.Lyd kan være en døråpner for din egen intuisjon. De kan løse opp blokkeringer som fins rundt kroppen da skjer healing. </span> 
+     	<span class="sv"></span> 
+     	<span class="en"></span></p>
+      <h3  class="rent">Energien rundt kroppen</h3>      
+      <a href="/bilder/aniHealing.svg"  target="_blank">
+         <img class="imgMenu3" width="321" height="359" src="/bilder/healing.png" alt="healing" />
+      </a> 
+       <p><span class="no">Rundt kroppen vår er det flere usynlige energi lag. De kalles aura. Traumer er tettere energi blokkeringer som fins i auraen. Traume er et psykisk sår. Traume kan oppstå pga vonde opplevelser i fortiden. Programmering fra familie og omgivelser fins også som traumer. I auraen skal energien flyte lett rundt. Hvis den møter på et traume vil energi flyten bli hindret. Masse energi blir brukt der, som kunne ha blitt brukt til annen healing. Når kroppen får nok energi, er den sterk nok til å heale seg selv.</span>
+        <span class="sv">Runt vår kropp finns det flera osynliga energilager. De kallas aura. Trauma är tätare energi blockeringar som finns i auran. Trauma är en psykologisk sår. Trauma kan uppstå på grund av dåliga erfarenheter i det förflutna. Programmering från familj och omgivning är också som trauma. I aura bör energi flöde lätt runt. Om den möter trauma, kan energiflödet förhindras. Massor av energi används där, vilket skulle ha kunnat användas för olika läkning. När kroppen får tillräckligt med energi, är det tillräckligt stark för att läka sig själva.</span>
+        <span class="en">Around our body there are several invisible energy layers. They are called aura. Trauma is closer energy blockages that exist in the aura. Trauma is a psychological wounds. Trauma can occur because of bad experiences in the past. Programming from family and surroundings are also as trauma. In the aura should energy flow easily around. If it meets the trauma, the energy flow can be prevented. Lots of energy is used there, which could have been used for different healing. When the body gets enough energy, it is strong enough to heal themselves.</span></p>
+       <p><span class="no">Cellene har kunnskap om sin jobb, men noen ganger har det kommet inn et virusprogram. Nesten alle som har en datamaskin i dag har installert et antivirusprogram. For deg og din kropp er antivirusprogrammet noe	i deg selv. Noen må fortelle deg hvordan du skal bruke det. Når du healer deg selv, fjerner du blokkeringene i auraen din. Når du har fjernet alle blokkeringene dine har du fullstendig fri vilje. Da er det ingenting som styrer deg i den ene eller andre retningen. Fri vilje betyr at du har like stor mulighet å si ja og nei til noe.</span>
+       <span class="sv">Cellerna är kunnig om sitt jobb, men ibland har det kommit in ett virus program. Nästan alla som har en dator idag har ett antivirusprogram installerat. För dig och din kropp är ditt antivirusprogram något i sig själv. Någon måste berätta för dig hur man använder den. När du läka sig själv, ta bort blockeringar i din aura. När du tar bort alla blockeringar din har fullständig fri vilja. När det finns ingenting som styr dig i en riktning eller den andra. Fri vilja innebär att du har lika stor chans att säga ja och nej till något.</span>
+       <span class="en">The cells are knowledgeable about her job, but sometimes it has come into a virus program. Almost everyone who has a computer nowadays have an antivirus program installed. For you and your body is your antivirus program something in yourself. Someone needs to tell you how to use it. When you heal yourself, remove blockages in your aura. After you remove all blockages your have complete free will. When there is nothing that steers you in one direction or the other. Free will means that you have an equal chance to say yes and no to something.</span></p>
+     </div>   
     <div class="liContent">
-      <header><h2 id="Personlig"><span class="no">Personlig lydreise</span><span class="sv">Personlig lydreise</span><span class="en">Personal sound</span></h2></header>
-      <p><span class="no">Bli med på en eventyrlig lydreise i ditt indre univers.</span><span class="sv">Gå med i en äventyrlig lydreise av din inre universum.</span><span class="en">Join an adventurous SoundSafari of your inner universe.</span></p>
-      <p><span class="no">Tonevariasjonene fra ditt indre danner tilsammen lydbildet av deg.</span><span class="sv">Tone varianter av din inre bildar tillsammans ljudbild av dig.</span><span class="en">Tone variations of your inner together form the soundscape of you.</span></p>
+      <header><h2>LydSafari</h2></header>
+      <header><h3 id="Personlig"><span class="no">- for en person</span><span class="sv">- för en person</span><span class="en">- SoundSafari for one person</span></h3></header>
+      <p><span class="no">Hør din personlige lyd. Jeg fokuserer på deg. Gled deg over opplevelsen. Bli med på en eventyrlig lydreise i ditt indre univers.</span><span class="sv">
+Hör din personliga sound. Jag fokuserar på dig. Njuta av upplevelsen. Gå med i en äventyrlig lydreise av din inre universum.</span><span class="en">Join an adventurous SoundSafari of your inner universe.</span></p>
+      <p><span class="no">Tonevariasjonene fra ditt indre danner tilsammen lydbildet av deg.</span><span class="sv">Tone varianter av din inre bildar tillsammans ljudbild av dig.</span><span class="en">Hear your personal sound. I focus on you. Enjoy the experience. Tone variations of your inner together form the soundscape of you.</span></p>
       <a href="https://www.youtube.com/watch?v=x2T7W-2wA_A&feature=youtu.be&t=7m14s" target="_blank" >
-	    <img class= "inside" width="320" height="200"  src="/bilder/ylvis.png"   alt="Fra Norges Herligste og Energidama"/><span class="no">Et lite eksempel på lydreise med Bård i Ylvis.</span><span class="sv"></span><span class="en"></span></a>
-	    <p><a class="ha" href="http://www.ha-halden.no/nyheter/article7407300.ece" target="_blank" ><span class="no">Et lenger eksempel i denne artikkelen.</span><span class="sv">Ett litet exempel på lydreise med Bard i Ylvis.</span><span class="en">A small example of SoundSafari with Bård in Ylvis.</span></a></p>
-    </div>   
-    <div class="liContent">
-       <header><h2 id="Gruppe"><span class="no">Gruppe lydreise</span><span class="sv">Grupp lydreise</span><span class="en">Group sound</span></h2></header>
+	    <img class= "imgMenu2" width="320" height="200"  src="/bilder/ylvis.png"   alt="Fra Norges Herligste og Energidama"/><span class="no">Et lite eksempel på lydreise med Bård i Ylvis.</span><span class="sv"></span><span class="en"></span></a>
+	       <header><h3 id="Gruppe"><span class="no">- for en gruppe</span><span class="sv">- för en grupp</span><span class="en">- for a group</span></h3></header>
        <p><span class="no">Dette passer for jubilant, utdrikningslag, kjærester, famile og venner.</span><span class="sv">Detta är lämpligt för jublande, familj och vänner.</span><span class="en">This is suitable for jubilant, bachelor parties, couple family and friends.</span></p>
       <p><span class="no">Tar lyd på gruppa som helhet og på enkelt personene og gjenstander som har betydning for personen eller forholdet.</span><span class="sv">Med ljudet av gruppen som helhet och på enskilda personer och objekt av betydelse för den person eller förhållandet. </span><span class="en">Taking sound of the group as a whole and on individuals and objects of significance for the person or the relationship.</span></p>
-    </div>
-    <div class="liContent">
-      <header><h2 id="Gjenstand"><span class="no">Lyd på gjenstand</span><span class="sv">Ljud på föremål</span><span class="en">Sound on subject</span></h2></header>
-      <p><span class="no">Tar lyd på gjenstanden.Det kan være et smykke,bilde, gjenstand, tegning, maleri eller et klesplagg.</span><span class="sv">Med ljud på gjenstanden.Det kan vara en juvel, bild, objekt, teckning, målning eller ett klädesplagg.</span>Taking sound of the object. It may be a jewel, image, object, drawing, painting or a piece of clothing.<span class="en"></span></p>
-    </div>
-    <div class="liContent">  
-      <header><h2 id="Plass"><span class="no">Lyd på plass</span><span class="sv">Ljud på platser</span><span class="en">Sound on sites</span></h2></header>
+  
+      <header><h3 id="Gjenstand"><span class="no">- med en gjenstand</span><span class="sv">- med föremål</span><span class="en">- with a subject</span></h3></header>
+      <p><span class="no">Tar lyd på gjenstanden.Det kan være et smykke,bilde, gjenstand, tegning, maleri eller et klesplagg.</span><span class="sv">Med ljud på gjenstanden.Det kan vara en juvel, bild, objekt, teckning, målning eller ett klädesplagg.</span><span class="en">Taking sound of the object. It may be a jewel, image, object, drawing, painting or a piece of clothing.</span></p>
+       <header><h3 id="Plass"><span class="no">- for plasser</span><span class="sv">- för platser</span><span class="en">- on sites</span></h3></header>
       <p><span class="no">Tar lyd på plasser som personen tenker på eller som vi besøker.</span><span class="sv">Med ljud på platser som personen tänker på eller som vi besökte.</span><span class="en">Taking sound in places like the person thinking of or that we visit.</span></p>	
     </div>    
     <div class="liContent">
       <header><h2 id="Kirke"><span class="no">Undersøk kirkens hemmeligheter</span><span class="sv">Undersök kyrk hemligheter</span><span class="en">Examine church secrets</span></h2></header>
       <h2><span class="no">Besøk en kirke. <span style="color:#feb06c"> EVENT</span></span><span class="sv">Besök en kyrka.  <span style="color:#feb06c"> EVENT</span></span><span class="en">Visit a church.<span style="color:#feb06c"> EVENT</span></span></h2> 
       <h3><span class="no">Salmesanger</span><span class="sv">Psalm låtar</span><span class="en">Psalm songs</span></h3>
-      <p><span class="no">I kirker fins det usynlige energiveier(12) rundt alteret som høres ut som salmesanger. Folk som er følsomme, kan gå med ønskekvist eller bruke pendel vil kunne kjenne dem. Sangene er forskjellig fra kirke til kirke.</span><span class="sv">I kyrkorna finns osynliga energi vägar (12) runt altaret som låter som psalmsånger. Människor som är känsliga, du går med slagruta eller använda shuttle kommer att kunna känna igen dem. Låtarna skiljer sig från kyrkan till kyrkan.</span><span class="en">In the churches there are invisible energy pathways (12) around the altar that sounds like hymn songs. People who are sensitive, dowsing people or use shuttle will be able to recognize them. The songs are different from church to church. </span></p>
+      <p><span class="no">I kirker fins det usynlige energiveier(12) rundt alteret som høres ut som salmesanger. Folk som er følsomme, kan gå med ønskekvist eller bruke pendel vil kunne kjenne dem. Sangene er forskjellig fra kirke til kirke.</span><span class="sv">I kyrkorna finns osynliga energi vägar (12) runt altaret som låter som psalmsånger. Människor som är känsliga, du går med slagruta eller använda shuttle kommer att kunna känna igen dem. Låtarna skiljer sig från kyrkan till kyrkan.</span><span class="en">In the churches there are invisible energy pathways (12) around the altar that sounds like hymn songs. People who are sensitive, <a href="#dowsing" >dowsing</a> people or use shuttle will be able to recognize them. The songs are different from church to church. </span></p>
       <h3><span class="no">Folkesanger og dans</span><span class="sv">Visor och dans</span><span class="en">Folk Songs and dance</span></h3>
       <p><span class="no">Kultplassene eller horg har også usynlige energiveier(7). Kirker ble bygd i nærheten av horg. Ofte finner jeg horg i kirken. Lyden minner om folkesanger og kroppen min begynner å danse automatisk.</span><span class="sv">Hgrgr har också osynliga energi vägar (7). Kyrkor byggdes nära hgrgr. Ofta finner jag hgrgr kyrka. Ljudet påminner om folkvisor och min kropp börjar dansa automatiskt.</span><span class="en">Hgrgr also have invisible energy pathways (7). Churches were built near hgrgr. Often I find hgrgr in church. The sound is as folk songs and my body starts to dance automatically.</span></p>   	
       <p><span class="no">Kirken har blitt bygd med gammel kunnskap om jordenergier osv av frimurer ol. Kildematrialet om dette fins i Oslo Universitet arkiver sa Sverre Dag Mogstad. Han er forfatter av "Frimureri : mysterier, fellesskap, personlighetsdannelse.</span><span class="sv">Kyrkan har byggts med gammal kunskap om jordens energi, etc. av frimurarnas ol. Källmaterial för detta återfinns i Oslo universitet arkiv sade Sverre Dag Mogstad. Han är författare till "frimureri:. Mysterier, gemenskap, teckenbildning</span><span class="en">The church has been built with old knowledge about earth energies, etc. by Masonic ol. Source material for this is found in Oslo University archives said Sverre Dag Mogstad. He is the author of "Freemasonry: mysteries, community, character formation.</span></p>
@@ -291,7 +326,7 @@ function transIt(isLang) {
   </section>      
   <section id="BedreData">
      <div class="liContent">
-      <header><h2><span class="no">IT-konsulenttjenester</span><span class="sv">IT-konsulttjänster företrädesvis inom X3DOM och MongoDB.</span><span class="en">IT consultancy preferably within X3DOM and MongoDB.</span></h2></header>
+      <header><h2><span class="no">IT-konsulenttjenester</span><span class="sv">IT-konsulttjänster</span><span class="en">IT consultancy</span></h2></header><img class="imgMenu2" width="197" height="200" src="/bilder/bedredataLogo2.png" alt="Logo til BedreData malt av Solveig Løvhaug"
       <p><span class="no">IT-konsulenttjenester helst innen X3DOM og MongoDB.</span><span class="sv"></span><span class="en"></span></p>
       <p><span class="no">Har jobbet med egne prosjekt siden 2014 (MongoDB, Node.js, Javascript , HTML, CSS, X3DOM).</span><span class="sv">Efter att ha arbetat med projektet sedan 2014 (MongoDB, Node.js, JavaScript, HTML, CSS, X3DOM).</span><span class="en">Having worked with MongoDB, Node.js, JavaScript, HTML, CSS and X3DOM since 2014.</span></p>
       <p><span class="no">5 år med Fortran for Lindorff og Soliditet. Kreditt informasjon.</span><span class="sv">5 år med Fortran för Lindorff och solvens. Kreditinformation.</span><span class="en">5 years with Fortran for Lindorff and Soliditet. Credit information.</span></p>  
@@ -314,13 +349,13 @@ function transIt(isLang) {
       <header><h2>MongoDB</h2></header>
  	    <p><span class="no">MongoDB er en NoSql database , den er OpenSource.Jeg bruker den sammen med Node.js, JSON og Javascript.BIG DATA.</span><span class="sv">MongoDB är en NoSQL databas, är det OpenSource.Jeg använda den med Node.js, JSON och Javascript.BIG DATA. </span><span class="en">MongoDB is a NoSQL database, it is OpenSource.I using it with Node.js, JSON and Javascript.BIG DATA. </span><a href="https://www.mongodb.com/"><span class="no">Les mer mongodb.com</span><span class="sv">Läs mer mongodb .com detaljer </span><span class="en">More info MongoDB</span></a></p>
 	    <p><span class="no">Jeg har brukt MongoDB siden 2013 i små private prosjekter. Har tatt kurs i MongoDB og bestått.</span><span class="sv">Jag har använt MongoDB sedan 2013 i små privata projekt. Har gått kurser i MongoDB och passerade.</span><span class="en">I have been using MongoDB since 2013 in small private projects. Has taken courses in MongoDB and passed.</span></p>
-	    <p><a href="http://www.x3dom.org/"><img id= "img1" width="459" height="200" src="/bilder/mongodb.png"   alt="MongoDB kurs"/> </a></p>
+	    <p><a href="http://www.x3dom.org/"><img class= "imgMenu2" width="459" height="200" src="/bilder/mongodb.png"   alt="MongoDB kurs"/> </a></p>
     </div>
     <div class="liContent">
       <header><h2>HTML5,CSS3,Javascript,Node</h2></header>
       <p><span class="no">HTML og CSS har jeg brukt i mange år. Javascript og Node.js siden 2013.</span><span class="sv">HTML och CSS jag har använt i flera år. JavaScript och Node.js sedan 2013.</span><span class="en">HTML and CSS I have used for years. JavaScript and Node.js since 2013.</span></p>
 	    <p><span class="no">Denne hjemmesiden er en "Single Page Website". Det fins kun en html fil, et javascript og en CSS fil. I tillegg har jeg brukt SSI-enabled HTML.</span><span class="sv">Den här webbplatsen är en" En sida webbplats ". Det finns bara en html-fil, JavaScript och CSS-fil. Dessutom har jag använt SSI-aktiverade HTML</span><span class="en">This website is a "Single Page Website". There is only one html file, javascript and CSS file. In addition, I used SSI-enabled HTML.</span></p>
-	    <p><span class="no">Jeg tok nylig et kurs i HTML5 og Javascript. Kursene anbefales.</span><span class="sv">Jag tog nyligen en kurs i HTML5 och JavaScript. Kurserna rekommenderas.</span><span class="en"> I recently took a course in HTML5 and JavaScript. The courses are recommended.</span><img id= "img2" width="570" height="220" src="/bilder/bagdeHtml.png"   alt="HTML5 og Javascript kurs"/></p>
+	    <p><span class="no">Jeg tok nylig et kurs i HTML5 og Javascript. Kursene anbefales.</span><span class="sv">Jag tog nyligen en kurs i HTML5 och JavaScript. Kurserna rekommenderas.</span><span class="en"> I recently took a course in HTML5 and JavaScript. The courses are recommended.</span><img class= "imgMenu2" width="570" height="220" src="/bilder/bagdeHtml.png"   alt="HTML5 og Javascript kurs"/></p>
     </div>
     <div class="liContent">
       <header><h2>Fortran,C,C++,PHP,EriPascal</h2></header>
@@ -341,13 +376,13 @@ function transIt(isLang) {
       <p><span class="no">X3DOM - 3D grafikk (X3D)</span><span class="sv">X3DOM - 3D-grafik (X3D)</span><span class="en">X3DOM - 3D Graphics (X3D)</span></p>
       <p><span class="no">Integrerer 3D inn i HTML5 uten plugins. Resultatet ska se likt ut på de fleste device og browsere.</span><span class="sv">Integrerar 3D i HTML5 utan plugins. Resultatet ska vara identiska på de flesta enhet och webbläsare.</span><span class="en">Integrates 3D into HTML5 without plugins. The result shall be identical on most device and browsers.</span></p>
 	    <p><br><a  href="http://www.lydsafari.no/ork/" target="_blank" >
-      <img id= "ork" width="141" height="200" src="/bilder/ork2.png"   alt="Animasjon i X3DOM"/>
+      <img class="imgMenu2" id= "ork" width="141" height="200" src="/bilder/ork2.png"   alt="Animasjon i X3DOM"/>
       	<span class="no">En liten animasjon jeg har laget med X3DOM. </span><span class="sv">En liten animation som jag gjorde med X3DOM.</span><span class="en">A small animation I made with X3DOM</span></a></p>
       <p><br><a href="http://www.x3dom.org/"><span class="no">Les mer om X3DOM</span><span class="sv">Läs mer om X3DOM detaljer </span><span class="en">More info X3DOM.</span></a></p>
     </div>  </section> 
   <section id="EMF">
     <div class="liContent">
-	    <header><h2>EMF <small>oversikt</small></h2></header>
+	    <header><h2>EMF</h2></header><img class="imgMenu2" width="100" height="100" src="/bilder/emfLogo2.png" alt="Logo til EMF malt av Solveig Løvhaug">
       <p><span class="no">Lavere grenseverdier på elektromagnetisk stråling.</span><span class="sv">Lägre gräns av elektromagnetisk strålning.</span><span class="en">Lower limits on electromagnetic radiation.</span></p>
     </div>
     <div class="liContent">
@@ -356,26 +391,121 @@ function transIt(isLang) {
   </section> 
   <section id="Bergyl">  	
    <div class="liContent">
-  	  <header><h2>Bergyl <small>oversikt</small></h2></header>
-      <p><span class="no">Bergyl er en 3D struktur som en liten nisse viste Solveig. Kan det være tankens byggestein?</span><span class="sv">Bergyl är en 3D-struktur som en liten älva visade Solveig. Kan det vara tanken byggsten?</span><span class="en">Bergyl is a 3D structure like a little elf showed Solveig . Could it be tank building block?</span></p>
+  	  <header><h2>Bergyl</h2></header><img class="imgMenu2" width="191" height="200" src="/bilder/bergylLogo2.gif" alt="Bergyl er  3D geometrisk figur programmert av Solveig Løvhaug">
+      <p><span class="no"> </span><span class="sv"> </span>
+      <span class="en">Bergyl is geometric shapes in 3 dimensions and a lot of other things, some unknown.Bergyl  is created when my brain asks about Bergyl for a particular thing. <br>
+      The geometric shapes use some time to be built when I ask for it. <br>
+      Depending on which question I ask the shape changes in form and size.<br>
+      I can scale down and scale up, move, copy Bergyl.<br>
+      I must specify the date of Bergyl I ask for. I can ask backwards in time.<br>
+      I can ask for everything. It is only our creativity that sets the limits for what to ask Bergyl for. 
+</span></p>
     </div>
+ <div class="liContent">  
+   <header><h2><span class="no"></span><span class="sv"></span><span class="en"></span></h2></header>
+ 
+ <p><span class="no"> </span><span class="sv"> </span><span class="en">
+ 	I can feel small "particles" going up in a spiral and some going down i a spiral. 
+The particles interact and make the 3D geometric shapes. (constructive interference.)
+I see the Golden ratio in Bergyl. 
+Asking a question with 7 parts of the same thing the 3D geometric shapes disappear. 
+The up and down spirals is in phase/harmony and I cannot feel anything. They extinguish each other out completely. (destructive interference)
+</span></p>
+   </div>
+ <div class="liContent">  
+      <header><h2><span class="no"></span><span class="sv"></span><span class="en"></span></h2></header>
+  <p><span class="no"> </span><span class="sv"> </span><span class="en">
+ 	For many years ago I was shown Bergyl 5 from a natural being (In Norway we call it "nisse".He was about half meters high with knickers and vest). 
+I can feel Bergyl with my hands. People that can do dowsing see/feel it also.
+I have tried to make it visible in 3D, see www.bergyl.no. 
+I miss a lot of the 3D geometric shapes, I am showing just the highest Bergyl 3D geometric shapes.
+I miss the  Golden ratio and that the same 3D geometric shapes repeats itself 14 times in height and bearing 14 cylinders around them.
+The program used too much memory.
+</span></p>
+ <p><span class="no"> </span><span class="sv"> </span><span class="en">
+ 	Unfortunately, I didn't understand everything yet.
+I do not know if it is particle moving up and down in spirals or if it is energy on and off in spirals.
+I have experimented a lot with this and there are very  a lot of regularities and  laws. In my first experiments I used stones and crystals.
+Together with Arne Groth we found that radiation from the highest Bergyl number stop the radiation from a lower Bergyl number. 
+He was a professor in Chemistry and had a lot of knowledge in dowsing. 
+</span></p>
+   </div>
+ <div class="liContent">  
+      <header><h2><span class="no"></span><span class="sv"></span><span class="en"></span></h2></header>
+  <p><span class="no"> </span><span class="sv"> </span><span class="en">
+But as my daughter says, what is it?
+It's like if I understand all about the parts of a car engine and wheels and how they are interrelated, 
+but I have not understood that I can drive with it.
+</span></p>
+   </div>
+ <div class="liContent">  
+      <header><h2><span class="no"></span><span class="sv"></span><span class="en"></span></h2></header>
+ <p><span class="no"> </span><span class="sv"></span> 
+<span class="en">
+ 	Until now I have been a software developer. www.bedredata.no 
+Now I have retired and can start to study Bergyl in full time.
+</span></p>
+   </div>
+ <div class="liContent">  
+      <header><h2><span class="no">
+      	Perhaps Bergyl is a <a href="http://www.nature.com/nature/journal/v526/n7575/full/nature15759.html?WT.ec_id=NATURE-20151029&spMailingID=49884916&spUserID=MjA1NzcwMjE4MQS2&spJobID=783976831&spReportId=NzgzOTc2ODMxS0">missing link in the physics. </a>
+Perhaps Bergyl with its 14 cylinders is the aura. Everything has an aura, people, animals, trees and also a thought you think has a Bergyl. 
+Perhaps Bergyl can explain that  <a href="http://forskning.no/2015/11/nye-beviser-verden-ikke-virker-som-den-burde#.VkUm1id6zdh.facebook">things do not get properties before we observe them</a>
+Perhaps Bergyl can make us understand gravity?
+Kanskje <a href="https://www.britishdowsers.org/glossary/hartmann-grid/"> Hartman linjer</a> og <a href="https://www.britishdowsers.org/glossary/curry-grid/">Curry linjer</a> er linjer i Bergyl. Men vi vet ikke hva som ble spurt om.
+Kanskje <a href="http://www.calphysics.org/zpe.html">"null-punkt" energier</a> er Bergyl?  
+
+      </span><span class="sv"></span><span class="en"></span></h2></header>
+  <p><span class="no"> </span>
+  	<span class="sv"> 
+  		Perhaps Bergyl is a <a href="http://www.nature.com/nature/journal/v526/n7575/full/nature15759.html?WT.ec_id=NATURE-20151029&spMailingID=49884916&spUserID=MjA1NzcwMjE4MQS2&spJobID=783976831&spReportId=NzgzOTc2ODMxS0">missing link in the physics. </a>
+Perhaps Bergyl with its 14 cylinders is the aura. Everything has an aura, people, animals, trees and also a thought you think has a Bergyl. 
+Perhaps Bergyl can explain that  <a href=" http://forskning.no/2015/11/nye-beviser-verden-ikke-virker-som-den-burde#.VkUm1id6zdh.facebook">things do not get properties before we observe them .</a>
+Perhaps Bergyl can make us understand gravity?
+Kanske  <a href="https://www.britishdowsers.org/glossary/hartmann-grid/">Hartmann linjer</a> och <a href="https://www.britishdowsers.org/glossary/curry-grid/"> Curry linjer </a> är linjer i Bergyl. Men vi vet inte vad som efterfrågas. 
+Kanske <a href="http://www.calphysics.org/zpe.html">"nollpunkts" energier</a> är Bergyl?  </span>
+ <span class="en">Perhaps Bergyl is <a href="http://www.cheniere.org/misc/interview1991.htm">Scalar Waves</a> explained by Thomas E. Bearden 
+Perhaps Bergyl is a <a href="http://www.nature.com/nature/journal/v526/n7575/full/nature15759.html?WT.ec_id=NATURE-20151029&spMailingID=49884916&spUserID=MjA1NzcwMjE4MQS2&spJobID=783976831&spReportId=NzgzOTc2ODMxS0">missing link in the physics.</a> 
+Perhaps Bergyl with its 14 cylinders is the aura. Everything has an aura, people, animals, trees and also a thought you think has a Bergyl. 
+Perhaps Bergyl can explain that  <a href="http://forskning.no/2015/11/nye-beviser-verden-ikke-virker-som-den-burde#.VkUm1id6zdh.facebook">things do not get properties before we observe them</a>
+Perhaps Bergyl can make us understand gravity?
+Perhaps <a href="https://www.britishdowsers.org/glossary/hartmann-grid/">Hartmann lines</a> and <a href="https://www.britishdowsers.org/glossary/curry-grid/">Curry lines</a> are lines in Bergyl. But we do not know what was asked for.
+Perhaps <a href=" http://www.calphysics.org/zpe.html">"zero-point"</a> energies is Bergyl?
+</span></p>
+   </div>
+ <div class="liContent">  
+      <header><h2><span class="no"></span><span class="sv"></span><span class="en"></span></h2></header>
+ <p><span class="no"> </span><span class="sv"> </span>
+	 <span class="en">Bohr said that one cannot look at the twin particles as two particles, they are the same in an invisible system and the invisible system is Bergyl?
+</span></p>
+<p><span class="no"> </span><span class="sv"> </span>
+	 <span class="en">Bohm says that an electron is not one thing, but "the totality or ensemble enfolded trough all space".
+When a juicer detects an electron is because one aspect of electrons Ensemble has unfolded.
+When it acts as an electron moves, it is because a continuing series such unfolding and enfolding.
+When a particle looks like it's gone is not it. It has enfolded back to a deeper order.
+An electron is not an elementary particle, but only a name given a particular aspect of holistic being. And the holistic being is Bergyl?
+</span></p>
+</div>      
+       
+ 
+   
   </section>
   <section id="NBH">
 	  <div class="liContent">
-     <header><h2>NBH <small>oversikt</small></h2></header>
+     <header><h2>NBH <small>oversikt</small></h2></header><img class="imgMenu2" width="145" height="120" src="/bilder/sky2.png" alt="Logo til NBH laget av Alf Langrind">
       <p><span class="no">NBH: Ny blå himmel er registrering av flystriper for analyse i geoengineering  i en database.</span><span class="sv">NBH:. Ny blå himmel registrering av airstrips för analys i geoengineering i en databas.</span><span class="en">NBH: New blue sky registration of airstrips for analysis in geoengineering in a database.</span></p>
     </div>     
   </section>
   <section id="Si">
     <div class="liContent">
-      <header><h2>SI <small>oversikt</small></h2></header>
+      <header><h2>SI <small>oversikt</small></h2></header><img class="imgMenu2" width="203" height="200" src="/bilder/siLogo2.png" alt="Logo til SI maltl av Solveig Løvhaug">
       <p><span class="no">Spirituelle og åndlige temaer.</span><span class="sv">Andliga teman.</span><span class="en">Spiritual themes.</span></p>
     </div>
   
    </section>
   <section id="Natur" >
     <div class="liContent">
-	    <header><h2>NATUR <small>oversikt</small></h2></header>
+	    <header><h2>NATUR <small>oversikt</small></h2></header><img class="imgMenu" width="204" height="200" src="/bilder/naturLogo2.png" alt="Kua Eva og logo til Natur malt av Solveig Løvhaug">
       <p><span class="no">Naturen, dyr, trær, stener.</span><span class="sv">Natur, djur, träd, stenar.</span><span class="en">Nature, animals, trees, stones.</span></p>
     </div>
   </section>
@@ -426,6 +556,7 @@ function transIt(isLang) {
              <h2 id="blog2Txt">BLOGG</h2> 
              <p>Blogggen kommer her etterhvert</p>   	         	                
   </aside>  
+
 <script type="text/javascript">  
 	var canvas=document.querySelector('#myHome');  
 	var canvas2=document.querySelector('#solStrek');  
